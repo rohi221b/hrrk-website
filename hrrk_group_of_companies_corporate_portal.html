@@ -1,0 +1,2320 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HRRK Group of Companies | Build. Manufacture. Trade. Grow.</title>
+  
+  <!-- Google Fonts: Poppins & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0B1F33',
+              navyLight: '#132c48',
+              royal: '#165D9C',
+              royalHover: '#114B7D',
+              gold: '#C7A33A',
+              goldHover: '#B08E2B',
+              goldLight: '#F5ECCE',
+              offwhite: '#F7F8FA',
+              charcoal: '#17202A',
+              slateBorder: '#E2E8F0',
+            },
+            division: {
+              namrushii: '#8A3B2B',
+              venturis: '#1B7F4B',
+              vyom: '#1B4D7E',
+              nivashaa: '#2E6941',
+              scribexa: '#1B3B6F',
+              devyana: '#D9651E',
+              gloy: '#F06522'
+            }
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            'corp': '0 4px 20px -2px rgba(11, 31, 51, 0.08), 0 2px 6px -1px rgba(11, 31, 51, 0.04)',
+            'corp-hover': '0 20px 30px -4px rgba(11, 31, 51, 0.12), 0 8px 16px -2px rgba(11, 31, 51, 0.06)',
+            'gold-glow': '0 0 18px rgba(199, 163, 58, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #17202A;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5, h6, .font-heading {
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero-grid-pattern {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    }
+    .pulse-route {
+      stroke-dasharray: 6, 6;
+      animation: dash 30s linear infinite;
+    }
+    @keyframes dash {
+      to {
+        stroke-dashoffset: -1000;
+      }
+    }
+    .mega-menu-content {
+      transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.25s;
+    }
+    /* Hide scrollbars smoothly for horizontal scrolls */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    /* Custom radio appearance */
+    .tab-active {
+      border-color: #C7A33A;
+      background-color: #0B1F33;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body class="text-brand-charcoal antialiased">
+
+  <div class="bg-brand-navy border-b border-brand-navyLight text-xs py-2 px-4 sm:px-8 text-gray-300 hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <span class="inline-flex items-center text-brand-gold font-medium">
+          <i class="fa-solid fa-shield-halved mr-2"></i> HRRK GROUP OF COMPANIES • ISO 9001:2015 Certified
+        </span>
+        <span class="hidden lg:inline text-gray-400">|</span>
+        <span class="hidden lg:inline"><i class="fa-solid fa-globe mr-1.5 text-gray-400"></i> Global Supply to 30+ Nations</span>
+        <span class="hidden xl:inline text-gray-400">|</span>
+        <span class="hidden xl:inline"><i class="fa-solid fa-industry mr-1.5 text-gray-400"></i> Namrushii Industrial Facilities (300,000+ Sq. Ft.)</span>
+      </div>
+      <div class="flex items-center space-x-5 text-gray-300">
+        <a href="#exports" class="hover:text-brand-gold transition-colors"><i class="fa-solid fa-plane-departure mr-1 text-xs"></i> International Trade</a>
+        <a href="#rfq" onclick="openRFQModal('General Enquiries')" class="hover:text-brand-gold transition-colors"><i class="fa-regular fa-envelope mr-1 text-xs"></i> RFQ Portal</a>
+        <span class="text-gray-500">|</span>
+        <div class="flex items-center space-x-3 text-xs">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-brand-gold" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-brand-gold" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="hover:text-brand-gold" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/?text=Hello%20HRRK%20Group%20Team" target="_blank" class="hover:text-brand-gold" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="hover:text-brand-gold" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header id="main-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md transition-all duration-300 border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- HRRK GROUP OFFICIAL LOGO -->
+        <a href="#" class="flex items-center group py-1">
+          <div class="relative flex items-center">
+            <!-- Official Framed Emblem SVG -->
+            <svg class="h-12 sm:h-14 w-auto drop-shadow-sm transition-transform duration-300 group-hover:scale-[1.02]" viewBox="0 0 320 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="hrrkFlameHdr" x1="160" y1="2" x2="160" y2="40" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#F59E0B" />
+                  <stop offset="45%" stop-color="#EA580C" />
+                  <stop offset="100%" stop-color="#C2410C" />
+                </linearGradient>
+                <linearGradient id="hrrkCoreHdr" x1="160" y1="18" x2="160" y2="38" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#FDE047" />
+                  <stop offset="60%" stop-color="#F59E0B" />
+                  <stop offset="100%" stop-color="#EA580C" />
+                </linearGradient>
+              </defs>
+              <!-- Outer Gold Border with Opening at Top for Flame -->
+              <path d="M125 4 H8 A4 4 0 0 0 4 8 V78 A4 4 0 0 0 8 82 H312 A4 4 0 0 0 316 78 V8 A4 4 0 0 0 312 4 H195" stroke="#C7A33A" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+              
+              <!-- Official Central Flame Emblem -->
+              <!-- Dark Slate Wing Cradle -->
+              <path d="M136 34 C136 42 147 45 160 45 C173 45 184 42 184 34 C184 27 178 24 178 24 C175 32 168 37 160 37 C152 37 145 32 142 24 C142 24 136 27 136 34 Z" fill="#243447" />
+              <!-- Outer Golden-Orange Flame Tongues -->
+              <path d="M145 28 C141 21 146 12 153 6 C150 14 153 19 157 24 C153 20 152 14 156 7 C161 1 167 0 167 0 C167 0 164 8 167 14 C170 8 174 5 178 7 C181 9 181 15 177 21 C182 14 185 22 178 28 C173 33 167 36 160 36 C153 36 147 33 145 28 Z" fill="url(#hrrkFlameHdr)" />
+              <!-- Inner Bright Core -->
+              <path d="M153 25 C152 20 157 15 160 11 C163 15 168 20 167 25 C167 30 164 34 160 34 C156 34 153 30 153 25 Z" fill="url(#hrrkCoreHdr)" />
+
+              <!-- Brand Typography inside Border -->
+              <text x="160" y="60" text-anchor="middle" fill="#B28C2B" font-family="'Poppins', 'Cinzel', serif" font-weight="800" font-size="14.5" letter-spacing="0.8">HRRK GROUP OF COMPANIES LTD.</text>
+              <text x="160" y="74" text-anchor="middle" fill="#0B1F33" font-family="'Inter', sans-serif" font-weight="700" font-size="8" letter-spacing="2.2">IGNITING GLOBAL POTENTIAL</text>
+            </svg>
+          </div>
+        </a>
+
+        <!-- DESKTOP NAVIGATION -->
+        <nav class="hidden lg:flex items-center space-x-1 xl:space-x-2">
+          
+          <!-- Home / About -->
+          <a href="#about" class="px-3 py-2 text-sm font-medium text-brand-navy hover:text-brand-royal hover:bg-gray-50 rounded-md transition-all">
+            About Group
+          </a>
+
+          <!-- Businesses Dropdown -->
+          <div class="relative group">
+            <button class="flex items-center space-x-1 px-3 py-2 text-sm font-medium text-brand-navy hover:text-brand-royal hover:bg-gray-50 rounded-md transition-all">
+              <span>Businesses</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 group-hover:rotate-180 transition-transform duration-200"></i>
+            </button>
+            <!-- Dropdown Content -->
+            <div class="absolute left-0 top-full pt-3 w-80 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+              <div class="bg-white rounded-xl shadow-corp border border-gray-100 p-3 space-y-1">
+                <a href="#ecosystem" class="flex items-start p-2.5 rounded-lg hover:bg-brand-offwhite transition-colors">
+                  <div class="w-8 h-8 rounded-md bg-amber-50/70 border border-amber-200/50 flex items-center justify-center mr-3 mt-0.5 p-1 flex-shrink-0">
+                    <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
+                      <path d="M22 65 C22 82 40 88 50 88 C60 88 78 82 78 65 C78 52 70 46 70 46 C67 58 58 66 50 66 C42 66 33 58 30 46 C30 46 22 52 22 65 Z" fill="#243447" />
+                      <path d="M32 55 C27 42 35 25 45 14 C42 28 46 36 51 44 C48 37 47 26 53 14 C60 2 68 0 68 0 C68 0 64 15 69 25 C74 15 80 10 85 14 C89 17 89 27 83 37 C90 26 94 39 85 50 C78 58 68 64 50 64 C38 64 34 60 32 55 Z" fill="url(#hrrkFlameHdr)" />
+                      <path d="M42 50 C41 40 47 31 50 25 C53 31 59 40 58 50 C58 58 54 62 50 62 C46 62 42 58 42 50 Z" fill="url(#hrrkCoreHdr)" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold text-brand-navy">HRRK Group of Companies</p>
+                    <p class="text-xs text-gray-500">Core parent company & strategic group vision</p>
+                  </div>
+                </a>
+                <a href="#manufacturing" class="flex items-start p-2.5 rounded-lg hover:bg-brand-offwhite transition-colors">
+                  <div class="w-8 h-8 rounded-md bg-stone-50 border border-stone-200 flex items-center justify-center mr-3 mt-0.5 p-1 flex-shrink-0">
+                    <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
+                      <path d="M50 50 C38 30 18 30 18 50 C18 70 38 70 50 50 C62 30 82 30 82 50 C82 70 62 70 50 50 Z" stroke="#334155" stroke-width="6" fill="none"/>
+                      <circle cx="33" cy="50" r="10" stroke="#2B4D3D" stroke-width="4" stroke-dasharray="4 2"/>
+                      <circle cx="67" cy="50" r="10" stroke="#9E4733" stroke-width="4" stroke-dasharray="4 2"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold text-brand-navy">Namrushii Industrixa</p>
+                    <p class="text-xs text-gray-500">Manufacturing, OEM & Private Label</p>
+                  </div>
+                </a>
+                <a href="#ventures" class="flex items-start p-2.5 rounded-lg hover:bg-brand-offwhite transition-colors">
+                  <div class="w-8 h-8 rounded-md bg-emerald-50 border border-emerald-200 flex items-center justify-center mr-3 mt-0.5 p-1 flex-shrink-0">
+                    <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
+                      <path d="M22 62 C12 48 24 28 42 42 C54 52 66 64 80 44" stroke="#167C47" stroke-width="7" stroke-linecap="round"/>
+                      <path d="M72 32 L86 42 L78 55" fill="#167C47"/>
+                      <path d="M48 48 C60 62 78 72 84 56" stroke="#94A3B8" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold text-brand-navy">Rekhraaj Ventures</p>
+                    <p class="text-xs text-gray-500">Business services, RV Vyapar Setu & Reverse Trade</p>
+                  </div>
+                </a>
+                <a href="#brands" class="flex items-start p-2.5 rounded-lg hover:bg-brand-offwhite transition-colors">
+                  <div class="w-8 h-8 rounded-md bg-blue-50 border border-blue-200 flex items-center justify-center mr-3 mt-0.5 p-1 flex-shrink-0">
+                    <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
+                      <path d="M50 15 L57 32 H43 Z" fill="#C7A33A"/>
+                      <path d="M38 24 L45 36 H31 Z" fill="#C7A33A"/>
+                      <path d="M62 24 L69 36 H55 Z" fill="#C7A33A"/>
+                      <path d="M25 36 C35 62 50 65 50 65 C50 65 65 62 75 36 C65 50 50 50 50 50 C50 50 35 50 25 36 Z" fill="#183B6B"/>
+                      <path d="M35 56 C44 76 50 82 50 82 C50 82 56 76 65 56" stroke="#C7A33A" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold text-brand-navy">Rekhraaj Vyom</p>
+                    <p class="text-xs text-gray-500">Consumer brands: Nivashaa, Scribexa, Devyana, Gloy</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Manufacturing Dropdown -->
+          <div class="relative group">
+            <button class="flex items-center space-x-1 px-3 py-2 text-sm font-medium text-brand-navy hover:text-brand-royal hover:bg-gray-50 rounded-md transition-all">
+              <span>Manufacturing</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 group-hover:rotate-180 transition-transform duration-200"></i>
+            </button>
+            <div class="absolute left-0 top-full pt-3 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+              <div class="bg-white rounded-xl shadow-corp border border-gray-100 p-2 text-sm">
+                <a href="#mfg-injection" class="flex items-center px-3 py-2 rounded-lg hover:bg-brand-offwhite text-gray-700 hover:text-brand-royal font-medium">
+                  <i class="fa-solid fa-cube w-6 text-brand-royal text-xs"></i> Injection Moulding Products
+                </a>
+                <a href="#mfg-blow" class="flex items-center px-3 py-2 rounded-lg hover:bg-brand-offwhite text-gray-700 hover:text-brand-royal font-medium">
+                  <i class="fa-solid fa-wine-bottle w-6 text-brand-royal text-xs"></i> Blow Moulding Products
+                </a>
+                <a href="#mfg-extrusion" class="flex items-center px-3 py-2 rounded-lg hover:bg-brand-offwhite text-gray-700 hover:text-brand-royal font-medium">
+                  <i class="fa-solid fa-grip-lines-vertical w-6 text-brand-royal text-xs"></i> Plastic Extrusion Line
+                </a>
+                <div class="h-px bg-gray-100 my-1"></div>
+                <a href="#mfg-privatelabel" class="flex items-center px-3 py-2 rounded-lg hover:bg-brand-offwhite text-gray-700 hover:text-brand-royal font-medium">
+                  <i class="fa-solid fa-tags w-6 text-brand-gold text-xs"></i> Private Label Manufacturing
+                </a>
+                <a href="#mfg-oem" class="flex items-center px-3 py-2 rounded-lg hover:bg-brand-offwhite text-gray-700 hover:text-brand-royal font-medium">
+                  <i class="fa-solid fa-industry w-6 text-brand-gold text-xs"></i> OEM Contract Engineering
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Opportunities Dropdown -->
+          <div class="relative group">
+            <button class="flex items-center space-x-1 px-3 py-2 text-sm font-medium text-brand-navy hover:text-brand-royal hover:bg-gray-50 rounded-md transition-all">
+              <span>Opportunities</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 group-hover:rotate-180 transition-transform duration-200"></i>
+            </button>
+            <div class="absolute left-0 top-full pt-3 w-80 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+              <div class="bg-white rounded-xl shadow-corp border border-gray-100 p-3 space-y-1">
+                <a href="#ventures" class="block p-2.5 rounded-lg hover:bg-brand-offwhite transition-colors">
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm font-semibold text-brand-navy">RV Vyapar Setu</span>
+                    <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded">Trading Network</span>
+                  </div>
+                  <p class="text-xs text-gray-500 mt-1">Build your trading business with our and associated group brands</p>
+                </a>
+                <a href="#reverse-trade" class="block p-2.5 rounded-lg hover:bg-brand-offwhite transition-colors">
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm font-semibold text-brand-navy">RV Reverse Trade</span>
+                    <span class="text-[10px] bg-blue-100 text-blue-800 font-bold px-1.5 py-0.5 rounded">Manufacturing</span>
+                  </div>
+                  <p class="text-xs text-gray-500 mt-1">Turn your plant manufacturing capacity into guaranteed opportunities</p>
+                </a>
+                <a href="#rfq" onclick="openRFQModal('Distribution Partnership')" class="block p-2.5 rounded-lg hover:bg-brand-offwhite transition-colors">
+                  <p class="text-sm font-semibold text-brand-navy">Distribution Franchises</p>
+                  <p class="text-xs text-gray-500">Pan-India dealership and regional super-stockist programs</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Brands Dropdown -->
+          <div class="relative group">
+            <button class="flex items-center space-x-1 px-3 py-2 text-sm font-medium text-brand-navy hover:text-brand-royal hover:bg-gray-50 rounded-md transition-all">
+              <span>Brands</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 group-hover:rotate-180 transition-transform duration-200"></i>
+            </button>
+            <div class="absolute -left-20 top-full pt-3 w-96 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+              <div class="bg-white rounded-xl shadow-corp border border-gray-100 p-3 grid grid-cols-2 gap-2">
+                <a href="#brand-nivashaa" class="p-2.5 rounded-lg hover:bg-emerald-50/50 border border-transparent hover:border-emerald-100 transition-all flex items-start space-x-2.5">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-50 border border-emerald-100 p-1 flex-shrink-0 flex items-center justify-center">
+                    <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
+                      <path d="M22 52 L50 24 L78 52" stroke="#B38B59" stroke-width="7" stroke-linecap="round"/>
+                      <rect x="34" y="44" width="8" height="24" fill="#B38B59"/>
+                      <path d="M38 68 C38 48 64 36 74 42 C74 58 56 74 38 68 Z" fill="#739855"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="font-heading font-bold text-xs text-emerald-950 block">NIVASHAA</span>
+                    <p class="text-[10px] text-gray-500 mt-0.5 leading-tight">Comfort For Every Home</p>
+                  </div>
+                </a>
+
+                <a href="#brand-scribexaa" class="p-2.5 rounded-lg hover:bg-blue-50/50 border border-transparent hover:border-blue-100 transition-all flex items-start space-x-2.5">
+                  <div class="w-8 h-8 rounded-lg bg-cyan-50 border border-cyan-100 p-1 flex-shrink-0 flex items-center justify-center">
+                    <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
+                      <path d="M22 30 C34 42 46 40 48 80 C44 64 30 58 18 64 Z" fill="#1E3557"/>
+                      <path d="M78 30 C66 42 54 40 52 80 C56 64 70 58 82 64 Z" fill="#00A5A8"/>
+                      <circle cx="50" cy="70" r="3.5" fill="#1E3557"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="font-heading font-bold text-xs text-blue-950 block">SCRIBEXA</span>
+                    <p class="text-[10px] text-gray-500 mt-0.5 leading-tight">Tools For Inspired Minds</p>
+                  </div>
+                </a>
+
+                <a href="#brand-devyana" class="p-2.5 rounded-lg hover:bg-orange-50/50 border border-transparent hover:border-orange-100 transition-all flex items-start space-x-2.5">
+                  <div class="w-8 h-8 rounded-lg bg-orange-50 border border-orange-100 p-1 flex-shrink-0 flex items-center justify-center">
+                    <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
+                      <path d="M50 18 C53 35 62 48 50 68 C38 48 47 35 50 18 Z" fill="#EA580C"/>
+                      <path d="M35 32 C43 45 42 58 26 70 C20 52 26 40 35 32 Z" fill="#F97316"/>
+                      <path d="M65 32 C57 45 58 58 74 70 C80 52 74 40 65 32 Z" fill="#F97316"/>
+                      <path d="M22 70 C40 82 60 82 78 70" stroke="#C74F20" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="font-heading font-bold text-xs text-orange-950 block">DEVYANA</span>
+                    <p class="text-[10px] text-gray-500 mt-0.5 leading-tight">Divine Essence, Pure Devotion</p>
+                  </div>
+                </a>
+
+                <a href="#brand-gloyex" class="p-2.5 rounded-lg hover:bg-amber-50/50 border border-transparent hover:border-amber-100 transition-all flex items-start space-x-2.5">
+                  <div class="w-8 h-8 rounded-lg bg-amber-50 border border-amber-100 p-1 flex-shrink-0 flex items-center justify-center">
+                    <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
+                      <circle cx="50" cy="38" r="22" fill="#E85D26"/>
+                      <path d="M34 48 C38 30 64 30 64 52 C50 64 34 60 30 50" fill="#0284C7"/>
+                      <rect x="42" y="64" width="16" height="14" rx="2" fill="#1B437C"/>
+                      <rect x="44" y="80" width="12" height="4" rx="1" fill="#64748B"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="font-heading font-bold text-xs text-slate-900 block">GLOY</span>
+                    <p class="text-[10px] text-gray-500 mt-0.5 leading-tight">Power, Light, Innovation</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#exports" class="px-3 py-2 text-sm font-medium text-brand-navy hover:text-brand-royal hover:bg-gray-50 rounded-md transition-all">
+            Exports
+          </a>
+          <a href="#contact" class="px-3 py-2 text-sm font-medium text-brand-navy hover:text-brand-royal hover:bg-gray-50 rounded-md transition-all">
+            Contact
+          </a>
+        </nav>
+
+        <!-- HEADER RIGHT ACTIONS -->
+        <div class="hidden sm:flex items-center space-x-2 xl:space-x-3">
+          <!-- Social Links (Facebook & Instagram) -->
+          <div class="flex items-center space-x-1.5 pr-2 border-r border-gray-200">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Follow HRRK on Facebook" class="w-9 h-9 rounded-lg text-gray-500 hover:text-[#1877F2] hover:bg-blue-50 flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-facebook-f text-sm"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Follow HRRK on Instagram" class="w-9 h-9 rounded-lg text-gray-500 hover:text-[#E4405F] hover:bg-pink-50 flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-instagram text-base"></i>
+            </a>
+          </div>
+
+          <button onclick="toggleGlobalSearch()" title="Search catalog & ecosystem" class="w-9 h-9 rounded-lg text-gray-500 hover:text-brand-navy hover:bg-gray-100 flex items-center justify-center transition-colors">
+            <i class="fa-solid fa-magnifying-glass text-sm"></i>
+          </button>
+          <button onclick="openRFQModal('General Enquiries')" class="font-heading tracking-wide uppercase text-xs font-bold px-4 sm:px-5 py-2.5 sm:py-3 rounded-lg bg-gradient-to-r from-brand-gold to-brand-goldHover text-brand-navy shadow-md hover:shadow-gold-glow hover:brightness-105 active:scale-95 transition-all">
+            Enquire Now <i class="fa-solid fa-arrow-right ml-1.5 text-[11px]"></i>
+          </button>
+        </div>
+
+        <!-- MOBILE HAMBURGER BUTTON -->
+        <div class="flex lg:hidden items-center space-x-2">
+          <!-- Mobile Social Icons -->
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded text-gray-600 hover:text-[#1877F2] flex items-center justify-center text-sm" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded text-gray-600 hover:text-[#E4405F] flex items-center justify-center text-base" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <button onclick="openRFQModal('Mobile Header')" class="text-xs font-bold px-3 py-2 rounded bg-brand-gold text-brand-navy sm:hidden">
+            Enquire
+          </button>
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="p-2 rounded-lg text-brand-navy hover:bg-gray-100 focus:outline-none" aria-label="Toggle navigation">
+            <i id="mobileMenuIcon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="lg:hidden hidden border-t border-gray-100 bg-white max-h-[85vh] overflow-y-auto px-4 py-4 space-y-3">
+      <!-- Social Connections for Mobile -->
+      <div class="flex items-center justify-between pb-3 border-b border-gray-100">
+        <span class="text-xs font-semibold text-gray-500">Connect With Us</span>
+        <div class="flex items-center space-x-3 text-gray-600">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#1877F2]"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#E4405F]"><i class="fa-brands fa-instagram text-lg"></i></a>
+          <a href="#" class="hover:text-brand-navy"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/?text=Hello%20HRRK%20Group%20Team" target="_blank" class="hover:text-emerald-600"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+        </div>
+      </div>
+
+      <div class="pb-2 border-b border-gray-100">
+        <p class="text-[11px] font-bold tracking-wider uppercase text-gray-400 mb-1">Corporate Menu</p>
+        <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-navy">About HRRK Group</a>
+        <a href="#ecosystem" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-navy">Business Ecosystem</a>
+      </div>
+      
+      <div class="py-2 border-b border-gray-100">
+        <p class="text-[11px] font-bold tracking-wider uppercase text-gray-400 mb-1">Manufacturing (Namrushii)</p>
+        <a href="#manufacturing" onclick="toggleMobileMenu()" class="block py-1.5 text-xs text-gray-600 pl-2">Injection Moulding</a>
+        <a href="#manufacturing" onclick="toggleMobileMenu()" class="block py-1.5 text-xs text-gray-600 pl-2">Blow Moulding</a>
+        <a href="#manufacturing" onclick="toggleMobileMenu()" class="block py-1.5 text-xs text-gray-600 pl-2">Plastic Extrusion</a>
+        <a href="#manufacturing" onclick="toggleMobileMenu()" class="block py-1.5 text-xs text-gray-600 pl-2 font-medium text-brand-royal">Private Label & OEM</a>
+      </div>
+
+      <div class="py-2 border-b border-gray-100">
+        <p class="text-[11px] font-bold tracking-wider uppercase text-gray-400 mb-1">Opportunities (Rekhraaj Ventures)</p>
+        <a href="#ventures" onclick="toggleMobileMenu()" class="block py-1.5 text-xs text-gray-600 pl-2">RV Vyapar Setu (Trading Network)</a>
+        <a href="#reverse-trade" onclick="toggleMobileMenu()" class="block py-1.5 text-xs text-gray-600 pl-2">RV Reverse Trade (Manufacturing Buyback)</a>
+      </div>
+
+      <div class="py-2 border-b border-gray-100">
+        <p class="text-[11px] font-bold tracking-wider uppercase text-gray-400 mb-1">Brands (Rekhraaj Vyom)</p>
+        <a href="#brand-nivashaa" onclick="toggleMobileMenu()" class="block py-1.5 text-xs text-gray-700 pl-2">NIVASHAA Cleaning</a>
+        <a href="#brand-scribexaa" onclick="toggleMobileMenu()" class="block py-1.5 text-xs text-gray-700 pl-2">SCRIBEXAA Stationery</a>
+        <a href="#brand-devyana" onclick="toggleMobileMenu()" class="block py-1.5 text-xs text-gray-700 pl-2">DEVYANA Devotional</a>
+        <a href="#brand-gloyex" onclick="toggleMobileMenu()" class="block py-1.5 text-xs text-gray-700 pl-2">GLOYEX LED Lighting</a>
+      </div>
+
+      <div class="pt-2 flex flex-col space-y-2">
+        <a href="#exports" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-navy">Global Exports</a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-navy">Contact Group HQ</a>
+        <button onclick="toggleMobileMenu(); openRFQModal('Mobile Menu CTA')" class="w-full py-3 bg-brand-navy text-white text-center font-bold text-xs uppercase tracking-wider rounded-lg">
+          Submit RFQ Enquiry
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative bg-brand-navy text-white overflow-hidden pt-8 pb-16 lg:py-24">
+    <!-- Subtle architectural background patterns -->
+    <div class="absolute inset-0 hero-grid-pattern opacity-40 pointer-events-none"></div>
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-royal/25 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-gold/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Left Column: Core Positioning -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-brand-gold/40 text-brand-gold text-xs font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+            <span>HRRK GROUP OF COMPANIES</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black font-heading tracking-tight leading-[1.08] text-white">
+            BUILD. <br/>
+            MANUFACTURE. <br/>
+            TRADE. <br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-amber-200 to-brand-gold">GROW.</span>
+          </h1>
+
+          <p class="text-gray-300 text-base sm:text-lg lg:text-xl font-normal max-w-2xl leading-relaxed">
+            A diversified business ecosystem connecting manufacturing, OEM, private label, business opportunities, consumer brands and global markets.
+          </p>
+
+          <div class="pt-2 flex flex-wrap gap-4 items-center">
+            <a href="#ecosystem" class="px-7 py-4 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-heading font-bold text-sm tracking-wide uppercase transition-all shadow-lg hover:shadow-gold-glow flex items-center group">
+              Explore Our Businesses
+              <i class="fa-solid fa-arrow-right ml-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+            </a>
+            <button onclick="openRFQModal('Partner With Us Hero')" class="px-7 py-4 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-heading font-semibold text-sm tracking-wide uppercase transition-all backdrop-blur-sm">
+              Partner With Us
+            </button>
+          </div>
+
+          <!-- Micro Highlights Bar -->
+          <div class="pt-6 border-t border-white/10 flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-gray-300 font-medium">
+            <span class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Plastic Manufacturing</span>
+            <span class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Business Opportunities</span>
+            <span class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Consumer Brands</span>
+            <span class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-2"></i> Global Exports</span>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Sophisticated Multi-Pane Architectural Grid -->
+        <div class="lg:col-span-5 relative">
+          
+          <div class="grid grid-cols-2 gap-3.5 relative">
+            
+            <!-- Pane 1: Manufacturing Facility -->
+            <div class="group relative rounded-2xl overflow-hidden border border-white/15 bg-brand-charcoal h-44 sm:h-52 shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" 
+                   alt="Industrial Injection Moulding" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/30 to-transparent"></div>
+              <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                <div>
+                  <span class="text-[10px] font-bold text-brand-gold uppercase tracking-wider block">NAMRUSHII</span>
+                  <p class="text-xs sm:text-sm font-heading font-bold text-white">MANUFACTURING</p>
+                </div>
+                <div class="w-6 h-6 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-[10px] text-white">
+                  <i class="fa-solid fa-gears"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pane 2: Consumer Products (FMCG & Goods) -->
+            <div class="group relative rounded-2xl overflow-hidden border border-white/15 bg-brand-charcoal h-44 sm:h-52 shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=600&q=80" 
+                   alt="Packaged Consumer Goods & Solutions" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/30 to-transparent"></div>
+              <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                <div>
+                  <span class="text-[10px] font-bold text-brand-gold uppercase tracking-wider block">REKHRAAJ VYOM</span>
+                  <p class="text-xs sm:text-sm font-heading font-bold text-white">CONSUMER PRODUCTS</p>
+                </div>
+                <div class="w-6 h-6 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-[10px] text-white">
+                  <i class="fa-solid fa-boxes-stacked"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pane 3: Business Trade & Ventures -->
+            <div class="group relative rounded-2xl overflow-hidden border border-white/15 bg-brand-charcoal h-44 sm:h-52 shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80" 
+                   alt="Business Opportunities and Deal Flow" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/30 to-transparent"></div>
+              <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                <div>
+                  <span class="text-[10px] font-bold text-brand-gold uppercase tracking-wider block">REKHRAAJ VENTURES</span>
+                  <p class="text-xs sm:text-sm font-heading font-bold text-white">BUSINESS PARTNERSHIPS</p>
+                </div>
+                <div class="w-6 h-6 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-[10px] text-white">
+                  <i class="fa-solid fa-handshake-angle"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pane 4: Global Shipping & Export -->
+            <div class="group relative rounded-2xl overflow-hidden border border-white/15 bg-brand-charcoal h-44 sm:h-52 shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=80" 
+                   alt="International Ocean Freight and Trade" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/30 to-transparent"></div>
+              <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                <div>
+                  <span class="text-[10px] font-bold text-brand-gold uppercase tracking-wider block">GLOBAL DIVISION</span>
+                  <p class="text-xs sm:text-sm font-heading font-bold text-white">EXPORT LOGISTICS</p>
+                </div>
+                <div class="w-6 h-6 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-[10px] text-white">
+                  <i class="fa-solid fa-ship"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Floating Architectural Badge -->
+          <div class="absolute -bottom-5 -right-3 sm:right-6 bg-brand-gold text-brand-navy px-4 py-2.5 rounded-xl shadow-xl border border-amber-300 font-heading text-xs font-extrabold tracking-wider uppercase flex items-center space-x-2">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span>FROM IDEAS TO SCALE</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-brand-offwhite border-y border-gray-200 py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+        
+        <div class="border-r border-gray-200 last:border-r-0">
+          <p class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-navy">4+</p>
+          <p class="text-xs font-medium text-gray-500 uppercase tracking-wider mt-0.5">Consumer Brands</p>
+        </div>
+
+        <div class="border-r border-gray-200 last:border-r-0">
+          <p class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-royal">3</p>
+          <p class="text-xs font-medium text-gray-500 uppercase tracking-wider mt-0.5">Polymer Techs</p>
+        </div>
+
+        <div class="border-r border-gray-200 last:border-r-0">
+          <p class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-navy">100+</p>
+          <p class="text-xs font-medium text-gray-500 uppercase tracking-wider mt-0.5">Product SKUs</p>
+        </div>
+
+        <div class="border-r border-gray-200 last:border-r-0">
+          <p class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-gold">30+</p>
+          <p class="text-xs font-medium text-gray-500 uppercase tracking-wider mt-0.5">Countries Exported</p>
+        </div>
+
+        <div class="col-span-2 md:col-span-1 flex items-center justify-center md:justify-start">
+          <div class="flex items-center space-x-2 text-left">
+            <span class="text-xl">🇮🇳</span>
+            <div class="text-[11px] leading-tight font-semibold text-gray-600">
+              <span class="text-brand-navy font-bold block">MADE IN INDIA</span>
+              FOR GLOBAL MARKETS
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="ecosystem" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-brand-royal text-xs font-bold uppercase tracking-wider mb-3">
+          Diversified Enterprise Architecture
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">
+          OUR BUSINESS ECOSYSTEM
+        </h2>
+        <div class="w-16 h-1 bg-brand-gold mx-auto my-4 rounded-full"></div>
+        <p class="text-gray-600 text-base sm:text-lg">
+          A diversified ecosystem creating products, opportunities and global possibilities.
+        </p>
+      </div>
+
+      <!-- Operating Businesses Grid (4 Divisions) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- CARD 1: NAMRUSHII INDUSTRIXA -->
+        <div class="group bg-white rounded-2xl border border-gray-200 p-6 flex flex-col justify-between hover:border-division-namrushii hover:shadow-corp-hover transition-all duration-300 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-division-namrushii"></div>
+          <div>
+            <div class="w-full h-24 rounded-xl bg-stone-50/80 border border-stone-200/60 flex items-center justify-center mb-5 p-2 group-hover:scale-[1.02] transition-transform">
+              <!-- Namrushii Official Dual-Gear Infinity SVG -->
+              <svg viewBox="0 0 280 90" class="w-full h-full" fill="none">
+                <!-- Dual-gear Infinity Symbol -->
+                <g transform="translate(140, 32) scale(0.65)">
+                  <!-- Left Dark Loop with Arrow -->
+                  <path d="M-10 0 C-30 -35 -75 -35 -75 0 C-75 35 -30 35 -10 0" stroke="#2B4D3D" stroke-width="12" stroke-linecap="round" fill="none"/>
+                  <polygon points="-70,22 -85,10 -75,32" fill="#2B4D3D"/>
+                  <!-- Right Terracotta Loop with Arrow -->
+                  <path d="M-10 0 C10 35 55 35 55 0 C55 -35 10 -35 -10 0" stroke="#9E4733" stroke-width="12" stroke-linecap="round" fill="none"/>
+                  <polygon points="50,-22 65,-10 55,-32" fill="#9E4733"/>
+                  <!-- Left Gear -->
+                  <circle cx="-50" cy="0" r="16" stroke="#4A6B5B" stroke-width="4" stroke-dasharray="7 4" fill="#FFFFFF"/>
+                  <circle cx="-50" cy="0" r="6" fill="#2B4D3D"/>
+                  <!-- Right Gear -->
+                  <circle cx="30" cy="0" r="16" stroke="#8F3E2C" stroke-width="4" stroke-dasharray="7 4" fill="#FFFFFF"/>
+                  <circle cx="30" cy="0" r="6" fill="#9E4733"/>
+                </g>
+                <!-- Namrushii Wordmark -->
+                <text x="140" y="68" text-anchor="middle" font-family="'Cinzel', 'Poppins', serif" font-weight="700" font-size="14" letter-spacing="1">
+                  <tspan fill="#333C37">NAMRUSHII </tspan>
+                  <tspan fill="#9E4733">INDUSTRIXA</tspan>
+                </text>
+                <text x="140" y="81" text-anchor="middle" fill="#4B5563" font-family="'Inter', sans-serif" font-weight="600" font-size="6.5" letter-spacing="1.8">ENDLESS INNOVATION IN MOTION</text>
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy">NAMRUSHII INDUSTRIXA</h3>
+            <p class="text-xs font-semibold text-division-namrushii mt-1 uppercase tracking-wide">Manufacturing & OEM Operations</p>
+            
+            <p class="text-xs text-gray-600 mt-4 leading-relaxed">
+              Industrial polymer manufacturing hub delivering precision injection moulding, blow moulding, high-capacity extrusion, and turnkey private-label production.
+            </p>
+
+            <div class="mt-6 pt-4 border-t border-gray-100 text-xs space-y-2 text-gray-600 font-medium">
+              <div class="flex items-center"><i class="fa-solid fa-circle-check text-[11px] text-division-namrushii mr-2"></i> Plastic Injection Moulding</div>
+              <div class="flex items-center"><i class="fa-solid fa-circle-check text-[11px] text-division-namrushii mr-2"></i> Plastic Blow Moulding</div>
+              <div class="flex items-center"><i class="fa-solid fa-circle-check text-[11px] text-division-namrushii mr-2"></i> Plastic Extrusion Products</div>
+              <div class="flex items-center"><i class="fa-solid fa-circle-check text-[11px] text-division-namrushii mr-2"></i> OEM & Private Label Solutions</div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4">
+            <a href="#manufacturing" class="inline-flex items-center text-xs font-bold text-division-namrushii hover:text-amber-900 uppercase tracking-wider group-hover:translate-x-1 transition-all">
+              Explore Manufacturing <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 2: REKHRAAJ VENTURES / VENTURIS -->
+        <div class="group bg-white rounded-2xl border border-gray-200 p-6 flex flex-col justify-between hover:border-division-venturis hover:shadow-corp-hover transition-all duration-300 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-division-venturis"></div>
+          <div>
+            <div class="w-full h-24 rounded-xl bg-emerald-50/60 border border-emerald-100 flex items-center justify-center mb-5 p-2 group-hover:scale-[1.02] transition-transform">
+              <!-- Rekhraaj Venturis Official Rising Infinity Vector SVG -->
+              <svg viewBox="0 0 280 90" class="w-full h-full" fill="none">
+                <g transform="translate(140, 32) scale(0.65)">
+                  <!-- Silver/Grey Shaded Lower Loop -->
+                  <path d="M-5 10 C18 36 58 40 68 15 C76 -8 55 -24 35 -15" stroke="#94A3B8" stroke-width="12" stroke-linecap="round" fill="none"/>
+                  <!-- Green Ribbon with Upward Growth Arrow -->
+                  <path d="M-60 10 C-78 -12 -55 -38 -28 -28 C-5 -18 20 5 45 -22" stroke="#167C47" stroke-width="13" stroke-linecap="round" fill="none"/>
+                  <path d="M-60 10 C-70 28 -45 42 -22 25 C-5 12 18 -10 32 -26" stroke="#167C47" stroke-width="13" stroke-linecap="round" fill="none"/>
+                  <!-- Arrow Head pointing upward to growth -->
+                  <polygon points="35,-42 58,-22 30,-15" fill="#167C47"/>
+                </g>
+                <!-- Typography -->
+                <text x="140" y="68" text-anchor="middle" fill="#1F3E33" font-family="'Cinzel', 'Poppins', serif" font-weight="800" font-size="13" letter-spacing="1">REKHRAAJ VENTURIS</text>
+                <text x="140" y="81" text-anchor="middle" fill="#167C47" font-family="'Inter', sans-serif" font-weight="600" font-size="6" letter-spacing="1.4">EXPANDING POSSIBILITIES, EMPOWERING PARTNERS</text>
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy">REKHRAAJ VENTURES</h3>
+            <p class="text-xs font-semibold text-division-venturis mt-1 uppercase tracking-wide">Business Services & Opportunities</p>
+            
+            <p class="text-xs text-gray-600 mt-4 leading-relaxed">
+              Structured partnership platforms empowering traders, entrepreneurs, and factory owners with scalable distribution networks and capacity monetization models.
+            </p>
+
+            <div class="mt-6 pt-4 border-t border-gray-100 text-xs space-y-2 text-gray-600 font-medium">
+              <div class="flex items-center"><i class="fa-solid fa-circle-check text-[11px] text-division-venturis mr-2"></i> RV Vyapar Setu (Trading Network)</div>
+              <div class="flex items-center"><i class="fa-solid fa-circle-check text-[11px] text-division-venturis mr-2"></i> RV Reverse Trade (Buyback System)</div>
+              <div class="flex items-center"><i class="fa-solid fa-circle-check text-[11px] text-division-venturis mr-2"></i> Channel Partner Enablement</div>
+              <div class="flex items-center"><i class="fa-solid fa-circle-check text-[11px] text-division-venturis mr-2"></i> Pan-India Distribution Support</div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4">
+            <a href="#ventures" class="inline-flex items-center text-xs font-bold text-division-venturis hover:text-emerald-800 uppercase tracking-wider group-hover:translate-x-1 transition-all">
+              Explore Opportunities <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 3: REKHRAAJ VYOM -->
+        <div class="group bg-white rounded-2xl border border-gray-200 p-6 flex flex-col justify-between hover:border-brand-royal hover:shadow-corp-hover transition-all duration-300 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-brand-royal"></div>
+          <div>
+            <div class="w-full h-24 rounded-xl bg-blue-50/60 border border-blue-100 flex items-center justify-center mb-5 p-2 group-hover:scale-[1.02] transition-transform">
+              <!-- Rekhraaj Vyom Official Regal Wing Crest SVG -->
+              <svg viewBox="0 0 280 90" class="w-full h-full" fill="none">
+                <g transform="translate(140, 32) scale(0.65)">
+                  <!-- 3 Top Golden Flame Petals -->
+                  <path d="M0 -38 C3 -25 7 -18 0 0 C-7 -18 -3 -25 0 -38 Z" fill="#D4A017"/>
+                  <path d="M-18 -22 C-14 -12 -9 -6 -2 0 C-10 -3 -15 -8 -18 -22 Z" fill="#D4A017"/>
+                  <path d="M18 -22 C14 -12 9 -6 2 0 C10 -3 15 -8 18 -22 Z" fill="#D4A017"/>
+                  <!-- Navy Winged Arms -->
+                  <path d="M-36 -8 C-20 25 0 28 0 28 C0 28 20 25 36 -8 C22 10 0 10 0 10 C0 10 -22 10 -36 -8 Z" fill="#183B6B"/>
+                  <!-- Lower Gold Bow Ribbon -->
+                  <path d="M-18 20 C-5 40 0 45 0 45 C0 45 5 40 18 20 C10 32 0 35 0 35 C0 35 -10 32 -18 20 Z" fill="#D4A017"/>
+                  <!-- Base Navy Droplet -->
+                  <path d="M-8 30 C-4 44 0 50 0 50 C0 50 4 44 8 30 C5 36 0 40 0 40 C0 40 -5 36 -8 30 Z" fill="#183B6B"/>
+                </g>
+                <!-- Typography -->
+                <text x="140" y="68" text-anchor="middle" fill="#C7A33A" font-family="'Poppins', sans-serif" font-weight="700" font-size="13.5" letter-spacing="3.5">REKHRAAJ VYOM</text>
+                <text x="140" y="81" text-anchor="middle" fill="#183B6B" font-family="'Inter', sans-serif" font-weight="600" font-size="6.5" letter-spacing="1.5">BUILDING BRANDS SHAPING FUTURE</text>
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy">REKHRAAJ VYOM</h3>
+            <p class="text-xs font-semibold text-brand-royal mt-1 uppercase tracking-wide">Core Consumer Brand Portfolio</p>
+            
+            <p class="text-xs text-gray-600 mt-4 leading-relaxed">
+              Household FMCG and retail goods arm creating high-utility consumer brands for modern residences, businesses, institutions, and spiritual wellness.
+            </p>
+
+            <div class="mt-6 pt-4 border-t border-gray-100 text-xs space-y-2 text-gray-600 font-medium">
+              <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-emerald-600 mr-2"></span> NIVASHAA (Everyday Cleaning)</div>
+              <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-700 mr-2"></span> SCRIBEXAA (Stationery Products)</div>
+              <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-amber-600 mr-2"></span> DEVYANA (Devotional Essentials)</div>
+              <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-yellow-500 mr-2"></span> GLOYEX (Efficient Lighting)</div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4">
+            <a href="#brands" class="inline-flex items-center text-xs font-bold text-brand-royal hover:text-brand-navy uppercase tracking-wider group-hover:translate-x-1 transition-all">
+              View Consumer Brands <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 4: EXPORTS -->
+        <div class="group bg-white rounded-2xl border border-gray-200 p-6 flex flex-col justify-between hover:border-brand-navy hover:shadow-corp-hover transition-all duration-300 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-brand-navy"></div>
+          <div>
+            <div class="w-full h-24 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center mb-5 p-2 group-hover:scale-[1.02] transition-transform">
+              <!-- Global Export Logistics Emblem SVG -->
+              <svg viewBox="0 0 280 90" class="w-full h-full" fill="none">
+                <g transform="translate(140, 32)">
+                  <circle cx="0" cy="0" r="22" stroke="#C7A33A" stroke-width="2.5" fill="#0B1F33"/>
+                  <!-- Lat/Long Lines -->
+                  <ellipse cx="0" cy="0" rx="22" ry="9" stroke="rgba(255,255,255,0.4)" stroke-width="1.2"/>
+                  <ellipse cx="0" cy="0" rx="9" ry="22" stroke="rgba(255,255,255,0.4)" stroke-width="1.2"/>
+                  <line x1="-22" y1="0" x2="22" y2="0" stroke="#C7A33A" stroke-width="1.5"/>
+                  <!-- Curved Flight/Ship Vector -->
+                  <path d="M-28 14 C-10 -18 18 -18 32 4" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 2"/>
+                  <polygon points="32,4 28,-3 23,2" fill="#F59E0B"/>
+                </g>
+                <text x="140" y="68" text-anchor="middle" fill="#FFFFFF" font-family="'Poppins', sans-serif" font-weight="800" font-size="14" letter-spacing="2">EXPORTS DIVISION</text>
+                <text x="140" y="81" text-anchor="middle" fill="#C7A33A" font-family="'Inter', sans-serif" font-weight="600" font-size="6.5" letter-spacing="1.5">GLOBAL BUSINESS & TRADE</text>
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-brand-navy">EXPORTS</h3>
+            <p class="text-xs font-semibold text-brand-gold mt-1 uppercase tracking-wide">Global Business / International Supply</p>
+            
+            <p class="text-xs text-gray-600 mt-4 leading-relaxed">
+              Exporting quality and delivering trust worldwide. FCL container dispatch, overseas private label, and international OEM adhering to strict global standards.
+            </p>
+
+            <div class="mt-6 pt-4 border-t border-gray-100 text-xs space-y-2 text-gray-600 font-medium">
+              <div class="flex items-center"><i class="fa-solid fa-circle-check text-[11px] text-brand-gold mr-2"></i> OEM & Private Label Solutions</div>
+              <div class="flex items-center"><i class="fa-solid fa-circle-check text-[11px] text-brand-gold mr-2"></i> High-Volume Bulk Container Supply</div>
+              <div class="flex items-center"><i class="fa-solid fa-circle-check text-[11px] text-brand-gold mr-2"></i> Exclusive Territorial Group Brands</div>
+              <div class="flex items-center"><i class="fa-solid fa-circle-check text-[11px] text-brand-gold mr-2"></i> International Ports Dispatch (30+ Nations)</div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4">
+            <a href="#exports" class="inline-flex items-center text-xs font-bold text-brand-navy hover:text-brand-royal uppercase tracking-wider group-hover:translate-x-1 transition-all">
+              Explore Global Exports <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="manufacturing" class="py-20 bg-brand-offwhite border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-14">
+        <div>
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-amber-100/70 text-division-namrushii text-xs font-bold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-industry"></i>
+            <span>NAMRUSHII INDUSTRIXA</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">
+            Manufacturing Built Around Your Requirement
+          </h2>
+          <p class="text-gray-600 text-base sm:text-lg mt-2">
+            Precision. Performance. Possibilities. Industrial plastics at enterprise scale.
+          </p>
+        </div>
+        <div class="mt-4 lg:mt-0">
+          <button onclick="openRFQModal('Manufacturing Enquiry')" class="px-6 py-3.5 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-heading font-bold text-xs uppercase tracking-wider shadow-md transition-all">
+            Request Manufacturing Enquiry <i class="fa-solid fa-arrow-right ml-1"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 3 Core Polymer Capabilities Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Technology 1: Injection Moulding -->
+        <div id="mfg-injection" class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-corp transition-all">
+          <div class="h-48 relative overflow-hidden bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" 
+                 alt="Plastic Injection Moulding Machine" 
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            <div class="absolute top-3 right-3 bg-brand-navy/90 backdrop-blur-sm text-brand-gold font-bold text-[10px] px-2.5 py-1 rounded">
+              50T — 650T Cap.
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-lg text-brand-navy">Injection Moulding Products</h3>
+            <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+              High-speed, multi-cavity injection moulding for closures, industrial caps, precision components, electrical casings, and thin-wall consumer articles.
+            </p>
+            <div class="mt-4 pt-4 border-t border-gray-100 text-xs space-y-1.5 text-gray-500 font-medium">
+              <p><i class="fa-solid fa-check text-brand-royal mr-1.5"></i> PP, HDPE, ABS, Polycarbonate, POM</p>
+              <p><i class="fa-solid fa-check text-brand-royal mr-1.5"></i> Hot runner & cold runner toolings</p>
+              <p><i class="fa-solid fa-check text-brand-royal mr-1.5"></i> In-mould labelling & pad printing</p>
+            </div>
+            <button onclick="openRFQModal('Injection Moulding Requirement')" class="mt-5 w-full py-2.5 rounded-lg border border-gray-200 hover:border-brand-navy text-brand-navy text-xs font-bold uppercase tracking-wider transition-colors">
+              Enquire Injection Moulding
+            </button>
+          </div>
+        </div>
+
+        <!-- Technology 2: Blow Moulding -->
+        <div id="mfg-blow" class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-corp transition-all">
+          <div class="h-48 relative overflow-hidden bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=600&q=80" 
+                 alt="Extrusion Blow Moulding Bottles" 
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            <div class="absolute top-3 right-3 bg-brand-navy/90 backdrop-blur-sm text-brand-gold font-bold text-[10px] px-2.5 py-1 rounded">
+              30ml — 5000ml
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-lg text-brand-navy">Blow Moulding Products</h3>
+            <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+              Extrusion blow moulding (EBM) and stretch blow moulding (ISBM) producing rigid bottles, jerry cans, detergent containers, and chemical carboys.
+            </p>
+            <div class="mt-4 pt-4 border-t border-gray-100 text-xs space-y-1.5 text-gray-500 font-medium">
+              <p><i class="fa-solid fa-check text-brand-royal mr-1.5"></i> Leak-proof neck calibrator finishes</p>
+              <p><i class="fa-solid fa-check text-brand-royal mr-1.5"></i> Multi-layer co-extrusion for barrier</p>
+              <p><i class="fa-solid fa-check text-brand-royal mr-1.5"></i> Custom volume & ergonomic molds</p>
+            </div>
+            <button onclick="openRFQModal('Blow Moulding Requirement')" class="mt-5 w-full py-2.5 rounded-lg border border-gray-200 hover:border-brand-navy text-brand-navy text-xs font-bold uppercase tracking-wider transition-colors">
+              Enquire Blow Moulding
+            </button>
+          </div>
+        </div>
+
+        <!-- Technology 3: Extrusion -->
+        <div id="mfg-extrusion" class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-corp transition-all">
+          <div class="h-48 relative overflow-hidden bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" 
+                 alt="Plastic Extrusion Plant" 
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            <div class="absolute top-3 right-3 bg-brand-navy/90 backdrop-blur-sm text-brand-gold font-bold text-[10px] px-2.5 py-1 rounded">
+              High Output Twin-Screw
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-lg text-brand-navy">Plastic Extrusion Products</h3>
+            <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+              Continuous profile extrusion delivering rigid & flexible tubes, pen barrels, conduits, protective sleeves, architectural profiles, and customized strips.
+            </p>
+            <div class="mt-4 pt-4 border-t border-gray-100 text-xs space-y-1.5 text-gray-500 font-medium">
+              <p><i class="fa-solid fa-check text-brand-royal mr-1.5"></i> Uniform wall-thickness tolerances</p>
+              <p><i class="fa-solid fa-check text-brand-royal mr-1.5"></i> Rigid PVC, PP, HDPE, LDPE, TPU</p>
+              <p><i class="fa-solid fa-check text-brand-royal mr-1.5"></i> High-speed inline cutting & coiling</p>
+            </div>
+            <button onclick="openRFQModal('Plastic Extrusion Requirement')" class="mt-5 w-full py-2.5 rounded-lg border border-gray-200 hover:border-brand-navy text-brand-navy text-xs font-bold uppercase tracking-wider transition-colors">
+              Enquire Extrusion Lines
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="mfg-oem" class="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
+        <div class="max-w-3xl mb-10">
+          <span class="text-xs font-bold text-brand-royal uppercase tracking-wider">End-to-End Contract Manufacturing</span>
+          <h3 class="text-2xl sm:text-3xl font-heading font-bold text-brand-navy mt-1">
+            Your Brand. Our Manufacturing Capability.
+          </h3>
+          <p class="text-sm text-gray-600 mt-2">
+            From technical drawings and 3D CAD to high-volume commercial production, we turn your product ideas into market-ready inventory.
+          </p>
+        </div>
+
+        <!-- 5 Step Flow Horizontal -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+          
+          <!-- Step 1 -->
+          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200 text-center relative group hover:border-brand-royal transition-all">
+            <div class="w-12 h-12 mx-auto rounded-full bg-blue-50 text-brand-royal flex items-center justify-center text-lg font-bold mb-3">
+              <i class="fa-regular fa-file-lines"></i>
+            </div>
+            <span class="text-[10px] font-bold text-gray-400 uppercase">Step 01</span>
+            <h4 class="font-heading font-bold text-sm text-brand-navy mt-1">Requirement</h4>
+            <p class="text-[11px] text-gray-500 mt-1">Product specs, design review & feasibility analysis</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200 text-center relative group hover:border-brand-royal transition-all">
+            <div class="w-12 h-12 mx-auto rounded-full bg-amber-50 text-brand-gold flex items-center justify-center text-lg font-bold mb-3">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <span class="text-[10px] font-bold text-gray-400 uppercase">Step 02</span>
+            <h4 class="font-heading font-bold text-sm text-brand-navy mt-1">Tooling & Mfg</h4>
+            <p class="text-[11px] text-gray-500 mt-1">Mould design, rapid prototyping & pilot run</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200 text-center relative group hover:border-brand-royal transition-all">
+            <div class="w-12 h-12 mx-auto rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold mb-3">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <span class="text-[10px] font-bold text-gray-400 uppercase">Step 03</span>
+            <h4 class="font-heading font-bold text-sm text-brand-navy mt-1">Quality Control</h4>
+            <p class="text-[11px] text-gray-500 mt-1">Dimensional checks, drop testing & barrier inspection</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200 text-center relative group hover:border-brand-royal transition-all">
+            <div class="w-12 h-12 mx-auto rounded-full bg-purple-50 text-purple-600 flex items-center justify-center text-lg font-bold mb-3">
+              <i class="fa-solid fa-box-open"></i>
+            </div>
+            <span class="text-[10px] font-bold text-gray-400 uppercase">Step 04</span>
+            <h4 class="font-heading font-bold text-sm text-brand-navy mt-1">Packaging</h4>
+            <p class="text-[11px] text-gray-500 mt-1">Custom retail boxes, barcoding & master cartons</p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="p-4 rounded-xl bg-brand-navy text-white text-center relative group shadow-md">
+            <div class="w-12 h-12 mx-auto rounded-full bg-brand-gold text-brand-navy flex items-center justify-center text-lg font-bold mb-3">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <span class="text-[10px] font-bold text-brand-gold uppercase">Step 05</span>
+            <h4 class="font-heading font-bold text-sm text-white mt-1">Your Brand</h4>
+            <p class="text-[11px] text-gray-300 mt-1">Dispatched to your warehouse or overseas port</p>
+          </div>
+
+        </div>
+
+        <!-- Action Row -->
+        <div class="mt-8 flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-gray-100">
+          <div class="flex items-center space-x-2 text-xs text-gray-500">
+            <i class="fa-solid fa-shield text-brand-royal"></i>
+            <span>NDA protected engineering • Tooling ownership options • Guaranteed batch repeatability</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <button onclick="openRFQModal('Start OEM Project')" class="px-5 py-2.5 rounded-lg bg-brand-navy hover:bg-brand-royal text-white text-xs font-bold uppercase tracking-wider transition-colors">
+              Start OEM Project
+            </button>
+            <button onclick="openRFQModal('Explore Private Label')" class="px-5 py-2.5 rounded-lg border border-gray-300 hover:border-brand-navy text-brand-navy text-xs font-bold uppercase tracking-wider transition-colors">
+              Explore Private Label
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="ventures" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-emerald-100/70 text-division-venturis text-xs font-bold uppercase tracking-wider mb-3">
+          <i class="fa-solid fa-arrow-trend-up"></i>
+          <span>REKHRAAJ VENTURES</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">
+          Business Opportunities for Ambitious People
+        </h2>
+        <div class="w-16 h-1 bg-brand-gold mx-auto my-4 rounded-full"></div>
+        <p class="text-gray-600 text-base sm:text-lg">
+          Structured commercial pathways for traders, entrepreneurs, super-stockists, and manufacturing facility owners.
+        </p>
+      </div>
+
+      <!-- Opportunities 2-Column Split -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- MODULE 1: RV VYAPAR SETU -->
+        <div class="rounded-2xl border-2 border-emerald-600/20 bg-gradient-to-b from-emerald-50/30 to-white p-8 hover:border-emerald-600/40 transition-all flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-14 h-14 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-2xl shadow-md">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full">
+                For Traders & Distributors
+              </span>
+            </div>
+
+            <h3 class="font-heading font-bold text-2xl text-brand-navy">RV VYAPAR SETU</h3>
+            <p class="text-xs font-semibold text-emerald-700 mt-1 uppercase tracking-wider">
+              Build Your Trading Business With Our & Associated Brands
+            </p>
+
+            <p class="text-sm text-gray-600 mt-4 leading-relaxed">
+              A comprehensive trading empowerment initiative. Whether you are an existing distributor or a rising entrepreneur, RV Vyapar Setu provides ready-to-sell inventory, credit terms, regional exclusivity, and direct group pricing.
+            </p>
+
+            <div class="mt-6 space-y-3">
+              <div class="flex items-start">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 mr-3 text-sm"></i>
+                <div class="text-xs text-gray-700">
+                  <span class="font-bold text-brand-navy">Diverse Brand Portfolio:</span> Instant access to Nivashaa (cleaning), Scribexaa (stationery), Devyana (puja), and Gloyex (lighting).
+                </div>
+              </div>
+              <div class="flex items-start">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 mr-3 text-sm"></i>
+                <div class="text-xs text-gray-700">
+                  <span class="font-bold text-brand-navy">Pan-India Logistics Support:</span> Direct warehouse dispatch, automated order fulfilment, and regional marketing collateral.
+                </div>
+              </div>
+              <div class="flex items-start">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 mr-3 text-sm"></i>
+                <div class="text-xs text-gray-700">
+                  <span class="font-bold text-brand-navy">Protected Margins:</span> High-yield distributor ROIs with transparent distributor billing and volume bonuses.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-emerald-100">
+            <button onclick="openRFQModal('RV Vyapar Setu Application')" class="w-full py-3.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-heading font-bold text-xs uppercase tracking-wider shadow transition-colors flex items-center justify-center">
+              Join RV Vyapar Setu <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- MODULE 2: RV REVERSE TRADE -->
+        <div id="reverse-trade" class="rounded-2xl border-2 border-brand-royal/20 bg-gradient-to-b from-blue-50/30 to-white p-8 hover:border-brand-royal/40 transition-all flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-14 h-14 rounded-xl bg-brand-royal text-white flex items-center justify-center text-2xl shadow-md">
+                <i class="fa-solid fa-arrows-rotate"></i>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 bg-blue-100 text-blue-800 rounded-full">
+                For Plant & Machine Owners
+              </span>
+            </div>
+
+            <h3 class="font-heading font-bold text-2xl text-brand-navy">RV REVERSE TRADE</h3>
+            <p class="text-xs font-semibold text-brand-royal mt-1 uppercase tracking-wider">
+              Turn Manufacturing Into Opportunity for Our Brands
+            </p>
+
+            <p class="text-sm text-gray-600 mt-4 leading-relaxed">
+              Do you possess idle machinery or manufacturing capacity? RV Reverse Trade connects your factory infrastructure into HRRK's verified production network with structured buyback and long-term supply contracts.
+            </p>
+
+            <div class="mt-6 space-y-3">
+              <div class="flex items-start">
+                <i class="fa-solid fa-circle-check text-brand-royal mt-1 mr-3 text-sm"></i>
+                <div class="text-xs text-gray-700">
+                  <span class="font-bold text-brand-navy">Capacity Monetization:</span> Fill idle machine hours with contract manufacturing of group branded items.
+                </div>
+              </div>
+              <div class="flex items-start">
+                <i class="fa-solid fa-circle-check text-brand-royal mt-1 mr-3 text-sm"></i>
+                <div class="text-xs text-gray-700">
+                  <span class="font-bold text-brand-navy">Raw Material & Mould Linkages:</span> We supply specialized tooling, technical guidance, and polymer sourcing assistance.
+                </div>
+              </div>
+              <div class="flex items-start">
+                <i class="fa-solid fa-circle-check text-brand-royal mt-1 mr-3 text-sm"></i>
+                <div class="text-xs text-gray-700">
+                  <span class="font-bold text-brand-navy">Guaranteed Buyback Offtake:</span> Pre-agreed off-take purchase orders with clear payment schedules.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-blue-100">
+            <button onclick="openRFQModal('RV Reverse Trade Capacity Listing')" class="w-full py-3.5 rounded-xl bg-brand-royal hover:bg-brand-royalHover text-white font-heading font-bold text-xs uppercase tracking-wider shadow transition-colors flex items-center justify-center">
+              Explore Reverse Trade <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="brands" class="py-20 bg-brand-offwhite border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-blue-100 text-brand-royal text-xs font-bold uppercase tracking-wider mb-2">
+            <span>REKHRAAJ VYOM</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">
+            Brands for Everyday Life
+          </h2>
+          <p class="text-gray-600 text-base sm:text-lg mt-1">
+            A growing portfolio of consumer brands engineered for households, institutions, and professionals.
+          </p>
+        </div>
+        <div class="mt-4 md:mt-0">
+          <button onclick="openRFQModal('All Brands Distribution')" class="px-5 py-2.5 rounded-xl bg-brand-navy hover:bg-brand-royal text-white text-xs font-heading font-bold uppercase tracking-wider transition-colors">
+            Explore All Brands Catalog <i class="fa-solid fa-arrow-right ml-1"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Interactive 4 Brand Showcase Tabs -->
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        
+        <!-- BRAND 1: NIVASHAA -->
+        <div id="brand-nivashaa" class="bg-white rounded-2xl border border-gray-200 p-6 flex flex-col justify-between hover:shadow-corp transition-all">
+          <div>
+            <!-- Brand Logo Header with Official Graphic -->
+            <div class="h-28 flex items-center justify-center pb-4 border-b border-gray-100 bg-emerald-50/20 rounded-xl p-2 mb-4">
+              <svg viewBox="0 0 260 110" class="w-full h-full" fill="none">
+                <!-- Camel Tan House Gable & Wall -->
+                <path d="M75 52 L130 15 L185 52" stroke="#B38B59" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="98" y="32" width="12" height="34" fill="#B38B59"/>
+                <!-- Graceful Fresh Green Leaf -->
+                <path d="M106 72 C106 44 148 26 166 35 C166 60 138 82 106 72 Z" fill="#739855"/>
+                <!-- Ground Wave -->
+                <path d="M55 76 C95 82 145 92 205 70" stroke="#B38B59" stroke-width="6" stroke-linecap="round"/>
+                <!-- Wordmark -->
+                <text x="130" y="96" text-anchor="middle" fill="#1B5433" font-family="'Cinzel', 'Playfair Display', serif" font-weight="800" font-size="20" letter-spacing="1.5">Nivashaa</text>
+                <text x="130" y="106" text-anchor="middle" fill="#B38B59" font-family="'Poppins', sans-serif" font-weight="700" font-size="5" letter-spacing="2">BY - RKHRAAJ VYOM</text>
+              </svg>
+            </div>
+
+            <div class="my-2">
+              <div class="flex items-center justify-between">
+                <span class="inline-block px-2.5 py-1 rounded bg-emerald-50 text-emerald-800 text-[10px] font-bold uppercase tracking-wider">Everyday Cleaning</span>
+                <span class="text-[10px] text-emerald-700 font-semibold italic">Comfort For Every Home</span>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed mt-2">
+                Formulated for modern homes, corporate offices, hotels, hospitals, and educational institutions.
+              </p>
+            </div>
+
+            <!-- Product Category Highlights -->
+            <div class="space-y-2 text-xs text-gray-700 font-medium bg-emerald-50/40 p-3.5 rounded-xl">
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-sparkles text-emerald-600 mr-2 text-[10px]"></i> Floor & Surface Cleaners</span>
+                <span class="text-[10px] text-gray-400">500ml / 5L</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-soap text-emerald-600 mr-2 text-[10px]"></i> Liquid Detergents & Fabric</span>
+                <span class="text-[10px] text-gray-400">1L / 5L</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-kitchen-set text-emerald-600 mr-2 text-[10px]"></i> Kitchen Degreasers</span>
+                <span class="text-[10px] text-gray-400">Concentrate</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-hand-holding-droplet text-emerald-600 mr-2 text-[10px]"></i> Hand Hygiene & Sanitizers</span>
+                <span class="text-[10px] text-gray-400">Institutional</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-gray-100 flex items-center space-x-2">
+            <button onclick="openRFQModal('Nivashaa Dealership')" class="flex-1 py-2.5 rounded-lg bg-emerald-800 hover:bg-emerald-900 text-white text-xs font-bold tracking-wider uppercase transition-colors">
+              Dealership RFQ
+            </button>
+            <a href="https://wa.me/?text=Hello%2C%20I%20am%20interested%20in%20Nivashaa%20Cleaning%20Products%20by%20HRRK" target="_blank" class="w-10 h-10 rounded-lg bg-emerald-100 hover:bg-emerald-200 text-emerald-800 flex items-center justify-center transition-colors" title="WhatsApp Inquiry">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- BRAND 2: SCRIBEXA -->
+        <div id="brand-scribexaa" class="bg-white rounded-2xl border border-gray-200 p-6 flex flex-col justify-between hover:shadow-corp transition-all">
+          <div>
+            <!-- Brand Logo Header with Official Graphic -->
+            <div class="h-28 flex items-center justify-center pb-4 border-b border-gray-100 bg-blue-50/20 rounded-xl p-2 mb-4">
+              <svg viewBox="0 0 260 110" class="w-full h-full" fill="none">
+                <!-- Book / Fountain Pen Nib Symbol -->
+                <g transform="translate(130, 36) scale(0.6)">
+                  <!-- Left Book Cover in Navy -->
+                  <path d="M-6 -30 C-32 -8 -50 -12 -58 45 C-48 20 -24 15 0 25 Z" fill="#1E3557"/>
+                  <!-- Upper Curve Pages -->
+                  <path d="M-6 -38 C-28 -20 -44 -24 -52 18 C-44 2 -26 0 0 10 Z" fill="#94A3B8"/>
+                  <path d="M6 -38 C28 -20 44 -24 52 18 C44 2 26 0 0 10 Z" fill="#00A5A8"/>
+                  <!-- Right Book Cover in Aqua/Cyan -->
+                  <path d="M6 -30 C32 -8 50 -12 58 45 C48 20 24 15 0 25 Z" fill="#00A5A8"/>
+                  <!-- Silver Pen Nib Center with Breather Hole -->
+                  <path d="M0 -30 L-10 18 L0 42 L10 18 Z" fill="#CBD5E1"/>
+                  <circle cx="0" cy="16" r="3.5" fill="#1E3557"/>
+                  <line x1="0" y1="20" x2="0" y2="42" stroke="#1E3557" stroke-width="1.5"/>
+                </g>
+                <!-- Wordmark with Flourished 'x' -->
+                <text x="130" y="86" text-anchor="middle" fill="#1E3557" font-family="'Poppins', sans-serif" font-weight="800" font-size="22" letter-spacing="1">Scribexa</text>
+                <!-- Extending 'x' swoop line -->
+                <path d="M152 86 C158 98 165 106 172 110" stroke="#1E3557" stroke-width="2.5" stroke-linecap="round"/>
+                <text x="130" y="98" text-anchor="middle" fill="#C7A33A" font-family="'Poppins', sans-serif" font-weight="700" font-size="5" letter-spacing="2">BY - RKHRAAJ VYOM</text>
+                <text x="130" y="107" text-anchor="middle" fill="#2B3445" font-family="'Inter', sans-serif" font-weight="600" font-size="5.5" letter-spacing="1.2">TOOLS FOR INSPIRED MINDS</text>
+              </svg>
+            </div>
+
+            <div class="my-2">
+              <div class="flex items-center justify-between">
+                <span class="inline-block px-2.5 py-1 rounded bg-blue-50 text-blue-800 text-[10px] font-bold uppercase tracking-wider">Stationery Needs</span>
+                <span class="text-[10px] text-blue-700 font-semibold italic">Tools For Inspired Minds</span>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed mt-2">
+                Practical, durable writing instruments and stationery engineered for daily scholastic and corporate demands.
+              </p>
+            </div>
+
+            <div class="space-y-2 text-xs text-gray-700 font-medium bg-blue-50/40 p-3.5 rounded-xl">
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-pen-nib text-blue-700 mr-2 text-[10px]"></i> Ballpoint & Gel Pens</span>
+                <span class="text-[10px] text-gray-400">0.7mm / 0.5mm</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-palette text-blue-700 mr-2 text-[10px]"></i> Markers & Highlighters</span>
+                <span class="text-[10px] text-gray-400">Chisel & Fine</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-book text-blue-700 mr-2 text-[10px]"></i> Office Registers & Pads</span>
+                <span class="text-[10px] text-gray-400">GSM Verified</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-pencil text-blue-700 mr-2 text-[10px]"></i> Educational Art Supplies</span>
+                <span class="text-[10px] text-gray-400">Non-toxic</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-gray-100 flex items-center space-x-2">
+            <button onclick="openRFQModal('Scribexa Dealership')" class="flex-1 py-2.5 rounded-lg bg-blue-900 hover:bg-blue-950 text-white text-xs font-bold tracking-wider uppercase transition-colors">
+              Dealership RFQ
+            </button>
+            <a href="https://wa.me/?text=Hello%2C%20I%20am%20interested%20in%20Scribexa%20Stationery%20by%20HRRK" target="_blank" class="w-10 h-10 rounded-lg bg-blue-100 hover:bg-blue-200 text-blue-900 flex items-center justify-center transition-colors" title="WhatsApp Inquiry">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- BRAND 3: DEVYANA -->
+        <div id="brand-devyana" class="bg-white rounded-2xl border border-gray-200 p-6 flex flex-col justify-between hover:shadow-corp transition-all">
+          <div>
+            <!-- Brand Logo Header with Official Graphic -->
+            <div class="h-28 flex items-center justify-center pb-4 border-b border-gray-100 bg-orange-50/20 rounded-xl p-2 mb-4">
+              <svg viewBox="0 0 260 110" class="w-full h-full" fill="none">
+                <!-- 9-Petal Saffron Lotus Blossom -->
+                <g transform="translate(130, 36) scale(0.65)">
+                  <!-- Central Tall Saffron Petal -->
+                  <path d="M0 -42 C5 -22 15 -8 0 16 C-15 -8 -5 -22 0 -42 Z" fill="#E25822"/>
+                  <!-- Inner Side Petals -->
+                  <path d="M-14 -32 C-7 -18 -3 -8 0 16 C-14 8 -22 -14 -14 -32 Z" fill="#F97316"/>
+                  <path d="M14 -32 C7 -18 3 -8 0 16 C14 8 22 -14 14 -32 Z" fill="#F97316"/>
+                  <!-- Middle Side Petals -->
+                  <path d="M-30 -18 C-20 -4 -12 2 0 16 C-18 16 -32 4 -30 -18 Z" fill="#FB923C"/>
+                  <path d="M30 -18 C20 -4 12 2 0 16 C18 16 32 4 30 -18 Z" fill="#FB923C"/>
+                  <!-- Bottom Flared Outer Petals -->
+                  <path d="M-45 0 C-30 12 -18 16 0 16 C-22 24 -42 18 -45 0 Z" fill="#EA580C"/>
+                  <path d="M45 0 C30 12 18 16 0 16 C22 24 42 18 45 0 Z" fill="#EA580C"/>
+                </g>
+                <!-- Wordmark -->
+                <text x="130" y="86" text-anchor="middle" fill="#C44A1B" font-family="'Cinzel', 'Playfair Display', serif" font-weight="800" font-size="22" letter-spacing="1">Devyana</text>
+                <text x="130" y="98" text-anchor="middle" fill="#C7A33A" font-family="'Poppins', sans-serif" font-weight="700" font-size="5" letter-spacing="2">BY - RKHRAAJ VYOM</text>
+                <text x="130" y="107" text-anchor="middle" fill="#C44A1B" font-family="'Inter', sans-serif" font-weight="600" font-size="5.5" letter-spacing="1.4">DIVINE ESSENCE , PURE DEVOTION</text>
+              </svg>
+            </div>
+
+            <div class="my-2">
+              <div class="flex items-center justify-between">
+                <span class="inline-block px-2.5 py-1 rounded bg-orange-50 text-orange-800 text-[10px] font-bold uppercase tracking-wider">Devotional Products</span>
+                <span class="text-[10px] text-orange-700 font-semibold italic">Divine Essence</span>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed mt-2">
+                Pure, traditional devotional offerings curated for sacred ceremonies, daily rituals, and festive temples.
+              </p>
+            </div>
+
+            <div class="space-y-2 text-xs text-gray-700 font-medium bg-orange-50/40 p-3.5 rounded-xl">
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-fire-flame-curved text-orange-600 mr-2 text-[10px]"></i> 100% Pure Bhimseni Camphor</span>
+                <span class="text-[10px] text-gray-400">Tablets / Jars</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-wind text-orange-600 mr-2 text-[10px]"></i> Premium Charcoal-Free Agarbatti</span>
+                <span class="text-[10px] text-gray-400">Natural Scents</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-seedling text-orange-600 mr-2 text-[10px]"></i> Cow Ghee & Sesame Pooja Oils</span>
+                <span class="text-[10px] text-gray-400">Smoke-Free</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-bell text-orange-600 mr-2 text-[10px]"></i> Dhoop Cones & Sambrani Cups</span>
+                <span class="text-[10px] text-gray-400">Aromatic</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-gray-100 flex items-center space-x-2">
+            <button onclick="openRFQModal('Devyana Dealership')" class="flex-1 py-2.5 rounded-lg bg-orange-800 hover:bg-orange-900 text-white text-xs font-bold tracking-wider uppercase transition-colors">
+              Dealership RFQ
+            </button>
+            <a href="https://wa.me/?text=Hello%2C%20I%20am%20interested%20in%20Devyana%20Devotional%20Products%20by%20HRRK" target="_blank" class="w-10 h-10 rounded-lg bg-orange-100 hover:bg-orange-200 text-orange-800 flex items-center justify-center transition-colors" title="WhatsApp Inquiry">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- BRAND 4: GLOY -->
+        <div id="brand-gloyex" class="bg-white rounded-2xl border border-gray-200 p-6 flex flex-col justify-between hover:shadow-corp transition-all">
+          <div>
+            <!-- Brand Logo Header with Official Graphic -->
+            <div class="h-28 flex items-center justify-center pb-4 border-b border-gray-100 bg-amber-50/20 rounded-xl p-2 mb-4">
+              <svg viewBox="0 0 260 110" class="w-full h-full" fill="none">
+                <!-- Glowing Orange Bulb with Blue Sweep -->
+                <g transform="translate(130, 36) scale(0.65)">
+                  <!-- Orange Dome -->
+                  <circle cx="0" cy="-14" r="25" fill="#E85D26"/>
+                  <!-- Inner White Looping Filament -->
+                  <path d="M-6 4 C-8 -12 8 -12 6 -24" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+                  <path d="M-2 -8 C4 -8 10 -18 8 -26" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                  <!-- Dynamic Cyan-Blue Swirl -->
+                  <path d="M-26 4 C-34 -14 10 -16 26 2 C28 14 -12 22 -24 4 Z" fill="#0284C7"/>
+                  <!-- Navy Blue Bulb Neck & Cap -->
+                  <path d="M-15 12 L15 12 L12 28 L-12 28 Z" fill="#1B437C"/>
+                  <rect x="-10" y="30" width="20" height="4" rx="1.5" fill="#1B437C"/>
+                  <rect x="-6" y="36" width="12" height="3" rx="1" fill="#64748B"/>
+                </g>
+                <!-- Wordmark -->
+                <text x="130" y="86" text-anchor="middle" fill="#1B437C" font-family="'Poppins', sans-serif" font-weight="900" font-size="24" letter-spacing="0.5">Gloy</text>
+                <text x="130" y="98" text-anchor="middle" fill="#C7A33A" font-family="'Poppins', sans-serif" font-weight="700" font-size="5" letter-spacing="2">BY - RKHRAAJ VYOM</text>
+                <text x="130" y="107" text-anchor="middle" fill="#2D3748" font-family="'Inter', sans-serif" font-weight="600" font-size="5.5" letter-spacing="1.2">POWER , LIGHT , INNOVATION</text>
+              </svg>
+            </div>
+
+            <div class="my-2">
+              <div class="flex items-center justify-between">
+                <span class="inline-block px-2.5 py-1 rounded bg-amber-50 text-amber-800 text-[10px] font-bold uppercase tracking-wider">Efficient Lighting</span>
+                <span class="text-[10px] text-amber-700 font-semibold italic">Power, Light, Innovation</span>
+              </div>
+              <p class="text-xs text-gray-600 leading-relaxed mt-2">
+                High lumen efficacy, surge-protected LED luminaires engineered for residential stability and commercial cost reduction.
+              </p>
+            </div>
+
+            <div class="space-y-2 text-xs text-gray-700 font-medium bg-amber-50/40 p-3.5 rounded-xl">
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-lightbulb text-amber-600 mr-2 text-[10px]"></i> Inverter & Standard LED Bulbs</span>
+                <span class="text-[10px] text-gray-400">9W — 50W</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-grip-lines text-amber-600 mr-2 text-[10px]"></i> T5 / T8 LED Battens & Tubes</span>
+                <span class="text-[10px] text-gray-400">2ft & 4ft</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-circle text-amber-600 mr-2 text-[10px]"></i> Slim Concealed Downlights</span>
+                <span class="text-[10px] text-gray-400">Warm & Cool</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span><i class="fa-solid fa-bolt text-amber-600 mr-2 text-[10px]"></i> Heavy Surge Drivers (4kV)</span>
+                <span class="text-[10px] text-gray-400">BIS Certified</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-gray-100 flex items-center space-x-2">
+            <button onclick="openRFQModal('Gloy Dealership')" class="flex-1 py-2.5 rounded-lg bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold tracking-wider uppercase transition-colors">
+              Dealership RFQ
+            </button>
+            <a href="https://wa.me/?text=Hello%2C%20I%20am%20interested%20in%20Gloy%20LED%20Lighting%20by%20HRRK" target="_blank" class="w-10 h-10 rounded-lg bg-amber-100 hover:bg-amber-200 text-amber-800 flex items-center justify-center transition-colors" title="WhatsApp Inquiry">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Featured Banner for Nivashaa Showcase -->
+      <div class="mt-12 rounded-2xl bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-950 text-white p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between shadow-xl">
+        <div class="space-y-2 max-w-xl text-center md:text-left">
+          <span class="text-emerald-300 text-xs font-bold uppercase tracking-widest block">Featured Product Line</span>
+          <h3 class="text-2xl font-bold font-heading">Cleaner Spaces. Brighter Tomorrows with NIVASHAA.</h3>
+          <p class="text-xs sm:text-sm text-emerald-100">
+            Bulk institutional packs available for facilities managers, school districts, hotels and retail supermarket chains. Custom private label formulation also offered.
+          </p>
+        </div>
+        <div class="mt-6 md:mt-0 flex items-center space-x-4">
+          <button onclick="openRFQModal('Nivashaa Institutional Supply')" class="px-6 py-3 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-heading font-bold text-xs uppercase tracking-wider transition-colors shadow">
+            Institutional Quote
+          </button>
+          <a href="https://wa.me/?text=Hi%20Nivashaa%20HRRK%20Team%2C%20I%20require%20bulk%20cleaning%20catalog" target="_blank" class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs font-bold uppercase tracking-wider transition-colors flex items-center">
+            <i class="fa-brands fa-whatsapp mr-2 text-emerald-400"></i> Order Catalog
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-16 bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy">
+          What Are You Looking For?
+        </h2>
+        <p class="text-sm text-gray-500 mt-2">
+          Find the right path for your business goals in one click.
+        </p>
+      </div>
+
+      <!-- 5 Interactive Gateway Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        
+        <!-- Option 1 -->
+        <button onclick="selectGoal('I Want to Manufacture Plastic Products', 'Namrushii Industrixa')" class="p-5 rounded-xl border border-gray-200 hover:border-brand-royal hover:shadow-corp transition-all text-left group bg-brand-offwhite/50 hover:bg-white">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand-royal flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Need Facilities</p>
+          <h4 class="font-heading font-bold text-sm text-brand-navy mt-1">I Want to Manufacture</h4>
+          <span class="text-xs text-brand-royal font-semibold mt-3 block group-hover:translate-x-1 transition-transform">
+            Namrushii Industrixa <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
+          </span>
+        </button>
+
+        <!-- Option 2 -->
+        <button onclick="selectGoal('I Want to Build a Trading Business', 'RV Vyapar Setu')" class="p-5 rounded-xl border border-gray-200 hover:border-emerald-600 hover:shadow-corp transition-all text-left group bg-brand-offwhite/50 hover:bg-white">
+          <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-shop"></i>
+          </div>
+          <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Trading & Retail</p>
+          <h4 class="font-heading font-bold text-sm text-brand-navy mt-1">I Want to Build a Trading Business</h4>
+          <span class="text-xs text-emerald-600 font-semibold mt-3 block group-hover:translate-x-1 transition-transform">
+            RV Vyapar Setu <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
+          </span>
+        </button>
+
+        <!-- Option 3 -->
+        <button onclick="selectGoal('I Have Idle Machine Capacity', 'RV Reverse Trade')" class="p-5 rounded-xl border border-gray-200 hover:border-brand-navy hover:shadow-corp transition-all text-left group bg-brand-offwhite/50 hover:bg-white">
+          <div class="w-10 h-10 rounded-lg bg-slate-100 text-brand-navy flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Have Capacity</p>
+          <h4 class="font-heading font-bold text-sm text-brand-navy mt-1">I Want a Mfg Opportunity</h4>
+          <span class="text-xs text-brand-navy font-semibold mt-3 block group-hover:translate-x-1 transition-transform">
+            RV Reverse Trade <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
+          </span>
+        </button>
+
+        <!-- Option 4 -->
+        <button onclick="selectGoal('I Want My Own Brand / Private Label', 'OEM / Private Label')" class="p-5 rounded-xl border border-gray-200 hover:border-brand-gold hover:shadow-corp transition-all text-left group bg-brand-offwhite/50 hover:bg-white">
+          <div class="w-10 h-10 rounded-lg bg-amber-50 text-brand-gold flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Launch a Brand</p>
+          <h4 class="font-heading font-bold text-sm text-brand-navy mt-1">I Want My Own Brand</h4>
+          <span class="text-xs text-amber-700 font-semibold mt-3 block group-hover:translate-x-1 transition-transform">
+            OEM / Private Label <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
+          </span>
+        </button>
+
+        <!-- Option 5 -->
+        <button onclick="selectGoal('I Want to Import / Buy From India', 'Exports Division')" class="p-5 rounded-xl border border-gray-200 hover:border-brand-royal hover:shadow-corp transition-all text-left group bg-brand-offwhite/50 hover:bg-white">
+          <div class="w-10 h-10 rounded-lg bg-cyan-50 text-cyan-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-ship"></i>
+          </div>
+          <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Overseas Buyer</p>
+          <h4 class="font-heading font-bold text-sm text-brand-navy mt-1">I Want to Buy From India</h4>
+          <span class="text-xs text-cyan-700 font-semibold mt-3 block group-hover:translate-x-1 transition-transform">
+            HRRK Exports <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
+          </span>
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="exports" class="py-20 bg-brand-navy text-white relative overflow-hidden">
+    <!-- Map Vector Graphic Background -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Exports Copy -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/10 text-brand-gold text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-globe"></i>
+            <span>EXPORTS & GLOBAL SUPPLY</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading tracking-tight leading-tight">
+            From India to Global Markets
+          </h2>
+
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+            Connecting international distributors, retail hypermarkets, and industrial buyers with reliable Indian manufacturing capabilities, certified quality controls, and full container load (FCL) dispatch.
+          </p>
+
+          <!-- 4 Pillars of Export -->
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+              <span class="text-brand-gold font-bold text-xs uppercase block">01. Contract OEM</span>
+              <p class="text-[11px] text-gray-400 mt-0.5">International tooling & specifications</p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+              <span class="text-brand-gold font-bold text-xs uppercase block">02. Private Label</span>
+              <p class="text-[11px] text-gray-400 mt-0.5">Custom multilingual packaging</p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+              <span class="text-brand-gold font-bold text-xs uppercase block">03. Bulk Supply</span>
+              <p class="text-[11px] text-gray-400 mt-0.5">High volume standard SKUs</p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+              <span class="text-brand-gold font-bold text-xs uppercase block">04. Group Brands</span>
+              <p class="text-[11px] text-gray-400 mt-0.5">Exclusive territorial rights</p>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-4">
+            <button onclick="openRFQModal('Overseas Export Inquiry')" class="px-7 py-3.5 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-heading font-bold text-xs uppercase tracking-wider transition-all shadow-md">
+              Send Export Enquiry <i class="fa-solid fa-paper-plane ml-1"></i>
+            </button>
+            <a href="mailto:exports@hrrkgroup.com" class="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-heading font-semibold text-xs uppercase tracking-wider transition-all">
+              exports@hrrkgroup.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Global Trade Map Graphic -->
+        <div class="lg:col-span-7">
+          <div class="bg-brand-navyLight/80 border border-white/15 rounded-2xl p-6 relative overflow-hidden backdrop-blur-md shadow-2xl">
+            
+            <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-4">
+              <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></span>
+                <span class="font-heading font-bold text-xs tracking-wider text-white">LIVE SHIPPING CORRIDORS</span>
+              </div>
+              <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">PORT: NHAVA SHEVA & MUNDRA</span>
+            </div>
+
+            <!-- Stylized Global SVG Vector Map with Connected Trade Nodes -->
+            <div class="relative w-full aspect-[16/9] flex items-center justify-center">
+              <svg viewBox="0 0 800 450" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Continents Stylized Outlines -->
+                <path d="M120,110 Q140,80 200,90 Q240,110 230,170 Q200,200 170,180 Q130,210 110,160 Z" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <path d="M190,230 Q240,240 250,310 Q210,380 180,330 Q160,270 190,230 Z" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <path d="M370,80 Q430,70 450,110 Q420,150 370,140 Z" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <path d="M380,160 Q460,170 460,270 Q410,340 370,280 Q340,220 380,160 Z" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <path d="M470,90 Q650,70 700,150 Q630,210 520,170 Z" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <path d="M630,270 Q710,260 720,330 Q660,370 620,320 Z" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                
+                <!-- INDIA (HUB) COORDINATE: (530, 210) -->
+                
+                <!-- Shipping Routes (Curved Arcs) -->
+                <!-- Route to Middle East (Dubai: 460, 190) -->
+                <path d="M530,210 Q495,190 460,190" stroke="#C7A33A" stroke-width="2" class="pulse-route"/>
+                <!-- Route to Europe (Rotterdam: 390, 110) -->
+                <path d="M530,210 Q450,130 390,110" stroke="#165D9C" stroke-width="2" class="pulse-route"/>
+                <!-- Route to East Africa (Mombasa: 440, 260) -->
+                <path d="M530,210 Q485,240 440,260" stroke="#C7A33A" stroke-width="2" class="pulse-route"/>
+                <!-- Route to SE Asia (Singapore: 620, 240) -->
+                <path d="M530,210 Q575,235 620,240" stroke="#165D9C" stroke-width="2" class="pulse-route"/>
+                <!-- Route to North America (New York: 190, 130) -->
+                <path d="M530,210 Q340,90 190,130" stroke="#C7A33A" stroke-width="2" class="pulse-route"/>
+                <!-- Route to Australia (Sydney: 690, 330) -->
+                <path d="M530,210 Q620,290 690,330" stroke="#165D9C" stroke-width="2" class="pulse-route"/>
+
+                <!-- Hub Marker: INDIA -->
+                <circle cx="530" cy="210" r="12" fill="#C7A33A" fill-opacity="0.3" class="animate-ping"/>
+                <circle cx="530" cy="210" r="6" fill="#C7A33A"/>
+                <text x="530" y="195" fill="#FFFFFF" font-family="Poppins" font-weight="bold" font-size="11" text-anchor="middle">HRRK HQ (INDIA)</text>
+
+                <!-- Destination Nodes -->
+                <circle cx="460" cy="190" r="4" fill="#FFFFFF"/>
+                <text x="460" y="180" fill="#CBD5E1" font-family="Inter" font-size="9" text-anchor="middle">Middle East</text>
+
+                <circle cx="390" cy="110" r="4" fill="#FFFFFF"/>
+                <text x="390" y="100" fill="#CBD5E1" font-family="Inter" font-size="9" text-anchor="middle">Europe</text>
+
+                <circle cx="440" cy="260" r="4" fill="#FFFFFF"/>
+                <text x="440" y="278" fill="#CBD5E1" font-family="Inter" font-size="9" text-anchor="middle">East Africa</text>
+
+                <circle cx="620" cy="240" r="4" fill="#FFFFFF"/>
+                <text x="620" y="258" fill="#CBD5E1" font-family="Inter" font-size="9" text-anchor="middle">ASEAN</text>
+
+                <circle cx="190" cy="130" r="4" fill="#FFFFFF"/>
+                <text x="190" y="120" fill="#CBD5E1" font-family="Inter" font-size="9" text-anchor="middle">Americas</text>
+
+                <circle cx="690" cy="330" r="4" fill="#FFFFFF"/>
+                <text x="690" y="348" fill="#CBD5E1" font-family="Inter" font-size="9" text-anchor="middle">Oceania</text>
+              </svg>
+            </div>
+
+            <!-- Export Features Bottom Mini Strip -->
+            <div class="mt-4 pt-4 border-t border-white/10 grid grid-cols-3 gap-2 text-center text-[10px] text-gray-300">
+              <div><span class="text-white font-bold block">Incoterms:</span> FOB, CIF, CFR, DDP</div>
+              <div><span class="text-white font-bold block">Documentation:</span> COO, Phytosanitary, MSDS</div>
+              <div><span class="text-white font-bold block">Packaging:</span> Euro-palletized / Shrinkwrap</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-blue-50 text-brand-navy text-xs font-bold uppercase tracking-wider">
+            <span>ABOUT THE ENTERPRISE</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">
+            Building Sustainable Value Across Multiple Industries
+          </h2>
+          <p class="text-gray-600 text-base leading-relaxed">
+            Headquartered in India, HRRK Group of Companies is an ambitious conglomerate rooted in core values of operational integrity, engineering precision, and widespread economic empowerment.
+          </p>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            What began with polymer manufacturing capabilities has expanded systematically into a comprehensive commercial matrix encompassing automated plastics processing, turnkey OEM supply chains, nationwide trading infrastructure, household FMCG consumer brands, and global marine freight.
+          </p>
+
+          <!-- Core Philosophy Pillars -->
+          <div class="grid grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200">
+              <h4 class="font-heading font-bold text-sm text-brand-navy">Industrial Scale</h4>
+              <p class="text-xs text-gray-500 mt-1">High-speed machinery running 24/7 with zero tolerance for defects.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200">
+              <h4 class="font-heading font-bold text-sm text-brand-navy">Partner Wealth</h4>
+              <p class="text-xs text-gray-500 mt-1">Structured profit engines creating sustained growth for traders and dealers.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <!-- Corporate Visual Composition -->
+          <div class="relative">
+            <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" 
+                   alt="HRRK Corporate Headquarters & Industrial Presence" 
+                   class="w-full h-96 object-cover" />
+            </div>
+
+            <!-- Floating Corporate Credo Card -->
+            <div class="absolute -bottom-8 -left-6 bg-brand-navy text-white p-6 rounded-2xl shadow-xl max-w-xs border border-white/10 hidden sm:block">
+              <span class="text-brand-gold font-heading font-bold text-xs uppercase tracking-widest block mb-1">Corporate Mission</span>
+              <p class="text-xs text-gray-300 leading-relaxed font-normal">
+                "Connecting Indian industrial capacity with domestic households and world-scale opportunities through reliable partnerships."
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-16 bg-brand-offwhite border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy">
+          Why Build Business With HRRK?
+        </h2>
+        <p class="text-sm text-gray-500 mt-1">More capabilities. More opportunities. A stronger tomorrow.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        
+        <div class="bg-white p-5 rounded-xl border border-gray-200 text-center hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 mx-auto rounded-lg bg-blue-50 text-brand-royal flex items-center justify-center mb-3">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+          <h4 class="font-heading font-bold text-xs text-brand-navy">Diversified Ecosystem</h4>
+          <p class="text-[11px] text-gray-500 mt-1">Multi-sector stability across B2B & B2C</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-gray-200 text-center hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 mx-auto rounded-lg bg-amber-50 text-brand-gold flex items-center justify-center mb-3">
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <h4 class="font-heading font-bold text-xs text-brand-navy">Manufacturing Capability</h4>
+          <p class="text-[11px] text-gray-500 mt-1">Advanced mouldings & extrusion lines</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-gray-200 text-center hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 mx-auto rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <h4 class="font-heading font-bold text-xs text-brand-navy">OEM & Private Label</h4>
+          <p class="text-[11px] text-gray-500 mt-1">Ready for custom brand formulation</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-gray-200 text-center hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 mx-auto rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center mb-3">
+            <i class="fa-solid fa-boxes-packing"></i>
+          </div>
+          <h4 class="font-heading font-bold text-xs text-brand-navy">Growing Consumer Brands</h4>
+          <p class="text-[11px] text-gray-500 mt-1">Established retail consumer pull</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-gray-200 text-center hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 mx-auto rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center mb-3">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h4 class="font-heading font-bold text-xs text-brand-navy">Business Opportunities</h4>
+          <p class="text-[11px] text-gray-500 mt-1">Tailored trading & capacity schemes</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-gray-200 text-center hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 mx-auto rounded-lg bg-cyan-50 text-cyan-600 flex items-center justify-center mb-3">
+            <i class="fa-solid fa-earth-asia"></i>
+          </div>
+          <h4 class="font-heading font-bold text-xs text-brand-navy">Global Ambition</h4>
+          <p class="text-[11px] text-gray-500 mt-1">ISO, CE & export logistics certified</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-br from-brand-navy via-brand-navy to-brand-charcoal rounded-3xl text-white p-8 sm:p-12 lg:p-16 shadow-2xl border border-white/10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Left Instructions & Corporate Coordinates -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-gold/20 text-brand-gold text-xs font-bold uppercase tracking-wider">
+              <span>LET'S BUILD SOMETHING TOGETHER</span>
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl font-extrabold font-heading tracking-tight leading-tight">
+              Tell Us What You Need.
+            </h2>
+
+            <p class="text-gray-300 text-sm leading-relaxed">
+              Whether you want to manufacture, trade, distribute, build your own brand or buy in bulk — our executive team will review your specifications and get back within 24 business hours.
+            </p>
+
+            <div class="space-y-4 pt-4 border-t border-white/10 text-xs text-gray-300">
+              <div class="flex items-start space-x-3">
+                <i class="fa-solid fa-location-dot text-brand-gold mt-1 text-sm"></i>
+                <div>
+                  <span class="font-bold text-white block">Corporate Headquarters:</span>
+                  HRRK Group Corporate Towers, Industrial Zone, India
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-3">
+                <i class="fa-solid fa-envelope text-brand-gold mt-1 text-sm"></i>
+                <div>
+                  <span class="font-bold text-white block">Official Group Correspondence:</span>
+                  info@hrrkgroup.com • exports@hrrkgroup.com
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-3">
+                <i class="fa-solid fa-phone text-brand-gold mt-1 text-sm"></i>
+                <div>
+                  <span class="font-bold text-white block">Central Business Desk:</span>
+                  +91 (0) 800-HRRK-GRP / +91 98765 43210
+                </div>
+              </div>
+            </div>
+
+            <!-- Instant Fast Actions -->
+            <div class="pt-2">
+              <a href="https://wa.me/?text=Hello%20HRRK%20Group%2C%20I%20would%20like%20to%20discuss%20a%20business%20opportunity" target="_blank" class="inline-flex items-center px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold text-xs uppercase tracking-wider transition-colors shadow-md">
+                <i class="fa-brands fa-whatsapp text-base mr-2"></i> WhatsApp Fast Desk
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Interactive Form -->
+          <div class="lg:col-span-7 bg-white rounded-2xl p-6 sm:p-8 text-brand-charcoal shadow-lg">
+            <form id="mainContactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div>
+                  <label class="block text-xs font-bold text-brand-navy uppercase mb-1">I'm Interested In *</label>
+                  <select id="formInterest" required class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none bg-brand-offwhite">
+                    <option value="">Select Division / Purpose</option>
+                    <option value="Namrushii Industrixa (Manufacturing / OEM)">Namrushii Industrixa (Manufacturing / OEM)</option>
+                    <option value="Injection Moulding Requirement">Injection Moulding Tooling & Production</option>
+                    <option value="Blow Moulding Requirement">Blow Moulding (Bottles / Containers)</option>
+                    <option value="Plastic Extrusion Requirement">Plastic Extrusion Line</option>
+                    <option value="RV Vyapar Setu (Trading Network)">RV Vyapar Setu (Trading Network)</option>
+                    <option value="RV Reverse Trade (Manufacturing Opportunity)">RV Reverse Trade (Manufacturing Opportunity)</option>
+                    <option value="Nivashaa Brand Distribution">Nivashaa (Everyday Cleaning)</option>
+                    <option value="Scribexaa Brand Distribution">Scribexaa (Stationery Products)</option>
+                    <option value="Devyana Brand Distribution">Devyana (Devotional Essentials)</option>
+                    <option value="Gloyex Brand Distribution">Gloyex (LED Lighting)</option>
+                    <option value="Global Exports & Container Orders">Global Exports & Container Orders</option>
+                    <option value="Other Corporate Collaboration">Other Strategic Corporate Collaboration</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Your Full Name *</label>
+                  <input type="text" required placeholder="e.g. Rajesh Sharma" class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" />
+                </div>
+
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div>
+                  <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Phone / WhatsApp Number *</label>
+                  <input type="tel" required placeholder="+91 98765 00000" class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" />
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Email Address *</label>
+                  <input type="email" required placeholder="name@company.com" class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" />
+                </div>
+
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div>
+                  <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Company / Trading Entity</label>
+                  <input type="text" placeholder="Your Firm Name" class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" />
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-brand-navy uppercase mb-1">City / Country *</label>
+                  <input type="text" required placeholder="e.g. Mumbai, India / Dubai, UAE" class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" />
+                </div>
+
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Your Detailed Requirement or Specifications *</label>
+                <textarea id="formMessage" rows="3" required placeholder="Describe product details, expected volume, machine specs or distribution region..." class="w-full text-xs p-3.5 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none resize-none"></textarea>
+              </div>
+
+              <!-- Privacy Check & Submit -->
+              <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <span class="text-[11px] text-gray-500">
+                  <i class="fa-solid fa-lock mr-1"></i> Your information is kept strictly confidential under corporate NDA.
+                </span>
+                <button type="submit" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-brand-navy hover:bg-brand-royal text-white font-heading font-bold text-xs uppercase tracking-wider transition-all shadow-md">
+                  Submit Enquiry <i class="fa-solid fa-paper-plane ml-1.5"></i>
+                </button>
+              </div>
+
+              <!-- Success Alert Placeholder -->
+              <div id="formSuccessMessage" class="hidden p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-medium">
+                <i class="fa-solid fa-circle-check mr-1.5"></i> <strong>Inquiry Registered:</strong> Thank you. Your specifications have been forwarded to the designated division head. A corporate manager will contact you promptly.
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-brand-navy border-t border-brand-navyLight text-gray-400 text-xs pt-16 pb-24 md:pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 pb-12 border-b border-white/10">
+        
+        <!-- Col 1: HRRK Brand & Positioning -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center">
+            <svg class="h-16 w-auto drop-shadow" viewBox="0 0 320 86" fill="none">
+              <!-- Outer Gold Border with Opening at Top for Flame -->
+              <path d="M125 4 H8 A4 4 0 0 0 4 8 V78 A4 4 0 0 0 8 82 H312 A4 4 0 0 0 316 78 V8 A4 4 0 0 0 312 4 H195" stroke="#C7A33A" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+              <!-- Dark Slate Wing Cradle -->
+              <path d="M136 34 C136 42 147 45 160 45 C173 45 184 42 184 34 C184 27 178 24 178 24 C175 32 168 37 160 37 C152 37 145 32 142 24 C142 24 136 27 136 34 Z" fill="#132C48" />
+              <!-- Flame Tongues -->
+              <path d="M145 28 C141 21 146 12 153 6 C150 14 153 19 157 24 C153 20 152 14 156 7 C161 1 167 0 167 0 C167 0 164 8 167 14 C170 8 174 5 178 7 C181 9 181 15 177 21 C182 14 185 22 178 28 C173 33 167 36 160 36 C153 36 147 33 145 28 Z" fill="url(#hrrkFlameHdr)" />
+              <path d="M153 25 C152 20 157 15 160 11 C163 15 168 20 167 25 C167 30 164 34 160 34 C156 34 153 30 153 25 Z" fill="url(#hrrkCoreHdr)" />
+              <!-- Brand Typography inside Border -->
+              <text x="160" y="60" text-anchor="middle" fill="#E5C76B" font-family="'Poppins', 'Cinzel', serif" font-weight="800" font-size="14.5" letter-spacing="0.8">HRRK GROUP OF COMPANIES LTD.</text>
+              <text x="160" y="74" text-anchor="middle" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="700" font-size="8" letter-spacing="2.2">IGNITING GLOBAL POTENTIAL</text>
+            </svg>
+          </div>
+          
+          <p class="text-gray-300 text-xs leading-relaxed max-w-sm">
+            "BUILD. MANUFACTURE. TRADE. GROW."<br/>
+            A diversified business ecosystem connecting manufacturing, OEM, private label, business opportunities, consumer brands and global markets.
+          </p>
+
+          <div class="pt-2 flex items-center space-x-3 text-sm text-gray-300">
+            <a href="#" class="w-8 h-8 rounded bg-white/5 hover:bg-brand-gold hover:text-brand-navy flex items-center justify-center transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="w-8 h-8 rounded bg-white/5 hover:bg-brand-gold hover:text-brand-navy flex items-center justify-center transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="w-8 h-8 rounded bg-white/5 hover:bg-brand-gold hover:text-brand-navy flex items-center justify-center transition-colors"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="w-8 h-8 rounded bg-white/5 hover:bg-brand-gold hover:text-brand-navy flex items-center justify-center transition-colors"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Core Businesses -->
+        <div class="space-y-3">
+          <p class="font-heading font-bold text-white text-xs uppercase tracking-wider">Our Businesses</p>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-white transition-colors">HRRK Group Core</a></li>
+            <li><a href="#manufacturing" class="hover:text-white transition-colors">Namrushii Industrixa</a></li>
+            <li><a href="#ventures" class="hover:text-white transition-colors">Rekhraaj Ventures</a></li>
+            <li><a href="#brands" class="hover:text-white transition-colors">Rekhraaj Vyom</a></li>
+            <li><a href="#exports" class="hover:text-white transition-colors">International Exports</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Manufacturing -->
+        <div class="space-y-3">
+          <p class="font-heading font-bold text-white text-xs uppercase tracking-wider">Manufacturing</p>
+          <ul class="space-y-2">
+            <li><a href="#mfg-injection" class="hover:text-white transition-colors">Injection Moulding</a></li>
+            <li><a href="#mfg-blow" class="hover:text-white transition-colors">Blow Moulding</a></li>
+            <li><a href="#mfg-extrusion" class="hover:text-white transition-colors">Plastic Extrusion</a></li>
+            <li><a href="#mfg-oem" class="hover:text-white transition-colors">OEM Manufacturing</a></li>
+            <li><a href="#mfg-oem" class="hover:text-white transition-colors">Private Label Solutions</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Opportunities & Services -->
+        <div class="space-y-3">
+          <p class="font-heading font-bold text-white text-xs uppercase tracking-wider">Opportunities</p>
+          <ul class="space-y-2">
+            <li><a href="#ventures" class="hover:text-white transition-colors">RV Vyapar Setu</a></li>
+            <li><a href="#reverse-trade" class="hover:text-white transition-colors">RV Reverse Trade</a></li>
+            <li><a href="#rfq" onclick="openRFQModal('Distributor Network Application')" class="hover:text-white transition-colors">Channel Distribution</a></li>
+            <li><a href="#rfq" onclick="openRFQModal('Plant Partnership Inquiry')" class="hover:text-white transition-colors">Machinery Tie-ups</a></li>
+            <li><a href="#exports" class="hover:text-white transition-colors">Overseas Agency</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Consumer Brands -->
+        <div class="space-y-3">
+          <p class="font-heading font-bold text-white text-xs uppercase tracking-wider">Consumer Brands</p>
+          <ul class="space-y-2">
+            <li><a href="#brand-nivashaa" class="hover:text-white transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2"></span> NIVASHAA</a></li>
+            <li><a href="#brand-scribexaa" class="hover:text-white transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-blue-400 mr-2"></span> SCRIBEXA</a></li>
+            <li><a href="#brand-devyana" class="hover:text-white transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-amber-400 mr-2"></span> DEVYANA</a></li>
+            <li><a href="#brand-gloyex" class="hover:text-white transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400 mr-2"></span> GLOY</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal Row -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-gray-500">
+        <div>
+          © 2026 HRRK Group of Companies Ltd. All rights reserved. Made in India.
+        </div>
+        <div class="flex items-center space-x-6">
+          <a href="#" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-gray-300 transition-colors">Terms of Trade</a>
+          <a href="#" class="hover:text-gray-300 transition-colors">Compliance & ISO</a>
+          <a href="#" class="hover:text-gray-300 transition-colors">Corporate Governance</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-2.5 shadow-2xl flex items-center space-x-3">
+    <a href="https://wa.me/?text=Hello%20HRRK%20Group%20Team%2C%20I%20have%20an%20urgent%20business%20inquiry" target="_blank" class="flex-1 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold text-xs uppercase tracking-wider text-center flex items-center justify-center shadow-sm">
+      <i class="fa-brands fa-whatsapp text-base mr-2"></i> WhatsApp
+    </a>
+    <button onclick="openRFQModal('Mobile Sticky Bottom CTA')" class="flex-1 py-3 px-4 rounded-xl bg-brand-navy hover:bg-brand-royal text-white font-heading font-bold text-xs uppercase tracking-wider text-center shadow-sm flex items-center justify-center">
+      <i class="fa-regular fa-envelope mr-2"></i> Enquire Now
+    </button>
+  </div>
+
+  <div id="rfqModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4 transition-opacity">
+    <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto border border-gray-200">
+      
+      <!-- Close Button -->
+      <button onclick="closeRFQModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark text-base"></i>
+      </button>
+
+      <div class="mb-6">
+        <span class="text-[10px] font-bold text-brand-gold uppercase tracking-widest block mb-1">Corporate RFQ & Partnership Desk</span>
+        <h3 id="modalTitle" class="font-heading font-extrabold text-2xl text-brand-navy">Submit Corporate Enquiry</h3>
+        <p class="text-xs text-gray-500 mt-1">Specify your project, brand partnership, or bulk order details below.</p>
+      </div>
+
+      <form id="modalForm" onsubmit="handleModalSubmit(event)" class="space-y-4">
+        
+        <div>
+          <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Selected Interest / Vertical</label>
+          <input type="text" id="modalInterestInput" readonly class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-gray-200 bg-gray-50 text-brand-navy font-semibold outline-none" />
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Your Name *</label>
+            <input type="text" required placeholder="Rajesh Patel" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-gray-300 focus:border-brand-royal outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Company / Firm</label>
+            <input type="text" placeholder="Firm or Enterprise Name" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-gray-300 focus:border-brand-royal outline-none" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Phone / WhatsApp *</label>
+            <input type="tel" required placeholder="+91 98765 43210" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-gray-300 focus:border-brand-royal outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Email Address *</label>
+            <input type="email" required placeholder="contact@domain.com" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-gray-300 focus:border-brand-royal outline-none" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Estimated Volume or Requirements *</label>
+          <textarea rows="3" required placeholder="Mention quantity, polymer type, destination port or specific brands of interest..." class="w-full text-xs p-3 rounded-lg border border-gray-300 focus:border-brand-royal outline-none resize-none"></textarea>
+        </div>
+
+        <div class="pt-3">
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-navy hover:bg-brand-royal text-white font-heading font-bold text-xs uppercase tracking-wider transition-colors shadow">
+            Transmit Enquiry to Group Desk <i class="fa-solid fa-paper-plane ml-1"></i>
+          </button>
+        </div>
+
+        <div id="modalSuccess" class="hidden p-3 rounded-lg bg-emerald-50 text-emerald-800 text-xs font-medium">
+          <i class="fa-solid fa-circle-check mr-1.5"></i> Enquiry successfully dispatched to HRRK Central Operations.
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <div id="searchOverlay" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-start justify-center pt-24 px-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full p-6 shadow-2xl border border-gray-200">
+      
+      <div class="flex items-center justify-between pb-4 border-b border-gray-200">
+        <div class="flex items-center space-x-3 flex-1 mr-4">
+          <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+          <input type="text" id="globalSearchInput" oninput="performLiveSearch(this.value)" placeholder="Search products, OEM, technologies, brands, opportunities..." class="w-full text-sm outline-none text-brand-navy font-medium placeholder-gray-400" />
+        </div>
+        <button onclick="toggleGlobalSearch()" class="text-gray-400 hover:text-gray-600">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div id="searchResults" class="pt-4 max-h-80 overflow-y-auto space-y-2">
+        <p class="text-xs text-gray-400">Type to search across HRRK's businesses, machinery lines, and brands...</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Sticky Header Scroll Effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 30) {
+        header.classList.add('shadow-md', 'bg-white');
+        header.classList.remove('bg-white/95');
+      } else {
+        header.classList.remove('shadow-md');
+        header.classList.add('bg-white/95');
+      }
+    });
+
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('mobileMenuIcon');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        menu.classList.add('hidden');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    }
+
+    // Modal Operations
+    function openRFQModal(interestTopic) {
+      const modal = document.getElementById('rfqModal');
+      const input = document.getElementById('modalInterestInput');
+      input.value = interestTopic || 'General Corporate Consultation';
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeRFQModal() {
+      const modal = document.getElementById('rfqModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.getElementById('modalSuccess').classList.add('hidden');
+    }
+
+    // Role Matrix Jump Handler
+    function selectGoal(roleName, verticalTarget) {
+      const form = document.getElementById('contact');
+      const select = document.getElementById('formInterest');
+      const textarea = document.getElementById('formMessage');
+
+      // Scroll smoothly to contact section
+      form.scrollIntoView({ behavior: 'smooth' });
+
+      // Match select value if exists or set custom
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].text.toLowerCase().includes(verticalTarget.toLowerCase())) {
+          select.selectedIndex = i;
+          break;
+        }
+      }
+      textarea.value = `Inquiry regarding: ${roleName} [Target: ${verticalTarget}]. Looking to discuss operational requirements and terms.`;
+      textarea.focus();
+    }
+
+    // Form Submissions
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const msg = document.getElementById('formSuccessMessage');
+      msg.classList.remove('hidden');
+      setTimeout(() => {
+        e.target.reset();
+      }, 1500);
+    }
+
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      const msg = document.getElementById('modalSuccess');
+      msg.classList.remove('hidden');
+      setTimeout(() => {
+        closeRFQModal();
+        e.target.reset();
+      }, 2000);
+    }
+
+    // Global Search System
+    const searchDatabase = [
+      { title: 'Injection Moulding Products', category: 'Namrushii Industrixa', link: '#mfg-injection', desc: 'Caps, closures, components, thin wall mouldings' },
+      { title: 'Blow Moulding Bottles & Cans', category: 'Namrushii Industrixa', link: '#mfg-blow', desc: '30ml to 5000ml HDPE, PP liquid containers' },
+      { title: 'Plastic Extrusion Lines', category: 'Namrushii Industrixa', link: '#mfg-extrusion', desc: 'Tubes, conduits, profiles, pen barrels' },
+      { title: 'OEM & Private Label', category: 'Namrushii Industrixa', link: '#mfg-oem', desc: 'Turnkey contract manufacturing with tooling support' },
+      { title: 'RV Vyapar Setu', category: 'Rekhraaj Ventures', link: '#ventures', desc: 'Trading platform for distributors and entrepreneurs' },
+      { title: 'RV Reverse Trade', category: 'Rekhraaj Ventures', link: '#reverse-trade', desc: 'Manufacturing capacity monetization & buyback' },
+      { title: 'NIVASHAA Cleaning Solutions', category: 'Rekhraaj Vyom', link: '#brand-nivashaa', desc: 'Comfort for every home: Floor cleaners, detergents, sanitizers' },
+      { title: 'SCRIBEXA Stationery', category: 'Rekhraaj Vyom', link: '#brand-scribexaa', desc: 'Tools for inspired minds: Pens, highlighters, registers' },
+      { title: 'DEVYANA Devotional', category: 'Rekhraaj Vyom', link: '#brand-devyana', desc: 'Divine essence, pure devotion: Camphor, agarbatti, pooja oils' },
+      { title: 'GLOY LED Lighting', category: 'Rekhraaj Vyom', link: '#brand-gloyex', desc: 'Power, light, innovation: Inverter bulbs, battens, downlights' },
+      { title: 'Exports Division', category: 'Global Business', link: '#exports', desc: 'Ocean freight, container supply, US-FDA & CE standards' }
+    ];
+
+    function toggleGlobalSearch() {
+      const overlay = document.getElementById('searchOverlay');
+      const input = document.getElementById('globalSearchInput');
+      if (overlay.classList.contains('hidden')) {
+        overlay.classList.remove('hidden');
+        overlay.classList.add('flex');
+        input.value = '';
+        performLiveSearch('');
+        setTimeout(() => input.focus(), 50);
+      } else {
+        overlay.classList.add('hidden');
+        overlay.classList.remove('flex');
+      }
+    }
+
+    function performLiveSearch(query) {
+      const container = document.getElementById('searchResults');
+      const q = query.trim().toLowerCase();
+      
+      if (!q) {
+        container.innerHTML = `
+          <div class="text-xs text-gray-400 py-2">Quick Shortcuts:</div>
+          <div class="grid grid-cols-2 gap-2">
+            <a href="#manufacturing" onclick="toggleGlobalSearch()" class="p-2 rounded bg-gray-50 hover:bg-gray-100 text-xs font-semibold text-brand-navy block">Plastic Manufacturing</a>
+            <a href="#ventures" onclick="toggleGlobalSearch()" class="p-2 rounded bg-gray-50 hover:bg-gray-100 text-xs font-semibold text-brand-navy block">RV Vyapar Setu</a>
+            <a href="#brands" onclick="toggleGlobalSearch()" class="p-2 rounded bg-gray-50 hover:bg-gray-100 text-xs font-semibold text-brand-navy block">Consumer Brands</a>
+            <a href="#exports" onclick="toggleGlobalSearch()" class="p-2 rounded bg-gray-50 hover:bg-gray-100 text-xs font-semibold text-brand-navy block">Global Exports</a>
+          </div>
+        `;
+        return;
+      }
+
+      const matches = searchDatabase.filter(item => 
+        item.title.toLowerCase().includes(q) || 
+        item.category.toLowerCase().includes(q) || 
+        item.desc.toLowerCase().includes(q)
+      );
+
+      if (matches.length === 0) {
+        container.innerHTML = `<p class="text-xs text-gray-500 py-4 text-center">No exact matching division found. <a href="#contact" onclick="toggleGlobalSearch()" class="text-brand-royal underline font-semibold">Inquire directly with our team</a>.</p>`;
+        return;
+      }
+
+      let html = '';
+      matches.forEach(item => {
+        html += `
+          <a href="${item.link}" onclick="toggleGlobalSearch()" class="block p-3 rounded-xl hover:bg-brand-offwhite border border-transparent hover:border-gray-200 transition-colors">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-navy">${item.title}</span>
+              <span class="text-[10px] font-semibold text-brand-royal uppercase px-2 py-0.5 bg-blue-50 rounded">${item.category}</span>
+            </div>
+            <p class="text-[11px] text-gray-500 mt-1">${item.desc}</p>
+          </a>
+        `;
+      });
+      container.innerHTML = html;
+    }
+
+    // Close overlays with Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeRFQModal();
+        const search = document.getElementById('searchOverlay');
+        if (!search.classList.contains('hidden')) {
+          toggleGlobalSearch();
+        }
+      }
+    });
+  </script>
+</body>
+</html>
