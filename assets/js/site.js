@@ -89,8 +89,14 @@ const searchDatabase = [
   { title: 'Blow Moulding Bottles & Cans', category: 'Namrushii Industrixa', link: 'namrushii.html#mfg-blow', desc: '30ml to 5000ml HDPE, PP liquid containers' },
   { title: 'Plastic Extrusion Lines', category: 'Namrushii Industrixa', link: 'namrushii.html#mfg-extrusion', desc: 'Tubes, conduits, profiles, pen barrels' },
   { title: 'OEM & Private Label', category: 'Namrushii Industrixa', link: 'namrushii.html#mfg-oem', desc: 'Turnkey contract manufacturing with tooling support' },
-  { title: 'RV Vyapar Setu', category: 'Rekhraaj Ventures', link: 'ventures.html', desc: 'Trading platform for distributors and entrepreneurs' },
-  { title: 'RV Reverse Trade', category: 'Rekhraaj Ventures', link: 'ventures.html#reverse-trade', desc: 'Manufacturing capacity monetization & buyback' },
+  { title: 'RV Vyapar Setu', category: 'Rekhraaj Ventures', link: 'ventures.html#vyapar-setu', desc: 'Multi-brand regional trade network for traders and brands' },
+  { title: 'RV Reverse Trade', category: 'Rekhraaj Ventures', link: 'ventures.html#reverse-trade', desc: 'Six manufacturing buyback verticals' },
+  { title: 'RV CLEANFLOW', category: 'Reverse Trade', link: 'ventures.html#reverse-trade', desc: 'Liquid cleaning products manufacturing and buyback' },
+  { title: 'RV PENCRAFT', category: 'Reverse Trade', link: 'ventures.html#reverse-trade', desc: 'Pen manufacturing and assembly buyback' },
+  { title: 'RV POWERCLEAN', category: 'Reverse Trade', link: 'ventures.html#reverse-trade', desc: 'Powder detergent manufacturing and packaging buyback' },
+  { title: 'RV GLOTECH', category: 'Reverse Trade', link: 'ventures.html#reverse-trade', desc: 'LED bulb manufacturing and assembly buyback' },
+  { title: 'RV KAPOORCRAFT', category: 'Reverse Trade', link: 'ventures.html#reverse-trade', desc: 'Kapoor / camphor manufacturing buyback' },
+  { title: 'RV DHOOPCRAFT', category: 'Reverse Trade', link: 'ventures.html#reverse-trade', desc: 'Dhoop stick manufacturing buyback' },
   { title: 'NIVASHAA Cleaning Solutions', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-nivashaa', desc: 'Comfort for every home: Floor cleaners, detergents, sanitizers' },
   { title: 'SCRIBEXA Stationery', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-scribexaa', desc: 'Tools for inspired minds: Pens, highlighters, registers' },
   { title: 'DEVYANA Devotional', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-devyana', desc: 'Divine essence, pure devotion: Camphor, agarbatti, pooja oils' },
@@ -125,7 +131,7 @@ function performLiveSearch(query) {
       <div class="text-xs text-gray-400 py-2">Quick Shortcuts:</div>
       <div class="grid grid-cols-2 gap-2">
         <a href="namrushii.html" onclick="toggleGlobalSearch()" class="p-2 rounded bg-gray-50 hover:bg-gray-100 text-xs font-semibold text-brand-navy block">Plastic Manufacturing</a>
-        <a href="ventures.html" onclick="toggleGlobalSearch()" class="p-2 rounded bg-gray-50 hover:bg-gray-100 text-xs font-semibold text-brand-navy block">RV Vyapar Setu</a>
+        <a href="ventures.html#vyapar-setu" onclick="toggleGlobalSearch()" class="p-2 rounded bg-gray-50 hover:bg-gray-100 text-xs font-semibold text-brand-navy block">RV Vyapar Setu</a>
         <a href="vyom.html" onclick="toggleGlobalSearch()" class="p-2 rounded bg-gray-50 hover:bg-gray-100 text-xs font-semibold text-brand-navy block">Consumer Brands</a>
         <a href="exports.html" onclick="toggleGlobalSearch()" class="p-2 rounded bg-gray-50 hover:bg-gray-100 text-xs font-semibold text-brand-navy block">Global Exports</a>
         <a href="founder.html" onclick="toggleGlobalSearch()" class="p-2 rounded bg-gray-50 hover:bg-gray-100 text-xs font-semibold text-brand-navy block">Founder</a>
