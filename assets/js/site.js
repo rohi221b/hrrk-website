@@ -101,8 +101,8 @@ const searchDatabase = [
   { title: 'SCRIBEXA Stationery', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-scribexaa', desc: 'Tools for inspired minds: Pens, highlighters, registers' },
   { title: 'DEVYANA Devotional', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-devyana', desc: 'Divine essence, pure devotion: Camphor, agarbatti, pooja oils' },
   { title: 'GLOY LED Lighting', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-gloyex', desc: 'Power, light, innovation: Inverter bulbs, battens, downlights' },
-  { title: 'Exports Division', category: 'Global Business', link: 'exports.html', desc: 'Ocean freight, container supply, US-FDA & CE standards' },
-  { title: 'Hrishikesh Kadam', category: 'Founder', link: 'founder.html', desc: 'Founder & Visionary — HRRK Group of Companies' }
+  { title: 'Exports Division', category: 'Global Business', link: 'exports.html', desc: 'Global sourcing, private label, OEM, bulk supply and group brands from India' },
+  { title: 'Hrishikesh Kadam', category: 'Founder', link: 'founder.html', desc: 'Founder’s message — building businesses, creating opportunities, shaping the future' }
 ];
 
 function toggleGlobalSearch() {
