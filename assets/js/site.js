@@ -153,6 +153,115 @@ function handleModalSubmit(e) {
   }, 2000);
 }
 
+function setupExportRfq() {
+  const form = document.getElementById('exportRfqForm');
+  if (!form) return;
+  form.removeAttribute('onsubmit');
+
+  const success = document.getElementById('exportRfqSuccess');
+  const submit = form.querySelector('button[type="submit"]');
+  const query = new URLSearchParams(window.location.search);
+  const timeline = form.querySelector('[name="timeline"]');
+  if (timeline) {
+    const packaging = document.createElement('input');
+    packaging.name = 'packaging';
+    packaging.placeholder = 'Packaging requirement';
+    packaging.className = timeline.className;
+    timeline.parentElement.insertBefore(packaging, timeline);
+  }
+
+  const rfqSection = form.closest('section');
+  if (rfqSection) {
+    rfqSection.classList.remove('bg-brand-offwhite');
+    rfqSection.classList.add('bg-brand-navy');
+    const copy = rfqSection.firstElementChild && rfqSection.firstElementChild.firstElementChild;
+    if (copy) {
+      const eyebrow = copy.querySelector('p');
+      const heading = copy.querySelector('h2');
+      const description = copy.querySelectorAll('p')[1];
+      if (eyebrow) eyebrow.classList.replace('text-brand-royal', 'text-brand-gold');
+      if (heading) heading.classList.replace('text-brand-navy', 'text-white');
+      if (description) description.classList.replace('text-gray-600', 'text-gray-300');
+    }
+  }
+  const error = document.createElement('div');
+  error.className = 'hidden p-3 rounded-lg bg-red-50 text-red-800 text-xs';
+  error.setAttribute('role', 'alert');
+  form.appendChild(error);
+
+  const style = document.createElement('style');
+  style.textContent = `
+    @media (max-width: 639px) {
+      #capabilities > div > .grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: .75rem; }
+      #capabilities > div > .grid > a { min-width: 82%; scroll-snap-align: start; }
+      .export-mobile-bar { position: fixed; right: 0; bottom: 0; left: 0; z-index: 45; display: flex; gap: .5rem; padding: .65rem 1rem; background: rgba(255,255,255,.96); border-top: 1px solid #e5e7eb; box-shadow: 0 -8px 24px rgba(11,31,51,.12); }
+      .export-mobile-bar a { flex: 1; padding: .8rem .5rem; border-radius: .6rem; text-align: center; font: 700 10px Poppins, sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+    }
+    @media (min-width: 640px) { .export-mobile-bar { display: none; } }
+  `;
+  document.head.appendChild(style);
+
+  const mobileBar = document.createElement('div');
+  mobileBar.className = 'export-mobile-bar';
+  mobileBar.innerHTML = '<a class="bg-emerald-600 text-white" href="https://wa.me/917875355135?text=Hello%20HRRK%2C%20I%20am%20interested%20in%20sourcing%20products%20from%20India.%20I%20would%20like%20to%20discuss%20an%20export%20requirement.">WhatsApp</a><a class="bg-brand-gold text-brand-navy" href="#international-rfq">Request export quote</a>';
+  document.body.appendChild(mobileBar);
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const values = new FormData(form);
+    const file = values.get('specification');
+    const payload = {
+      company: values.get('company'),
+      contact: values.get('contact'),
+      country: values.get('country'),
+      website: values.get('website'),
+      email: values.get('email'),
+      phone: values.get('phone'),
+      interests: values.getAll('interest'),
+      product: values.get('product'),
+      quantity: values.get('quantity'),
+      market: values.get('market'),
+      packaging: values.get('packaging'),
+      timeline: values.get('timeline'),
+      notes: values.get('notes'),
+      fileName: file && file.name ? file.name : '',
+      pageUrl: window.location.href,
+      utmSource: query.get('utm_source') || '',
+      utmMedium: query.get('utm_medium') || '',
+      utmCampaign: query.get('utm_campaign') || '',
+    };
+
+    if (submit) {
+      submit.disabled = true;
+      submit.classList.add('opacity-60', 'cursor-not-allowed');
+    }
+    error.classList.add('hidden');
+    if (success) success.classList.add('hidden');
+
+    try {
+      const response = await fetch('/api/export-rfq', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !result.ok) throw new Error(result.error || 'Your export requirement could not be sent. Please try again later.');
+      if (success) success.classList.remove('hidden');
+      form.reset();
+    } catch (requestError) {
+      error.textContent = requestError.message || 'Your export requirement could not be sent. Please try again later.';
+      error.classList.remove('hidden');
+    } finally {
+      if (submit) {
+        submit.disabled = false;
+        submit.classList.remove('opacity-60', 'cursor-not-allowed');
+      }
+    }
+  });
+}
+
+setupExportRfq();
+
 const searchDatabase = [
   { title: 'Injection Moulding Products', category: 'Namrushii Industrixa', link: 'namrushii.html#mfg-injection', desc: 'Caps, closures, components, thin wall mouldings' },
   { title: 'Blow Moulding Bottles & Cans', category: 'Namrushii Industrixa', link: 'namrushii.html#mfg-blow', desc: '30ml to 5000ml HDPE, PP liquid containers' },

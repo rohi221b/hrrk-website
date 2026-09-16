@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const handler = require('../api/inquiry');
+const exportRfqHandler = require('../api/export-rfq');
 
 const root = path.join(__dirname, '..');
 const mime = {
@@ -21,6 +22,10 @@ const server = http.createServer((req, res) => {
   const urlPath = (req.url || '/').split('?')[0];
   if (urlPath === '/api/inquiry') {
     handler(req, res);
+    return;
+  }
+  if (urlPath === '/api/export-rfq') {
+    exportRfqHandler(req, res);
     return;
   }
 
