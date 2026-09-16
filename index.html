@@ -737,7 +737,7 @@
                 
                 <div>
                   <label class="block text-xs font-bold text-brand-navy uppercase mb-1">I'm Interested In *</label>
-                  <select id="formInterest" required class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none bg-brand-offwhite">
+                  <select id="formInterest" name="interest" required class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none bg-brand-offwhite">
                     <option value="">Select Division / Purpose</option>
                     <option value="Namrushii Industrixa (Manufacturing / OEM)">Namrushii Industrixa (Manufacturing / OEM)</option>
                     <option value="Injection Moulding Requirement">Injection Moulding Tooling & Production</option>
@@ -756,7 +756,7 @@
 
                 <div>
                   <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Your Full Name *</label>
-                  <input type="text" required placeholder="e.g. Rajesh Sharma" class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" />
+                  <input id="formFullName" name="fullName" type="text" required autocomplete="name" placeholder="e.g. Rajesh Sharma" class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" />
                 </div>
 
               </div>
@@ -765,19 +765,19 @@
                 
                 <div>
                   <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Phone / WhatsApp Number *</label>
-                  <input type="tel" required placeholder="+91 98765 00000" class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" />
+                  <input id="formPhone" name="phone" type="tel" required autocomplete="tel" placeholder="+91 98765 00000" class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" />
                 </div>
 
                 <div>
                   <label class="block text-xs font-bold text-brand-navy uppercase mb-1">City / Country *</label>
-                  <input type="text" required placeholder="e.g. Mumbai, India / Dubai, UAE" class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" />
+                  <input id="formLocation" name="location" type="text" required autocomplete="address-level2" placeholder="e.g. Mumbai, India / Dubai, UAE" class="w-full text-xs px-3.5 py-3 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" />
                 </div>
 
               </div>
 
               <div>
                 <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Your Requirement or Specifications <span class="text-gray-400 font-medium normal-case">(optional)</span></label>
-                <textarea id="formMessage" rows="2" placeholder="Any product, volume or region details..." class="w-full text-xs p-3.5 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none resize-none"></textarea>
+                <textarea id="formMessage" name="message" rows="2" placeholder="Any product, volume or region details..." class="w-full text-xs p-3.5 rounded-lg border border-gray-300 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none resize-none"></textarea>
               </div>
 
               <!-- Privacy Check & Submit -->
@@ -794,6 +794,7 @@
               <div id="formSuccessMessage" class="hidden p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-medium">
                 <i class="fa-solid fa-circle-check mr-1.5"></i> <strong>Inquiry Registered:</strong> Thank you. Your specifications have been forwarded to the designated division head. A corporate manager will contact you promptly.
               </div>
+              <div id="formErrorMessage" class="hidden p-4 rounded-xl bg-red-50 border border-red-200 text-red-800 text-xs font-medium"></div>
 
             </form>
           </div>

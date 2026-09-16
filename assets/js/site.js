@@ -65,13 +65,82 @@ function selectGoal(roleName, verticalTarget) {
   textarea.focus();
 }
 
+function normalizeHomeMobile(raw) {
+  const digits = String(raw || '').replace(/\D/g, '');
+  if (digits.length === 10) return digits;
+  if (digits.length === 12 && digits.startsWith('91')) return digits.slice(2);
+  return null;
+}
+
 function handleFormSubmit(e) {
   e.preventDefault();
-  const msg = document.getElementById('formSuccessMessage');
-  if (msg) msg.classList.remove('hidden');
-  setTimeout(() => {
-    e.target.reset();
-  }, 1500);
+  const form = e.target;
+  const success = document.getElementById('formSuccessMessage');
+  const errorBox = document.getElementById('formErrorMessage');
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  function showError(message) {
+    if (success) success.classList.add('hidden');
+    if (errorBox) {
+      errorBox.textContent = message;
+      errorBox.classList.remove('hidden');
+    }
+  }
+
+  function showSuccess() {
+    if (errorBox) errorBox.classList.add('hidden');
+    if (success) success.classList.remove('hidden');
+  }
+
+  const payload = {
+    interest: (document.getElementById('formInterest') || {}).value || '',
+    fullName: (document.getElementById('formFullName') || {}).value || '',
+    phone: (document.getElementById('formPhone') || {}).value || '',
+    location: (document.getElementById('formLocation') || {}).value || '',
+    message: (document.getElementById('formMessage') || {}).value || '',
+  };
+
+  if (!normalizeHomeMobile(payload.phone)) {
+    showError('Enter a 10-digit Indian mobile, or +91 followed by 10 digits.');
+    return;
+  }
+
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.classList.add('opacity-60', 'cursor-not-allowed');
+  }
+  if (errorBox) errorBox.classList.add('hidden');
+  if (success) success.classList.add('hidden');
+
+  fetch('/api/inquiry', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  })
+    .then(async (res) => {
+      let data = {};
+      try {
+        data = await res.json();
+      } catch {
+        data = {};
+      }
+      if (!res.ok || !data.ok) {
+        throw new Error(data.error || 'Inquiry could not be sent. Please try again later.');
+      }
+      showSuccess();
+      setTimeout(() => {
+        form.reset();
+      }, 1500);
+    })
+    .catch((err) => {
+      showError(err.message || 'Inquiry could not be sent. Please try again later.');
+    })
+    .finally(() => {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('opacity-60', 'cursor-not-allowed');
+      }
+    });
 }
 
 function handleModalSubmit(e) {
