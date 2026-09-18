@@ -11,7 +11,7 @@ const {
 
 assert.strictEqual(normalizeMobile('+91 98765 43210'), '9876543210');
 assert.strictEqual(normalizeMobile('9876543210'), '9876543210');
-assert.strictEqual(normalizeMobile('+971 50 123 4567'), null);
+assert.strictEqual(normalizeMobile('+971 50 123 4567'), '971501234567');
 
 assert.deepStrictEqual(splitName('Rajesh Sharma'), { firstName: 'Rajesh', lastName: 'Sharma' });
 assert.deepStrictEqual(splitName('Rajesh'), { firstName: '', lastName: 'Rajesh' });
@@ -20,7 +20,13 @@ assert.strictEqual(splitName('Mohammed Abdul Rahman Khan').lastName, 'Khan');
 assert.deepStrictEqual(parseLocation('Mumbai, Maharashtra, India'), {
   city: 'Mumbai', state: 'Maharashtra', country: 'India',
 });
-assert.strictEqual(parseLocation('Mumbai, India'), null);
+assert.deepStrictEqual(parseLocation('Mumbai, India'), {
+  city: 'Mumbai', state: '', country: 'India',
+});
+assert.deepStrictEqual(parseLocation('Mumbai'), {
+  city: 'Mumbai', state: '', country: 'India',
+});
+assert.strictEqual(parseLocation(''), null);
 
 const mapped = toLeadFields({
   interest: 'Namrushii Industrixa (Manufacturing / OEM)',

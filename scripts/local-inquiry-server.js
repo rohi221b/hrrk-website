@@ -1,10 +1,23 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const handler = require('../api/inquiry');
-const exportRfqHandler = require('../api/export-rfq');
 
 const root = path.join(__dirname, '..');
+const envPath = path.join(root, '.env');
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, 'utf8');
+  for (const line of envContent.split('\n')) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const [k, ...v] = trimmed.split('=');
+    if (k && !process.env[k.trim()]) {
+      process.env[k.trim()] = v.join('=').trim();
+    }
+  }
+}
+
+const handler = require('../api/inquiry');
+const exportRfqHandler = require('../api/export-rfq');
 const mime = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
