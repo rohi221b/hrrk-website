@@ -175,10 +175,12 @@ function handleModalSubmit(e) {
   const interestInput = document.getElementById('modalInterestInput');
   const nameInput = form.querySelector('input[placeholder*="name" i], input[placeholder*="Patel" i]') || form.querySelectorAll('input[type="text"]')[1];
   const phoneInput = form.querySelector('input[type="tel"]') || form.querySelector('input[placeholder*="WhatsApp" i]');
+  const cityInput = form.querySelector('input[name="city"], input[placeholder*="city" i], input[placeholder*="Mumbai" i]');
   const reqTextarea = form.querySelector('textarea');
 
   const fullName = (nameInput && nameInput.value ? nameInput.value.trim() : '');
   const phone = (phoneInput && phoneInput.value ? phoneInput.value.trim() : '');
+  const city = (cityInput && cityInput.value ? cityInput.value.trim() : '');
   const interest = (interestInput && interestInput.value ? interestInput.value.trim() : 'Corporate Enquiry');
   const message = (reqTextarea && reqTextarea.value ? reqTextarea.value.trim() : '');
 
@@ -192,12 +194,17 @@ function handleModalSubmit(e) {
     if (phoneInput) phoneInput.focus();
     return;
   }
+  if (cityInput && !city) {
+    showError('Please enter your city.');
+    cityInput.focus();
+    return;
+  }
 
   const payload = {
     interest,
     fullName,
     phone,
-    location: 'India',
+    location: city ? `${city}, India` : 'India',
     message,
     source: 'Corporate Modal Enquiry',
   };
@@ -297,6 +304,7 @@ function setupExportRfq() {
     const payload = {
       company: values.get('company'),
       contact: values.get('contact'),
+      city: values.get('city'),
       country: values.get('country'),
       website: values.get('website'),
       email: values.get('email'),
@@ -360,9 +368,9 @@ const searchDatabase = [
   { title: 'RV KAPOORCRAFT', category: 'Reverse Trade', link: 'ventures.html#reverse-trade', desc: 'Kapoor / camphor manufacturing buyback' },
   { title: 'RV DHOOPCRAFT', category: 'Reverse Trade', link: 'ventures.html#reverse-trade', desc: 'Dhoop stick manufacturing buyback' },
   { title: 'NIVASHAA Cleaning Solutions', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-nivashaa', desc: 'Comfort for every home: Floor cleaners, detergents, sanitizers' },
-  { title: 'SCRIBEXA Stationery', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-scribexaa', desc: 'Tools for inspired minds: Pens, highlighters, registers' },
+  { title: 'SCRIBEXAA Stationery', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-scribexaa', desc: 'Tools for inspired minds: Pens, highlighters, registers' },
   { title: 'DEVYANA Devotional', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-devyana', desc: 'Divine essence, pure devotion: Camphor, agarbatti, pooja oils' },
-  { title: 'GLOY LED Lighting', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-gloyex', desc: 'Power, light, innovation: Inverter bulbs, battens, downlights' },
+  { title: 'GLOYEX LED Lighting', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-gloyex', desc: 'Power, light, innovation: Inverter bulbs, battens, downlights' },
   { title: 'Exports Division', category: 'Global Business', link: 'exports.html', desc: 'Global sourcing, private label, OEM, bulk supply and group brands from India' },
   { title: 'Hrishikesh Kadam', category: 'Founder', link: 'founder.html', desc: 'Founder’s message — building businesses, creating opportunities, shaping the future' }
 ];

@@ -32,15 +32,12 @@
         extend: {
           colors: {
             brand: {
-              navy: '#0B1F33',
-              navyLight: '#132c48',
-              royal: '#165D9C',
-              royalHover: '#114B7D',
-              gold: '#C7A33A',
-              goldHover: '#B08E2B',
-              goldLight: '#F5ECCE',
-              offwhite: '#F7F8FA',
-              charcoal: '#17202A',
+              graphite: '#252525',
+              graphiteLight: '#3A3A3A',
+              gold: '#C9A84C',
+              goldHover: '#B8962E',
+              goldLight: '#F5EDCE',
+              offwhite: '#F7F5F0',
             }
           },
           fontFamily: {
@@ -48,7 +45,7 @@
             inter: ['Inter', 'sans-serif'],
           },
           boxShadow: {
-            'corp': '0 4px 20px -2px rgba(11, 31, 51, 0.08), 0 2px 6px -1px rgba(11, 31, 51, 0.04)',
+            'corp': '0 4px 20px -2px rgba(37, 37, 37, 0.08), 0 2px 6px -1px rgba(37, 37, 37, 0.04)',
           }
         }
       }
@@ -58,7 +55,7 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      color: #17202A;
+      color: #252525;
       background-color: #FFFFFF;
     }
     h1, h2, h3, h4, .font-heading {
@@ -66,7 +63,7 @@
     }
   </style>
 </head>
-<body class="text-brand-charcoal antialiased">
+<body class="text-brand-graphite antialiased">
 
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -74,58 +71,58 @@
         <img src="assets/images/logos/hrrk-group-logo.png" alt="HRRK Group of Companies Ltd." class="h-12 sm:h-14 w-auto max-w-[min(100vw-8rem,280px)] object-contain" />
       </a>
       <nav class="flex items-center gap-1 sm:gap-2 text-sm">
-        <a href="index.html#ecosystem" class="hidden md:inline px-3 py-2 text-brand-navy hover:text-brand-royal font-medium rounded-md">Businesses</a>
-        <a href="exports.html" class="hidden md:inline px-3 py-2 text-brand-navy hover:text-brand-royal font-medium rounded-md">Exports</a>
-        <a href="index.html#about" class="hidden md:inline px-3 py-2 text-brand-navy hover:text-brand-royal font-medium rounded-md">About Group</a>
-        <a href="founder.html" class="hidden md:inline px-3 py-2 text-brand-navy hover:text-brand-royal font-medium rounded-md">Founder</a>
-        <a href="index.html#contact" class="px-4 py-2.5 rounded-lg bg-brand-navy text-white font-heading font-bold text-xs uppercase tracking-wider hover:bg-brand-royal transition-colors">Contact</a>
+        <a href="index.html#ecosystem" class="hidden md:inline px-3 py-2 text-brand-graphite hover:text-brand-gold font-medium rounded-md">Businesses</a>
+        <a href="exports.html" class="hidden md:inline px-3 py-2 text-brand-graphite hover:text-brand-gold font-medium rounded-md">Exports</a>
+        <a href="index.html#about" class="hidden md:inline px-3 py-2 text-brand-graphite hover:text-brand-gold font-medium rounded-md">About Group</a>
+        <a href="founder.html" class="hidden md:inline px-3 py-2 text-brand-graphite hover:text-brand-gold font-medium rounded-md">Founder</a>
+        <a href="index.html#contact" class="px-4 py-2.5 rounded-lg bg-brand-graphite text-white font-heading font-bold text-xs uppercase tracking-wider hover:bg-brand-gold transition-colors">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="relative overflow-hidden bg-brand-navy text-white">
-    <div class="absolute inset-0 opacity-30 pointer-events-none" style="background-image:linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px); background-size:40px 40px;"></div>
+  <section class="relative overflow-hidden bg-brand-offwhite text-brand-graphite border-b border-gray-200">
+    <div class="absolute inset-0 opacity-15 pointer-events-none" style="background-image:linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px); background-size:40px 40px;"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 relative z-10">
       <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
         <div class="lg:col-span-6 space-y-5">
           <p class="text-brand-gold text-xs font-bold uppercase tracking-[0.28em]">Founder’s Message</p>
-          <p class="text-sm text-gray-300">HRISHIKESH KADAM</p>
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[0.95]">
+          <p class="text-sm font-semibold text-gray-500 tracking-wider">HRISHIKESH KADAM</p>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[0.95] text-brand-graphite">
             Building Businesses.<br />
             Creating Opportunities.<br />
             <span class="text-brand-gold">Shaping The Future.</span>
           </h1>
-          <p class="text-base sm:text-lg text-gray-200">Founder &amp; Visionary — HRRK Group of Companies</p>
-          <a href="#journey" class="inline-flex items-center px-7 py-3.5 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-heading font-bold text-xs uppercase tracking-wider">
-            Read My Journey <i class="fa-solid fa-arrow-right ml-2"></i>
+          <p class="text-base sm:text-lg text-gray-600">Founder &amp; Visionary — HRRK Group of Companies</p>
+          <a href="#journey" class="inline-flex items-center px-7 py-3.5 rounded-xl bg-brand-graphite hover:bg-brand-graphiteLight text-white font-heading font-bold text-xs uppercase tracking-wider shadow-md transition-all">
+            Read My Journey <i class="fa-solid fa-arrow-right ml-2 text-brand-gold"></i>
           </a>
         </div>
         <div class="lg:col-span-6">
-          <figure class="relative rounded-2xl overflow-hidden border border-white/10 shadow-corp bg-brand-navyLight">
+          <figure class="relative rounded-2xl overflow-hidden border border-gray-200 shadow-corp bg-white">
             <img src="assets/images/founder/hrishikesh-kadam.jpeg"
                  alt="Hrishikesh Kadam, Founder of HRRK Group of Companies"
                  class="w-full h-auto object-cover max-h-[520px] object-[center_22%]" />
-            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
             <div class="absolute bottom-4 left-4 right-4 grid grid-cols-2 sm:grid-cols-4 gap-2">
-              <div class="rounded-lg bg-black/45 backdrop-blur-sm border border-white/10 px-2 py-2 text-center">
+              <div class="rounded-lg bg-black/60 backdrop-blur-sm border border-white/10 px-2 py-2 text-center text-white">
                 <i class="fa-solid fa-industry text-brand-gold text-xs"></i>
                 <p class="text-[9px] font-bold uppercase tracking-wider mt-1">Manufacturing</p>
               </div>
-              <div class="rounded-lg bg-black/45 backdrop-blur-sm border border-white/10 px-2 py-2 text-center">
+              <div class="rounded-lg bg-black/60 backdrop-blur-sm border border-white/10 px-2 py-2 text-center text-white">
                 <i class="fa-solid fa-handshake text-brand-gold text-xs"></i>
                 <p class="text-[9px] font-bold uppercase tracking-wider mt-1">Opportunities</p>
               </div>
-              <div class="rounded-lg bg-black/45 backdrop-blur-sm border border-white/10 px-2 py-2 text-center">
+              <div class="rounded-lg bg-black/60 backdrop-blur-sm border border-white/10 px-2 py-2 text-center text-white">
                 <i class="fa-solid fa-bag-shopping text-brand-gold text-xs"></i>
                 <p class="text-[9px] font-bold uppercase tracking-wider mt-1">Brands</p>
               </div>
-              <div class="rounded-lg bg-black/45 backdrop-blur-sm border border-white/10 px-2 py-2 text-center">
+              <div class="rounded-lg bg-black/60 backdrop-blur-sm border border-white/10 px-2 py-2 text-center text-white">
                 <i class="fa-solid fa-globe text-brand-gold text-xs"></i>
                 <p class="text-[9px] font-bold uppercase tracking-wider mt-1">Global Trade</p>
               </div>
             </div>
           </figure>
-          <p class="text-[11px] text-gray-400 mt-3">Maharashtra Udyojak Samman Puraskar 2025</p>
+          <p class="text-[11px] text-gray-500 mt-3 font-medium">Maharashtra Udyojak Samman Puraskar 2025</p>
         </div>
       </div>
     </div>
@@ -133,8 +130,8 @@
 
   <section id="journey" class="py-16 sm:py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-xs font-bold uppercase tracking-widest text-brand-royal mb-2">My Journey</p>
-      <h2 class="text-3xl font-extrabold text-brand-navy tracking-tight mb-8">Built through persistence and purpose</h2>
+      <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">My Journey</p>
+      <h2 class="text-3xl font-extrabold text-brand-graphite tracking-tight mb-8">Built through persistence and purpose</h2>
       <div class="space-y-5 text-gray-600 text-sm sm:text-base leading-relaxed">
         <p>Every business begins with an idea, but sustainable businesses are built through persistence, learning and the willingness to create value for others.</p>
         <p>My journey started with a strong desire to build something meaningful—something that would go beyond a single product or a single business. I wanted to create an ecosystem where manufacturing, brands, business opportunities and trade could work together to generate long-term growth.</p>
@@ -147,8 +144,8 @@
 
   <section class="py-16 sm:py-20 bg-brand-offwhite">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-xs font-bold uppercase tracking-widest text-brand-royal mb-2">Why HRRK Group was created</p>
-      <h2 class="text-3xl font-extrabold text-brand-navy tracking-tight mb-6">A larger purpose than operating businesses</h2>
+      <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Why HRRK Group was created</p>
+      <h2 class="text-3xl font-extrabold text-brand-graphite tracking-tight mb-6">A larger purpose than operating businesses</h2>
       <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-8">HRRK Group was created with a larger purpose than simply operating businesses. The vision was to develop an ecosystem where:</p>
       <ul class="space-y-3 text-sm sm:text-base text-gray-700">
         <li class="flex gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>Manufacturing capabilities can support brands and businesses.</span></li>
@@ -161,7 +158,7 @@
     </div>
   </section>
 
-  <section class="py-16 sm:py-20 bg-brand-navy text-white">
+  <section class="py-16 sm:py-20 bg-brand-graphite text-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-brand-gold text-xs font-bold uppercase tracking-widest mb-2">Our Vision</p>
       <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6">Building a diversified and globally respected business group</h2>
@@ -179,28 +176,28 @@
 
   <section class="py-16 sm:py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-xs font-bold uppercase tracking-widest text-brand-royal mb-2">Our Business Philosophy</p>
-      <h2 class="text-3xl font-extrabold text-brand-navy tracking-tight mb-3">Growth through value creation</h2>
+      <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Our Business Philosophy</p>
+      <h2 class="text-3xl font-extrabold text-brand-graphite tracking-tight mb-3">Growth through value creation</h2>
       <p class="text-gray-600 text-sm sm:text-base max-w-3xl mb-10">At HRRK Group, we believe that sustainable growth is achieved when value is created for everyone involved. Our philosophy is based on five core principles:</p>
       <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
         <div class="p-5 rounded-2xl bg-brand-offwhite border border-gray-200">
-          <p class="font-heading font-extrabold text-brand-navy text-sm tracking-wider">Integrity</p>
+          <p class="font-heading font-extrabold text-brand-graphite text-sm tracking-wider">Integrity</p>
           <p class="text-xs text-gray-500 mt-2 leading-relaxed">Building trust through transparency, accountability and ethical business practices.</p>
         </div>
         <div class="p-5 rounded-2xl bg-brand-offwhite border border-gray-200">
-          <p class="font-heading font-extrabold text-brand-navy text-sm tracking-wider">Quality</p>
+          <p class="font-heading font-extrabold text-brand-graphite text-sm tracking-wider">Quality</p>
           <p class="text-xs text-gray-500 mt-2 leading-relaxed">Maintaining high standards across products, services and operations.</p>
         </div>
         <div class="p-5 rounded-2xl bg-brand-offwhite border border-gray-200">
-          <p class="font-heading font-extrabold text-brand-navy text-sm tracking-wider">Innovation</p>
+          <p class="font-heading font-extrabold text-brand-graphite text-sm tracking-wider">Innovation</p>
           <p class="text-xs text-gray-500 mt-2 leading-relaxed">Continuously improving and adapting to changing market needs.</p>
         </div>
         <div class="p-5 rounded-2xl bg-brand-offwhite border border-gray-200">
-          <p class="font-heading font-extrabold text-brand-navy text-sm tracking-wider">Opportunity</p>
+          <p class="font-heading font-extrabold text-brand-graphite text-sm tracking-wider">Opportunity</p>
           <p class="text-xs text-gray-500 mt-2 leading-relaxed">Creating pathways for entrepreneurs, partners and businesses to grow.</p>
         </div>
         <div class="p-5 rounded-2xl bg-brand-offwhite border border-gray-200">
-          <p class="font-heading font-extrabold text-brand-navy text-sm tracking-wider">Long-Term Thinking</p>
+          <p class="font-heading font-extrabold text-brand-graphite text-sm tracking-wider">Long-Term Thinking</p>
           <p class="text-xs text-gray-500 mt-2 leading-relaxed">Making decisions that support sustainable growth rather than short-term gains.</p>
         </div>
       </div>
@@ -209,23 +206,23 @@
 
   <section class="py-16 sm:py-20 bg-brand-offwhite">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-xs font-bold uppercase tracking-widest text-brand-royal mb-2">Our Business Ecosystem</p>
-      <h2 class="text-3xl font-extrabold text-brand-navy tracking-tight mb-8">Four key pillars</h2>
+      <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Our Business Ecosystem</p>
+      <h2 class="text-3xl font-extrabold text-brand-graphite tracking-tight mb-8">Four key pillars</h2>
       <div class="grid sm:grid-cols-2 gap-5">
         <a href="namrushii.html" class="p-6 rounded-2xl bg-white border border-gray-200 hover:shadow-corp transition-all">
-          <p class="font-heading font-extrabold text-brand-navy">NAMRUSHII INDUSTRIXA</p>
+          <p class="font-heading font-extrabold text-brand-graphite">NAMRUSHII INDUSTRIXA</p>
           <p class="text-sm text-gray-600 mt-2">Manufacturing, Private Label and OEM Operations.</p>
         </a>
         <a href="ventures.html" class="p-6 rounded-2xl bg-white border border-gray-200 hover:shadow-corp transition-all">
-          <p class="font-heading font-extrabold text-brand-navy">REKHRAAJ VENTURES</p>
+          <p class="font-heading font-extrabold text-brand-graphite">REKHRAAJ VENTURES</p>
           <p class="text-sm text-gray-600 mt-2">Business Services and Entrepreneurial Opportunities.</p>
         </a>
         <a href="vyom.html" class="p-6 rounded-2xl bg-white border border-gray-200 hover:shadow-corp transition-all">
-          <p class="font-heading font-extrabold text-brand-navy">REKHRAAJ VYOM</p>
+          <p class="font-heading font-extrabold text-brand-graphite">REKHRAAJ VYOM</p>
           <p class="text-sm text-gray-600 mt-2">Consumer Brands focused on everyday needs.</p>
         </a>
         <a href="exports.html" class="p-6 rounded-2xl bg-white border border-gray-200 hover:shadow-corp transition-all">
-          <p class="font-heading font-extrabold text-brand-navy">EXPORTS</p>
+          <p class="font-heading font-extrabold text-brand-graphite">EXPORTS</p>
           <p class="text-sm text-gray-600 mt-2">Connecting Indian manufacturing and brands with global markets.</p>
         </a>
       </div>
@@ -235,8 +232,8 @@
 
   <section class="py-16 sm:py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-xs font-bold uppercase tracking-widest text-brand-royal mb-2">Looking Ahead</p>
-      <h2 class="text-3xl font-extrabold text-brand-navy tracking-tight mb-6">Expansion, innovation and global connectivity</h2>
+      <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Looking Ahead</p>
+      <h2 class="text-3xl font-extrabold text-brand-graphite tracking-tight mb-6">Expansion, innovation and global connectivity</h2>
       <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">The future of HRRK Group is centered on expansion, innovation and global connectivity. Our long-term focus includes:</p>
       <ul class="space-y-3 text-sm sm:text-base text-gray-700 mb-8">
         <li class="flex gap-3"><i class="fa-solid fa-arrow-right text-brand-gold mt-1 text-xs"></i><span>Expanding manufacturing capabilities.</span></li>
@@ -252,7 +249,7 @@
 
   <section class="py-16 sm:py-20 bg-brand-offwhite">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-xs font-bold uppercase tracking-widest text-brand-royal mb-2">A message to our customers, partners &amp; entrepreneurs</p>
+      <p class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">A message to our customers, partners &amp; entrepreneurs</p>
       <div class="space-y-5 text-gray-600 text-sm sm:text-base leading-relaxed">
         <p>To our customers, thank you for your trust.</p>
         <p>To our business partners, thank you for your collaboration.</p>
@@ -265,7 +262,7 @@
 
   <section class="py-16 sm:py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-3xl bg-brand-navy text-white p-8 sm:p-12">
+      <div class="rounded-3xl bg-brand-graphite text-white p-8 sm:p-12">
         <p class="font-heading font-extrabold text-2xl tracking-tight">HRISHIKESH KADAM</p>
         <p class="text-brand-gold text-sm font-semibold mt-1">Founder &amp; Visionary</p>
         <p class="text-gray-300 text-sm mt-0.5">HRRK Group of Companies</p>
@@ -273,17 +270,17 @@
         <p class="font-heading text-lg sm:text-xl leading-relaxed">“Build with purpose. Grow with integrity. Create opportunities for others.”</p>
       </div>
       <div class="mt-10 flex flex-wrap gap-3">
-        <a href="index.html#contact" class="px-7 py-3.5 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-heading font-bold text-xs uppercase tracking-wider transition-colors">
+        <a href="index.html#contact" class="px-7 py-3.5 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-brand-graphite font-heading font-bold text-xs uppercase tracking-wider transition-colors">
           Partner With Us
         </a>
-        <a href="index.html" class="px-7 py-3.5 rounded-xl border border-gray-200 hover:border-brand-navy text-brand-navy font-heading font-bold text-xs uppercase tracking-wider transition-colors">
+        <a href="index.html" class="px-7 py-3.5 rounded-xl border border-gray-200 hover:border-brand-graphite text-brand-graphite font-heading font-bold text-xs uppercase tracking-wider transition-colors">
           Back to Home
         </a>
       </div>
     </div>
   </section>
 
-  <footer class="bg-brand-navy border-t border-brand-navyLight text-gray-400 text-xs py-8">
+  <footer class="bg-brand-graphite border-t border-brand-graphiteLight text-gray-400 text-xs py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
       <p>© 2026 HRRK Group of Companies Ltd. All rights reserved.</p>
       <a href="index.html" class="hover:text-white transition-colors">hrrkgroup.com</a>
