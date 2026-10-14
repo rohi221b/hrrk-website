@@ -37,10 +37,12 @@ function openRFQModal(interestTopic) {
 function closeRFQModal() {
   const modal = document.getElementById('rfqModal');
   const success = document.getElementById('modalSuccess');
+  const error = document.getElementById('modalError');
   if (!modal) return;
   modal.classList.add('hidden');
   modal.classList.remove('flex');
   if (success) success.classList.add('hidden');
+  if (error) error.classList.add('hidden');
 }
 
 function selectGoal(roleName, verticalTarget) {
@@ -69,6 +71,8 @@ function normalizeHomeMobile(raw) {
   const digits = String(raw || '').replace(/\D/g, '');
   if (digits.length === 10) return digits;
   if (digits.length === 12 && digits.startsWith('91')) return digits.slice(2);
+  // Accept international numbers (7–15 digits)
+  if (digits.length >= 7 && digits.length <= 15) return digits;
   return null;
 }
 
@@ -93,17 +97,22 @@ function handleFormSubmit(e) {
   }
 
   const payload = {
-    interest: (document.getElementById('formInterest') || {}).value || '',
-    fullName: (document.getElementById('formFullName') || {}).value || '',
-    phone: (document.getElementById('formPhone') || {}).value || '',
-    location: (document.getElementById('formLocation') || {}).value || '',
-    message: (document.getElementById('formMessage') || {}).value || '',
+    interest:  (document.getElementById('formInterest')  || {}).value || '',
+    fullName:  (document.getElementById('formFullName')  || {}).value || '',
+    phone:     (document.getElementById('formPhone')     || {}).value || '',
+    location:  (document.getElementById('formLocation')  || {}).value || '',
+    company:   (document.getElementById('formCompany')   || {}).value || '',
+    email:     (document.getElementById('formEmail')     || {}).value || '',
+    product:   (document.getElementById('formProduct')   || {}).value || '',
+    quantity:  (document.getElementById('formQuantity')  || {}).value || '',
+    message:   (document.getElementById('formMessage')   || {}).value || '',
   };
 
   if (!normalizeHomeMobile(payload.phone)) {
-    showError('Enter a 10-digit Indian mobile, or +91 followed by 10 digits.');
+    showError('Enter a valid phone or WhatsApp number.');
     return;
   }
+
 
   if (submitBtn) {
     submitBtn.disabled = true;
@@ -145,12 +154,94 @@ function handleFormSubmit(e) {
 
 function handleModalSubmit(e) {
   e.preventDefault();
-  const msg = document.getElementById('modalSuccess');
-  if (msg) msg.classList.remove('hidden');
-  setTimeout(() => {
-    closeRFQModal();
-    e.target.reset();
-  }, 2000);
+  const form = e.target;
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const success = document.getElementById('modalSuccess');
+  let errorBox = document.getElementById('modalError');
+
+  if (!errorBox) {
+    errorBox = document.createElement('div');
+    errorBox.id = 'modalError';
+    errorBox.className = 'hidden p-3 rounded-lg bg-red-50 text-red-800 text-xs font-medium';
+    form.appendChild(errorBox);
+  }
+
+  function showError(msg) {
+    if (success) success.classList.add('hidden');
+    errorBox.textContent = msg;
+    errorBox.classList.remove('hidden');
+  }
+
+  const interestInput = document.getElementById('modalInterestInput');
+  const nameInput = form.querySelector('input[placeholder*="name" i], input[placeholder*="Patel" i]') || form.querySelectorAll('input[type="text"]')[1];
+  const phoneInput = form.querySelector('input[type="tel"]') || form.querySelector('input[placeholder*="WhatsApp" i]');
+  const cityInput = form.querySelector('input[name="city"], input[placeholder*="city" i], input[placeholder*="Mumbai" i]');
+  const reqTextarea = form.querySelector('textarea');
+
+  const fullName = (nameInput && nameInput.value ? nameInput.value.trim() : '');
+  const phone = (phoneInput && phoneInput.value ? phoneInput.value.trim() : '');
+  const city = (cityInput && cityInput.value ? cityInput.value.trim() : '');
+  const interest = (interestInput && interestInput.value ? interestInput.value.trim() : 'Corporate Enquiry');
+  const message = (reqTextarea && reqTextarea.value ? reqTextarea.value.trim() : '');
+
+  if (!fullName) {
+    showError('Please enter your name.');
+    if (nameInput) nameInput.focus();
+    return;
+  }
+  if (!phone) {
+    showError('Please enter your phone or WhatsApp number.');
+    if (phoneInput) phoneInput.focus();
+    return;
+  }
+  if (cityInput && !city) {
+    showError('Please enter your city.');
+    cityInput.focus();
+    return;
+  }
+
+  const payload = {
+    interest,
+    fullName,
+    phone,
+    location: city ? `${city}, India` : 'India',
+    message,
+    source: 'Corporate Modal Enquiry',
+  };
+
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.classList.add('opacity-60', 'cursor-not-allowed');
+  }
+  errorBox.classList.add('hidden');
+  if (success) success.classList.add('hidden');
+
+  fetch('/api/inquiry', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  })
+    .then(async (res) => {
+      let data = {};
+      try { data = await res.json(); } catch { data = {}; }
+      if (!res.ok || !data.ok) {
+        throw new Error(data.error || 'Enquiry could not be sent. Please try again later.');
+      }
+      if (success) success.classList.remove('hidden');
+      setTimeout(() => {
+        closeRFQModal();
+        form.reset();
+      }, 1800);
+    })
+    .catch((err) => {
+      showError(err.message || 'Enquiry could not be sent. Please try again later.');
+    })
+    .finally(() => {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('opacity-60', 'cursor-not-allowed');
+      }
+    });
 }
 
 function setupExportRfq() {
@@ -213,6 +304,7 @@ function setupExportRfq() {
     const payload = {
       company: values.get('company'),
       contact: values.get('contact'),
+      city: values.get('city'),
       country: values.get('country'),
       website: values.get('website'),
       email: values.get('email'),
@@ -276,9 +368,9 @@ const searchDatabase = [
   { title: 'RV KAPOORCRAFT', category: 'Reverse Trade', link: 'ventures.html#reverse-trade', desc: 'Kapoor / camphor manufacturing buyback' },
   { title: 'RV DHOOPCRAFT', category: 'Reverse Trade', link: 'ventures.html#reverse-trade', desc: 'Dhoop stick manufacturing buyback' },
   { title: 'NIVASHAA Cleaning Solutions', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-nivashaa', desc: 'Comfort for every home: Floor cleaners, detergents, sanitizers' },
-  { title: 'SCRIBEXA Stationery', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-scribexaa', desc: 'Tools for inspired minds: Pens, highlighters, registers' },
+  { title: 'SCRIBEXAA Stationery', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-scribexaa', desc: 'Tools for inspired minds: Pens, highlighters, registers' },
   { title: 'DEVYANA Devotional', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-devyana', desc: 'Divine essence, pure devotion: Camphor, agarbatti, pooja oils' },
-  { title: 'GLOY LED Lighting', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-gloyex', desc: 'Power, light, innovation: Inverter bulbs, battens, downlights' },
+  { title: 'GLOYEX LED Lighting', category: 'Rekhraaj Vyom', link: 'vyom.html#brand-gloyex', desc: 'Power, light, innovation: Inverter bulbs, battens, downlights' },
   { title: 'Exports Division', category: 'Global Business', link: 'exports.html', desc: 'Global sourcing, private label, OEM, bulk supply and group brands from India' },
   { title: 'Hrishikesh Kadam', category: 'Founder', link: 'founder.html', desc: 'Founder’s message — building businesses, creating opportunities, shaping the future' }
 ];

@@ -36,25 +36,22 @@
         extend: {
           colors: {
             brand: {
-              navy: '#0B1F33',
-              navyLight: '#132c48',
-              royal: '#165D9C',
-              royalHover: '#114B7D',
-              gold: '#C7A33A',
-              goldHover: '#B08E2B',
-              goldLight: '#F5ECCE',
-              offwhite: '#F7F8FA',
-              charcoal: '#17202A',
-              slateBorder: '#E2E8F0',
+              graphite: '#252525',
+              graphiteLight: '#3A3A3A',
+              gold: '#C9A84C',
+              goldHover: '#B8962E',
+              goldLight: '#F5EDCE',
+              offwhite: '#F7F5F0',
+              warmBorder: '#E8E4DC',
             },
             division: {
               namrushii: '#8A3B2B',
               venturis: '#1B7F4B',
               vyom: '#1B4D7E',
               nivashaa: '#2E6941',
-              scribexa: '#1B3B6F',
+              scribexaa: '#1B3B6F',
               devyana: '#D9651E',
-              gloy: '#F06522'
+              gloyex: '#F06522'
             }
           },
           fontFamily: {
@@ -62,9 +59,9 @@
             inter: ['Inter', 'sans-serif'],
           },
           boxShadow: {
-            'corp': '0 4px 20px -2px rgba(11, 31, 51, 0.08), 0 2px 6px -1px rgba(11, 31, 51, 0.04)',
-            'corp-hover': '0 20px 30px -4px rgba(11, 31, 51, 0.12), 0 8px 16px -2px rgba(11, 31, 51, 0.06)',
-            'gold-glow': '0 0 18px rgba(199, 163, 58, 0.35)',
+            'corp': '0 4px 20px -2px rgba(37, 37, 37, 0.08), 0 2px 6px -1px rgba(37, 37, 37, 0.04)',
+            'corp-hover': '0 20px 30px -4px rgba(37, 37, 37, 0.12), 0 8px 16px -2px rgba(37, 37, 37, 0.06)',
+            'gold-glow': '0 0 18px rgba(201, 168, 76, 0.35)',
           }
         }
       }
@@ -74,7 +71,7 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      color: #17202A;
+      color: #252525;
       background-color: #FFFFFF;
       overflow-x: hidden;
     }
@@ -109,14 +106,14 @@
     }
     /* Custom radio appearance */
     .tab-active {
-      border-color: #C7A33A;
-      background-color: #0B1F33;
+      border-color: #C9A84C;
+      background-color: #252525;
       color: #FFFFFF;
     }
   </style>
 </head>
-<body class="text-brand-charcoal antialiased">
-<div class="bg-brand-navy border-b border-brand-navyLight text-xs py-2 px-4 sm:px-8 text-gray-300 hidden md:block">
+<body class="text-brand-graphite antialiased">
+<div class="bg-brand-graphite border-b border-brand-graphiteLight text-xs py-2 px-4 sm:px-8 text-gray-300 hidden md:block">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
       <div class="flex items-center space-x-6">
         <span class="inline-flex items-center text-brand-gold font-medium">
@@ -154,7 +151,7 @@
 
           <!-- Businesses Dropdown -->
           <div class="relative group">
-            <button class="flex items-center space-x-1 px-3 py-2 text-sm font-medium text-brand-navy hover:text-brand-royal hover:bg-gray-50 rounded-md transition-all">
+            <button class="flex items-center space-x-1 px-3 py-2 text-sm font-medium text-brand-graphite hover:text-brand-gold hover:bg-gray-50 rounded-md transition-all">
               <span>Businesses</span>
               <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 group-hover:rotate-180 transition-transform duration-200"></i>
             </button>
@@ -166,7 +163,7 @@
                     <img src="assets/images/logos/hrrk-group-logo.png" alt="" class="w-full h-full object-contain" />
                   </div>
                   <div>
-                    <p class="text-sm font-semibold text-brand-navy">HRRK Group of Companies</p>
+                    <p class="text-sm font-semibold text-brand-graphite">HRRK Group of Companies</p>
                     <p class="text-xs text-gray-500">Core parent company & strategic group vision</p>
                   </div>
                 </a>
@@ -175,7 +172,7 @@
                     <img src="assets/images/logos/namrushii-industrixa-logo.png" alt="" class="w-full h-full object-contain" />
                   </div>
                   <div>
-                    <p class="text-sm font-semibold text-brand-navy">Namrushii Industrixa</p>
+                    <p class="text-sm font-semibold text-brand-graphite">Namrushii Industrixa</p>
                     <p class="text-xs text-gray-500">Manufacturing, OEM & Private Label</p>
                   </div>
                 </a>
@@ -184,7 +181,7 @@
                     <img src="assets/images/logos/rekhraaj-venturis-logo.png" alt="" class="w-full h-full object-contain" />
                   </div>
                   <div>
-                    <p class="text-sm font-semibold text-brand-navy">Rekhraaj Ventures</p>
+                    <p class="text-sm font-semibold text-brand-graphite">Rekhraaj Ventures</p>
                     <p class="text-xs text-gray-500">Business services, RV Vyapar Setu & Reverse Trade</p>
                   </div>
                 </a>
@@ -193,44 +190,44 @@
                     <img src="assets/images/logos/rekhraaj-vyom-logo.png" alt="" class="w-full h-full object-contain" />
                   </div>
                   <div>
-                    <p class="text-sm font-semibold text-brand-navy">Rekhraaj Vyom</p>
-                    <p class="text-xs text-gray-500">Consumer brands: Nivashaa, Scribexa, Devyana, Gloy</p>
+                    <p class="text-sm font-semibold text-brand-graphite">Rekhraaj Vyom</p>
+                    <p class="text-xs text-gray-500">Consumer brands: Nivashaa, Scribexaa, Devyana, Gloyex</p>
                   </div>
                 </a>
               </div>
             </div>
           </div>
 
-          <a href="exports.html" class="px-3 py-2 text-sm font-medium text-brand-navy hover:text-brand-royal hover:bg-gray-50 rounded-md transition-all">
+          <a href="exports.html" class="px-3 py-2 text-sm font-medium text-brand-graphite hover:text-brand-gold hover:bg-gray-50 rounded-md transition-all">
             Exports
           </a>
-          <a href="index.html#about" class="px-3 py-2 text-sm font-medium text-brand-navy hover:text-brand-royal hover:bg-gray-50 rounded-md transition-all">
+          <a href="index.html#about" class="px-3 py-2 text-sm font-medium text-brand-graphite hover:text-brand-gold hover:bg-gray-50 rounded-md transition-all">
             About Group
           </a>
-          <a href="index.html#founder" class="px-3 py-2 text-sm font-medium text-brand-navy hover:text-brand-royal hover:bg-gray-50 rounded-md transition-all">
+          <a href="index.html#founder" class="px-3 py-2 text-sm font-medium text-brand-graphite hover:text-brand-gold hover:bg-gray-50 rounded-md transition-all">
             Founder
           </a>
-          <a href="index.html#contact" class="px-3 py-2 text-sm font-medium text-brand-navy hover:text-brand-royal hover:bg-gray-50 rounded-md transition-all">
+          <a href="index.html#contact" class="px-3 py-2 text-sm font-medium text-brand-graphite hover:text-brand-gold hover:bg-gray-50 rounded-md transition-all">
             Contact
           </a>
         </nav>
 
         <!-- HEADER RIGHT ACTIONS -->
         <div class="hidden sm:flex items-center space-x-2 xl:space-x-3">
-          <button onclick="toggleGlobalSearch()" title="Search catalog & ecosystem" class="w-9 h-9 rounded-lg text-gray-500 hover:text-brand-navy hover:bg-gray-100 flex items-center justify-center transition-colors">
+          <button onclick="toggleGlobalSearch()" title="Search catalog & ecosystem" class="w-9 h-9 rounded-lg text-gray-500 hover:text-brand-graphite hover:bg-gray-100 flex items-center justify-center transition-colors">
             <i class="fa-solid fa-magnifying-glass text-sm"></i>
           </button>
-          <button onclick="openRFQModal('General Enquiries')" class="font-heading tracking-wide uppercase text-xs font-bold px-4 sm:px-5 py-2.5 sm:py-3 rounded-lg bg-gradient-to-r from-brand-gold to-brand-goldHover text-brand-navy shadow-md hover:shadow-gold-glow hover:brightness-105 active:scale-95 transition-all">
+          <button onclick="openRFQModal('General Enquiries')" class="font-heading tracking-wide uppercase text-xs font-bold px-4 sm:px-5 py-2.5 sm:py-3 rounded-lg bg-gradient-to-r from-brand-gold to-brand-goldHover text-brand-graphite shadow-md hover:shadow-gold-glow hover:brightness-105 active:scale-95 transition-all">
             Enquire Now <i class="fa-solid fa-arrow-right ml-1.5 text-[11px]"></i>
           </button>
         </div>
 
         <!-- MOBILE HAMBURGER BUTTON -->
         <div class="flex lg:hidden items-center space-x-2">
-          <button onclick="openRFQModal('Mobile Header')" class="text-xs font-bold px-3 py-2 rounded bg-brand-gold text-brand-navy sm:hidden">
+          <button onclick="openRFQModal('Mobile Header')" class="text-xs font-bold px-3 py-2 rounded bg-brand-gold text-brand-graphite sm:hidden">
             Enquire
           </button>
-          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="p-2 rounded-lg text-brand-navy hover:bg-gray-100 focus:outline-none" aria-label="Toggle navigation">
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="p-2 rounded-lg text-brand-graphite hover:bg-gray-100 focus:outline-none" aria-label="Toggle navigation">
             <i id="mobileMenuIcon" class="fa-solid fa-bars text-xl"></i>
           </button>
         </div>
@@ -249,22 +246,22 @@
 
       <div class="pb-2 border-b border-gray-100">
         <p class="text-[11px] font-bold tracking-wider uppercase text-gray-400 mb-1">Menu</p>
-        <a href="index.html#ecosystem" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-navy">Businesses</a>
-        <a href="exports.html" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-navy">Exports</a>
-        <a href="index.html#about" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-navy">About Group</a>
-        <a href="index.html#founder" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-navy">Founder</a>
-        <a href="index.html#contact" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-navy">Contact</a>
+        <a href="index.html#ecosystem" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-graphite">Businesses</a>
+        <a href="exports.html" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-graphite">Exports</a>
+        <a href="index.html#about" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-graphite">About Group</a>
+        <a href="index.html#founder" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-graphite">Founder</a>
+        <a href="index.html#contact" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-brand-graphite">Contact</a>
       </div>
       
       <div class="pt-2 flex flex-col space-y-2">
-        <button onclick="toggleMobileMenu(); openRFQModal('Mobile Menu CTA')" class="w-full py-3 bg-brand-navy text-white text-center font-bold text-xs uppercase tracking-wider rounded-lg">
+        <button onclick="toggleMobileMenu(); openRFQModal('Mobile Menu CTA')" class="w-full py-3 bg-brand-graphite text-white text-center font-bold text-xs uppercase tracking-wider rounded-lg">
           Submit RFQ Enquiry
         </button>
       </div>
     </div>
   </header>
 
-  <section id="ventures" class="py-20 bg-white">
+  <section id="ventures" class="py-20 bg-brand-offwhite border-t border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -272,7 +269,7 @@
           <i class="fa-solid fa-arrow-trend-up"></i>
           <span>REKHRAAJ VENTURES</span>
         </div>
-        <h1 class="text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-brand-graphite tracking-tight">
           Business Opportunities for Ambitious People
         </h1>
         <div class="w-16 h-1 bg-brand-gold mx-auto my-4 rounded-full"></div>
@@ -296,32 +293,32 @@
               </span>
             </div>
 
-            <h3 class="font-heading font-bold text-2xl text-brand-navy">RV VYAPAR SETU&trade;</h3>
+            <h3 class="font-heading font-bold text-2xl text-brand-graphite">RV VYAPAR SETU&trade;</h3>
             <p class="text-xs font-semibold text-emerald-700 mt-1 uppercase tracking-wider">
               Multi-Brand Regional Trade Network Platform
             </p>
 
             <p class="text-sm text-gray-600 mt-4 leading-relaxed">
-              Powered by Rekhraaj Venturis. Connecting brands, traders and retail markets through structured regional distribution — own brands, associated brands, partner brands and multiple FMCG categories.
+              Powered by Rekhraaj Ventures. Connecting brands, traders and retail markets through structured regional distribution — own brands, associated brands, partner brands and multiple FMCG categories.
             </p>
 
             <div class="mt-6 space-y-3">
               <div class="flex items-start">
                 <i class="fa-solid fa-circle-check text-emerald-600 mt-1 mr-3 text-sm"></i>
                 <div class="text-xs text-gray-700">
-                  <span class="font-bold text-brand-navy">Multi-category supply:</span> Cleaning, stationery, household, pooja, lighting, personal care and other approved retail lines.
+                  <span class="font-bold text-brand-graphite">Multi-category supply:</span> Cleaning, stationery, household, pooja, lighting, personal care and other approved retail lines.
                 </div>
               </div>
               <div class="flex items-start">
                 <i class="fa-solid fa-circle-check text-emerald-600 mt-1 mr-3 text-sm"></i>
                 <div class="text-xs text-gray-700">
-                  <span class="font-bold text-brand-navy">Territory + support:</span> Defined taluka coverage, sales visits, marketing materials and organised billing.
+                  <span class="font-bold text-brand-graphite">Territory + support:</span> Defined taluka coverage, sales visits, marketing materials and organised billing.
                 </div>
               </div>
               <div class="flex items-start">
                 <i class="fa-solid fa-circle-check text-emerald-600 mt-1 mr-3 text-sm"></i>
                 <div class="text-xs text-gray-700">
-                  <span class="font-bold text-brand-navy">Trade platform, not an investment:</span> Not MLM and not a guaranteed-income programme. Margins depend on product, market and the trader’s own strategy.
+                  <span class="font-bold text-brand-graphite">Trade platform, not an investment:</span> Not MLM and not a guaranteed-income programme. Margins depend on product, market and the trader’s own strategy.
                 </div>
               </div>
             </div>
@@ -335,10 +332,10 @@
         </div>
 
         <!-- MODULE 2: RV REVERSE TRADE -->
-        <div class="rounded-2xl border-2 border-brand-royal/20 bg-gradient-to-b from-blue-50/30 to-white p-8 hover:border-brand-royal/40 transition-all flex flex-col justify-between shadow-sm">
+        <div class="rounded-2xl border-2 border-brand-gold/20 bg-gradient-to-b from-blue-50/30 to-white p-8 hover:border-brand-gold/40 transition-all flex flex-col justify-between shadow-sm">
           <div>
             <div class="flex items-center justify-between mb-6">
-              <div class="w-14 h-14 rounded-xl bg-brand-royal text-white flex items-center justify-center text-2xl shadow-md">
+              <div class="w-14 h-14 rounded-xl bg-brand-gold text-white flex items-center justify-center text-2xl shadow-md">
                 <i class="fa-solid fa-arrows-rotate"></i>
               </div>
               <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 bg-blue-100 text-blue-800 rounded-full">
@@ -346,39 +343,39 @@
               </span>
             </div>
 
-            <h3 class="font-heading font-bold text-2xl text-brand-navy">RV REVERSE TRADE&trade;</h3>
-            <p class="text-xs font-semibold text-brand-royal mt-1 uppercase tracking-wider">
+            <h3 class="font-heading font-bold text-2xl text-brand-graphite">RV REVERSE TRADE&trade;</h3>
+            <p class="text-xs font-semibold text-brand-gold mt-1 uppercase tracking-wider">
               A Structured Manufacturing Partnership &amp; Buyback Ecosystem
             </p>
 
             <p class="text-sm text-gray-600 mt-4 leading-relaxed">
-              RV Reverse Trade&trade; by Rekhraaj Venturis enables entrepreneurs, individuals, SHGs and small manufacturing partners to establish standardized micro-manufacturing units with machinery, raw materials, packaging, training, quality support and an organized buyback system.
+              RV Reverse Trade&trade; by Rekhraaj Ventures enables entrepreneurs, individuals, SHGs and small manufacturing partners to establish standardized micro-manufacturing units with machinery, raw materials, packaging, training, quality support and an organized buyback system.
             </p>
 
             <div class="mt-6 space-y-3">
               <div class="flex items-start">
-                <i class="fa-solid fa-circle-check text-brand-royal mt-1 mr-3 text-sm"></i>
+                <i class="fa-solid fa-circle-check text-brand-gold mt-1 mr-3 text-sm"></i>
                 <div class="text-xs text-gray-700">
-                  <span class="font-bold text-brand-navy">Rolling production:</span> QC, buyback and settlement under one framework.
+                  <span class="font-bold text-brand-graphite">Rolling production:</span> QC, buyback and settlement under one framework.
                 </div>
               </div>
               <div class="flex items-start">
-                <i class="fa-solid fa-circle-check text-brand-royal mt-1 mr-3 text-sm"></i>
+                <i class="fa-solid fa-circle-check text-brand-gold mt-1 mr-3 text-sm"></i>
                 <div class="text-xs text-gray-700">
-                  <span class="font-bold text-brand-navy">Company-controlled brands:</span> Partners can produce for Nivashaa, Scribexa, Devyana, Gloy and other approved SKUs.
+                  <span class="font-bold text-brand-graphite">Company-controlled brands:</span> Partners can produce for Nivashaa, Scribexaa, Devyana, Gloyex and other approved SKUs.
                 </div>
               </div>
               <div class="flex items-start">
-                <i class="fa-solid fa-circle-check text-brand-royal mt-1 mr-3 text-sm"></i>
+                <i class="fa-solid fa-circle-check text-brand-gold mt-1 mr-3 text-sm"></i>
                 <div class="text-xs text-gray-700">
-                  <span class="font-bold text-brand-navy">Formal agreement:</span> Machinery, materials, training, QC and buyback sit under a Manufacturing Support Agreement. This is not employment and does not guarantee income.
+                  <span class="font-bold text-brand-graphite">Formal agreement:</span> Machinery, materials, training, QC and buyback sit under a Manufacturing Support Agreement. This is not employment and does not guarantee income.
                 </div>
               </div>
             </div>
           </div>
 
           <div class="mt-8 pt-6 border-t border-blue-100">
-            <a href="#reverse-trade" class="w-full py-3.5 rounded-xl bg-brand-royal hover:bg-brand-royalHover text-white font-heading font-bold text-xs uppercase tracking-wider shadow transition-colors flex items-center justify-center">
+            <a href="#reverse-trade" class="w-full py-3.5 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-white font-heading font-bold text-xs uppercase tracking-wider shadow transition-colors flex items-center justify-center">
               View Six Verticals <i class="fa-solid fa-arrow-right ml-2"></i>
             </a>
           </div>
@@ -388,8 +385,8 @@
 
       <div id="vyapar-setu" class="mt-20 scroll-mt-28">
         <div class="text-center max-w-3xl mx-auto mb-10">
-          <p class="text-[11px] font-bold uppercase tracking-widest text-gray-400">Rekhraaj Venturis &rarr; RV Vyapar Setu&trade;</p>
-          <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-navy mt-2">Multi-Brand Regional Trade Network</h3>
+          <p class="text-[11px] font-bold uppercase tracking-widest text-gray-400">Rekhraaj Ventures &rarr; RV Vyapar Setu&trade;</p>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-graphite mt-2">Multi-Brand Regional Trade Network</h3>
           <p class="text-sm text-gray-600 mt-3">
             A structured alternative to conventional regional wholesale. Traders access a diversified portfolio; brands reach local retail through an organised trader network.
           </p>
@@ -399,39 +396,39 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
           <a href="vyom.html#brand-nivashaa" class="bg-white rounded-2xl border border-gray-200 p-5 hover:shadow-corp transition-all">
             <img src="assets/images/logos/nivashaa-logo.png" alt="Nivashaa" class="h-14 w-full object-contain mb-3" />
-            <h4 class="font-heading font-bold text-sm text-brand-navy">NIVASHAA</h4>
+            <h4 class="font-heading font-bold text-sm text-brand-graphite">NIVASHAA</h4>
             <p class="text-xs text-gray-500 mt-1">Home cleaning products</p>
           </a>
           <a href="vyom.html#brand-scribexaa" class="bg-white rounded-2xl border border-gray-200 p-5 hover:shadow-corp transition-all">
-            <img src="assets/images/logos/scribexa-logo.png" alt="Scribexa" class="h-14 w-full object-contain mb-3" />
-            <h4 class="font-heading font-bold text-sm text-brand-navy">SCRIBEXA</h4>
+            <img src="assets/images/logos/scribexaa-logo.png" alt="Scribexaa" class="h-14 w-full object-contain mb-3" />
+            <h4 class="font-heading font-bold text-sm text-brand-graphite">SCRIBEXAA</h4>
             <p class="text-xs text-gray-500 mt-1">Stationery products</p>
           </a>
           <a href="vyom.html#brand-devyana" class="bg-white rounded-2xl border border-gray-200 p-5 hover:shadow-corp transition-all">
             <img src="assets/images/logos/devyana-logo.png" alt="Devyana" class="h-14 w-full object-contain mb-3" />
-            <h4 class="font-heading font-bold text-sm text-brand-navy">DEVYANA</h4>
+            <h4 class="font-heading font-bold text-sm text-brand-graphite">DEVYANA</h4>
             <p class="text-xs text-gray-500 mt-1">Devotional products</p>
           </a>
           <a href="vyom.html#brand-gloyex" class="bg-white rounded-2xl border border-gray-200 p-5 hover:shadow-corp transition-all">
-            <img src="assets/images/logos/gloy-logo.png" alt="Gloy" class="h-14 w-full object-contain mb-3" />
-            <h4 class="font-heading font-bold text-sm text-brand-navy">GLOY</h4>
+            <img src="assets/images/logos/gloyex-logo.png" alt="Gloyex" class="h-14 w-full object-contain mb-3" />
+            <h4 class="font-heading font-bold text-sm text-brand-graphite">GLOYEX</h4>
             <p class="text-xs text-gray-500 mt-1">Lighting products</p>
           </a>
         </div>
 
         <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Multi-Category Product Network with associated &amp; partner brands</p>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-12">
-          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200"><p class="font-heading font-bold text-xs text-brand-navy">Household &amp; Cleaning</p><p class="text-[11px] text-gray-500 mt-1">Daily-use cleaning and household consumables</p></div>
-          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200"><p class="font-heading font-bold text-xs text-brand-navy">Stationery</p><p class="text-[11px] text-gray-500 mt-1">Pens, notebooks, school and office lines</p></div>
-          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200"><p class="font-heading font-bold text-xs text-brand-navy">Devotional</p><p class="text-[11px] text-gray-500 mt-1">Pooja, agarbatti, dhoop and utility SKUs</p></div>
-          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200"><p class="font-heading font-bold text-xs text-brand-navy">Lighting</p><p class="text-[11px] text-gray-500 mt-1">LED bulbs, tubes and lighting products</p></div>
-          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200"><p class="font-heading font-bold text-xs text-brand-navy">Personal Care</p><p class="text-[11px] text-gray-500 mt-1">Soaps, cosmetics and daily personal care</p></div>
-          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200"><p class="font-heading font-bold text-xs text-brand-navy">General FMCG</p><p class="text-[11px] text-gray-500 mt-1">Retail utility, seasonal and fast-moving lines</p></div>
+          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200"><p class="font-heading font-bold text-xs text-brand-graphite">Household &amp; Cleaning</p><p class="text-[11px] text-gray-500 mt-1">Daily-use cleaning and household consumables</p></div>
+          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200"><p class="font-heading font-bold text-xs text-brand-graphite">Stationery</p><p class="text-[11px] text-gray-500 mt-1">Pens, notebooks, school and office lines</p></div>
+          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200"><p class="font-heading font-bold text-xs text-brand-graphite">Devotional</p><p class="text-[11px] text-gray-500 mt-1">Pooja, agarbatti, dhoop and utility SKUs</p></div>
+          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200"><p class="font-heading font-bold text-xs text-brand-graphite">Lighting</p><p class="text-[11px] text-gray-500 mt-1">LED bulbs, tubes and lighting products</p></div>
+          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200"><p class="font-heading font-bold text-xs text-brand-graphite">Personal Care</p><p class="text-[11px] text-gray-500 mt-1">Soaps, cosmetics and daily personal care</p></div>
+          <div class="p-4 rounded-xl bg-brand-offwhite border border-gray-200"><p class="font-heading font-bold text-xs text-brand-graphite">General FMCG</p><p class="text-[11px] text-gray-500 mt-1">Retail utility, seasonal and fast-moving lines</p></div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           <div class="rounded-2xl border border-gray-200 p-6">
-            <h4 class="font-heading font-bold text-brand-navy mb-3">Why Traders Choose Us</h4>
+            <h4 class="font-heading font-bold text-brand-graphite mb-3">Why Traders Choose Us</h4>
             <ul class="text-xs text-gray-600 space-y-2">
               <li>One platform for proprietary, associated and partner brands</li>
               <li>Multi-category business instead of a single product line</li>
@@ -441,7 +438,7 @@
             </ul>
           </div>
           <div class="rounded-2xl border border-gray-200 p-6">
-            <h4 class="font-heading font-bold text-brand-navy mb-3">Why Brands Collaborate</h4>
+            <h4 class="font-heading font-bold text-brand-graphite mb-3">Why Brands Collaborate</h4>
             <ul class="text-xs text-gray-600 space-y-2">
               <li>You bring the product. We help build the market network.</li>
               <li>Brand &rarr; RV Vyapar Setu &rarr; trader &rarr; retail</li>
@@ -452,21 +449,21 @@
           </div>
         </div>
 
-        <div class="bg-brand-navy text-white rounded-2xl border border-white/10 p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div class="bg-brand-graphite text-white rounded-2xl border border-white/10 p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div class="lg:col-span-5">
             <span class="text-[10px] font-bold uppercase tracking-widest text-brand-gold">Trade &amp; Distribution</span>
             <h4 class="font-heading font-bold text-xl mt-2">How RV Vyapar Setu Works</h4>
             <p class="text-sm text-gray-300 mt-3 leading-relaxed">
               Selected regional traders operate under a Trade &amp; Distribution Agreement covering territory, product supply, credit, payments and market development.
             </p>
-            <button onclick="openRFQModal('RV Vyapar Setu — Trade Partner Application')" class="mt-6 px-6 py-3 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-heading font-bold text-xs uppercase tracking-wider">
+            <button onclick="openRFQModal('RV Vyapar Setu — Trade Partner Application')" class="mt-6 px-6 py-3 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-brand-graphite font-heading font-bold text-xs uppercase tracking-wider">
               Become a Trade Partner
             </button>
           </div>
           <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
             <div class="p-3.5 rounded-xl bg-white/5 border border-white/10"><span class="font-bold text-brand-gold block mb-1">01. Application</span>Submit business details and preferred territory.</div>
             <div class="p-3.5 rounded-xl bg-white/5 border border-white/10"><span class="font-bold text-brand-gold block mb-1">02. Verification</span>Profile, market experience and documentation review.</div>
-            <div class="p-3.5 rounded-xl bg-white/5 border border-white/10"><span class="font-bold text-brand-gold block mb-1">03. Agreement</span>1-year Trade &amp; Distribution Agreement with Rekhraaj Venturis.</div>
+            <div class="p-3.5 rounded-xl bg-white/5 border border-white/10"><span class="font-bold text-brand-gold block mb-1">03. Agreement</span>1-year Trade &amp; Distribution Agreement with Rekhraaj Ventures.</div>
             <div class="p-3.5 rounded-xl bg-white/5 border border-white/10"><span class="font-bold text-brand-gold block mb-1">04. Onboarding</span>Security deposit and credit facility as per agreement terms.</div>
             <div class="p-3.5 rounded-xl bg-white/5 border border-white/10"><span class="font-bold text-brand-gold block mb-1">05. Product Supply</span>Purchase from own, associated and partner brand portfolios.</div>
             <div class="p-3.5 rounded-xl bg-white/5 border border-white/10"><span class="font-bold text-brand-gold block mb-1">06. Market Development</span>Build wholesale and retail coverage in the assigned territory.</div>
@@ -476,8 +473,8 @@
 
       <div id="reverse-trade" class="mt-20 scroll-mt-28">
         <div class="text-center max-w-3xl mx-auto mb-4">
-          <p class="text-[11px] font-bold uppercase tracking-widest text-gray-400">Rekhraaj Venturis &rarr; RV Reverse Trade&trade;</p>
-          <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-navy mt-2">Six Business Verticals</h3>
+          <p class="text-[11px] font-bold uppercase tracking-widest text-gray-400">Rekhraaj Ventures &rarr; RV Reverse Trade&trade;</p>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-graphite mt-2">Six Business Verticals</h3>
           <p class="text-sm text-gray-600 mt-3">
             Manufacture locally. Supply systematically. Grow through a structured buyback ecosystem. Choose the manufacturing opportunity that matches your unit.
           </p>
@@ -489,7 +486,7 @@
             <div class="mb-4">
               <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center"><i class="fa-solid fa-droplet"></i></div>
             </div>
-            <h4 class="font-heading font-bold text-brand-navy">RV CLEANFLOW&trade;</h4>
+            <h4 class="font-heading font-bold text-brand-graphite">RV CLEANFLOW&trade;</h4>
             <p class="text-xs font-semibold text-emerald-700 mt-1">Liquid Cleaning Products Manufacturing &amp; Buyback</p>
             <p class="text-[11px] text-gray-500 mt-2">Household &amp; institutional cleaning. Ready-mix, bottles, pouches and rolling settlement.</p>
             <ul class="mt-4 text-xs text-gray-600 space-y-1.5 flex-1">
@@ -504,7 +501,7 @@
             <div class="mb-4">
               <div class="w-11 h-11 rounded-xl bg-blue-50 text-blue-800 flex items-center justify-center"><i class="fa-solid fa-pen"></i></div>
             </div>
-            <h4 class="font-heading font-bold text-brand-navy">RV PENCRAFT&trade;</h4>
+            <h4 class="font-heading font-bold text-brand-graphite">RV PENCRAFT&trade;</h4>
             <p class="text-xs font-semibold text-blue-800 mt-1">Pen Manufacturing &amp; Assembly Buyback</p>
             <p class="text-[11px] text-gray-500 mt-2">Stationery &amp; writing instruments. Assembly machinery and company-supplied components.</p>
             <ul class="mt-4 text-xs text-gray-600 space-y-1.5 flex-1">
@@ -519,7 +516,7 @@
             <div class="mb-4">
               <div class="w-11 h-11 rounded-xl bg-cyan-50 text-cyan-800 flex items-center justify-center"><i class="fa-solid fa-soap"></i></div>
             </div>
-            <h4 class="font-heading font-bold text-brand-navy">RV POWERCLEAN&trade;</h4>
+            <h4 class="font-heading font-bold text-brand-graphite">RV POWERCLEAN&trade;</h4>
             <p class="text-xs font-semibold text-cyan-800 mt-1">Powder Detergent Manufacturing &amp; Buyback</p>
             <p class="text-[11px] text-gray-500 mt-2">Laundry &amp; cleaning. Mix, fill, seal and pack approved detergent SKUs.</p>
             <ul class="mt-4 text-xs text-gray-600 space-y-1.5 flex-1">
@@ -534,7 +531,7 @@
             <div class="mb-4">
               <div class="w-11 h-11 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center"><i class="fa-solid fa-lightbulb"></i></div>
             </div>
-            <h4 class="font-heading font-bold text-brand-navy">RV GLOTECH&trade;</h4>
+            <h4 class="font-heading font-bold text-brand-graphite">RV GLOTECH&trade;</h4>
             <p class="text-xs font-semibold text-amber-700 mt-1">LED Bulb Manufacturing &amp; Assembly Buyback</p>
             <p class="text-[11px] text-gray-500 mt-2">Electrical &amp; lighting. Assembly, testing and packing of approved lighting SKUs.</p>
             <ul class="mt-4 text-xs text-gray-600 space-y-1.5 flex-1">
@@ -549,7 +546,7 @@
             <div class="mb-4">
               <div class="w-11 h-11 rounded-xl bg-orange-50 text-orange-700 flex items-center justify-center"><i class="fa-solid fa-fire-flame-curved"></i></div>
             </div>
-            <h4 class="font-heading font-bold text-brand-navy">RV KAPOORCRAFT&trade;</h4>
+            <h4 class="font-heading font-bold text-brand-graphite">RV KAPOORCRAFT&trade;</h4>
             <p class="text-xs font-semibold text-orange-700 mt-1">Kapoor Manufacturing &amp; Buyback</p>
             <p class="text-[11px] text-gray-500 mt-2">Puja, religious &amp; fragrance. Standardized camphor production and packing.</p>
             <ul class="mt-4 text-xs text-gray-600 space-y-1.5 flex-1">
@@ -564,7 +561,7 @@
             <div class="mb-4">
               <div class="w-11 h-11 rounded-xl bg-lime-50 text-lime-800 flex items-center justify-center"><i class="fa-solid fa-wind"></i></div>
             </div>
-            <h4 class="font-heading font-bold text-brand-navy">RV DHOOPCRAFT&trade;</h4>
+            <h4 class="font-heading font-bold text-brand-graphite">RV DHOOPCRAFT&trade;</h4>
             <p class="text-xs font-semibold text-lime-800 mt-1">Dhoop Stick Manufacturing &amp; Buyback</p>
             <p class="text-[11px] text-gray-500 mt-2">Devotional fragrance. Forming, drying/curing, inspection and packing.</p>
             <ul class="mt-4 text-xs text-gray-600 space-y-1.5 flex-1">
@@ -575,17 +572,17 @@
             <button onclick="openRFQModal('RV DHOOPCRAFT — Manufacturing Partner')" class="mt-5 w-full py-2.5 rounded-lg bg-lime-800 hover:bg-lime-900 text-white text-[11px] font-bold uppercase tracking-wider">Enquire DHOOPCRAFT</button>
           </div>
 
-          <div id="reverse-trade-agreement" class="md:col-span-2 lg:col-span-3 bg-brand-navy text-white rounded-2xl border border-white/10 p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div id="reverse-trade-agreement" class="md:col-span-2 lg:col-span-3 bg-brand-graphite text-white rounded-2xl border border-white/10 p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div class="lg:col-span-5">
               <span class="text-[10px] font-bold uppercase tracking-widest text-brand-gold">Manufacturing Support Agreement</span>
               <h4 class="font-heading font-bold text-xl mt-2">Your Formal Entry into RV Reverse Trade&trade;</h4>
               <p class="text-sm text-gray-300 mt-3 leading-relaxed">
-                Every participating manufacturing partner operates under a Manufacturing Support Agreement with Rekhraaj Venturis covering machinery assistance, raw-material supply, technical support, quality procedures, buyback participation and settlement.
+                Every participating manufacturing partner operates under a Manufacturing Support Agreement with Rekhraaj Ventures covering machinery assistance, raw-material supply, technical support, quality procedures, buyback participation and settlement.
               </p>
               <p class="text-xs text-gray-400 mt-3 leading-relaxed">
                 The agreement is not an employment agreement and does not represent a guaranteed income or guaranteed return. Buyback applies only to approved quantities that meet quality, packing, documentation and program rules.
               </p>
-              <button onclick="openRFQModal('RV Reverse Trade — Manufacturing Support Agreement')" class="mt-6 px-6 py-3 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-heading font-bold text-xs uppercase tracking-wider">
+              <button onclick="openRFQModal('RV Reverse Trade — Manufacturing Support Agreement')" class="mt-6 px-6 py-3 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-brand-graphite font-heading font-bold text-xs uppercase tracking-wider">
                 Become a Manufacturing Partner
               </button>
             </div>
@@ -605,7 +602,7 @@
     </div>
   </section>
 
-  <footer class="bg-brand-navy border-t border-brand-navyLight text-gray-400 text-xs pt-16 pb-24 md:pb-12">
+  <footer class="bg-brand-graphite border-t border-brand-graphiteLight text-gray-400 text-xs pt-16 pb-24 md:pb-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 pb-12 border-b border-white/10">
@@ -620,10 +617,19 @@
             "BUILD. MANUFACTURE. TRADE. GROW."<br/>
             A diversified business ecosystem connecting manufacturing, OEM, private label, business opportunities, consumer brands and global markets.
           </p>
-
+          <div class="space-y-1.5 text-xs text-gray-300 pt-1">
+            <div class="flex items-start space-x-2.5">
+              <i class="fa-solid fa-location-dot text-brand-gold mt-0.5 text-xs flex-shrink-0"></i>
+              <span>5th lane Rajampuri, Near vidyalnake classes, Kolhapur.</span>
+            </div>
+            <div class="flex items-center space-x-2.5">
+              <i class="fa-solid fa-envelope text-brand-gold text-xs flex-shrink-0"></i>
+              <a href="mailto:hrrkgrp@gmail.com" class="hover:text-white transition-colors">hrrkgrp@gmail.com</a>
+            </div>
+          </div>
           <div class="pt-2 flex items-center space-x-3 text-sm text-gray-300">
-            <a href="https://wa.me/917875355135?text=Hello%20HRRK%20Group%20Team" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded bg-white/5 hover:bg-brand-gold hover:text-brand-navy flex items-center justify-center transition-colors" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="index.html" class="w-8 h-8 rounded bg-white/5 hover:bg-brand-gold hover:text-brand-navy flex items-center justify-center transition-colors"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/917875355135?text=Hello%20HRRK%20Group%20Team" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded bg-white/5 hover:bg-brand-gold hover:text-brand-graphite flex items-center justify-center transition-colors" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="index.html" class="w-8 h-8 rounded bg-white/5 hover:bg-brand-gold hover:text-brand-graphite flex items-center justify-center transition-colors"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
 
@@ -669,9 +675,9 @@
           <p class="font-heading font-bold text-white text-xs uppercase tracking-wider">Consumer Brands</p>
           <ul class="space-y-2">
             <li><a href="vyom.html#brand-nivashaa" class="hover:text-white transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2"></span> NIVASHAA</a></li>
-            <li><a href="vyom.html#brand-scribexaa" class="hover:text-white transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-blue-400 mr-2"></span> SCRIBEXA</a></li>
+            <li><a href="vyom.html#brand-scribexaa" class="hover:text-white transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-blue-400 mr-2"></span> SCRIBEXAA</a></li>
             <li><a href="vyom.html#brand-devyana" class="hover:text-white transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-amber-400 mr-2"></span> DEVYANA</a></li>
-            <li><a href="vyom.html#brand-gloyex" class="hover:text-white transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400 mr-2"></span> GLOY</a></li>
+            <li><a href="vyom.html#brand-gloyex" class="hover:text-white transition-colors flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400 mr-2"></span> GLOYEX</a></li>
           </ul>
         </div>
 
@@ -697,7 +703,7 @@
     <a href="https://wa.me/917875355135?text=Hello%20HRRK%20Group%20Team%2C%20I%20have%20an%20urgent%20business%20inquiry" target="_blank" class="flex-1 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold text-xs uppercase tracking-wider text-center flex items-center justify-center shadow-sm">
       <i class="fa-brands fa-whatsapp text-base mr-2"></i> WhatsApp
     </a>
-    <button onclick="openRFQModal('Mobile Sticky Bottom CTA')" class="flex-1 py-3 px-4 rounded-xl bg-brand-navy hover:bg-brand-royal text-white font-heading font-bold text-xs uppercase tracking-wider text-center shadow-sm flex items-center justify-center">
+    <button onclick="openRFQModal('Mobile Sticky Bottom CTA')" class="flex-1 py-3 px-4 rounded-xl bg-brand-graphite hover:bg-brand-gold text-white font-heading font-bold text-xs uppercase tracking-wider text-center shadow-sm flex items-center justify-center">
       <i class="fa-regular fa-envelope mr-2"></i> Enquire Now
     </button>
   </div>
@@ -712,35 +718,39 @@
 
       <div class="mb-6">
         <span class="text-[10px] font-bold text-brand-gold uppercase tracking-widest block mb-1">Corporate RFQ & Partnership Desk</span>
-        <h3 id="modalTitle" class="font-heading font-extrabold text-2xl text-brand-navy">Submit Corporate Enquiry</h3>
+        <h3 id="modalTitle" class="font-heading font-extrabold text-2xl text-brand-graphite">Submit Corporate Enquiry</h3>
         <p class="text-xs text-gray-500 mt-1">Specify your project, brand partnership, or bulk order details below.</p>
       </div>
 
       <form id="modalForm" onsubmit="handleModalSubmit(event)" class="space-y-4">
         
         <div>
-          <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Selected Interest / Vertical</label>
-          <input type="text" id="modalInterestInput" readonly class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-gray-200 bg-gray-50 text-brand-navy font-semibold outline-none" />
+          <label class="block text-xs font-bold text-brand-graphite uppercase mb-1">Selected Interest / Vertical</label>
+          <input type="text" id="modalInterestInput" readonly class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-gray-200 bg-gray-50 text-brand-graphite font-semibold outline-none" />
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
-            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Your Name *</label>
-            <input type="text" required placeholder="Rajesh Patel" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-gray-300 focus:border-brand-royal outline-none" />
+            <label class="block text-xs font-bold text-brand-graphite uppercase mb-1">Your Name *</label>
+            <input type="text" required placeholder="Rajesh Patel" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-gray-300 focus:border-brand-gold outline-none" />
           </div>
           <div>
-            <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Phone / WhatsApp *</label>
-            <input type="tel" required placeholder="+91 98765 43210" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-gray-300 focus:border-brand-royal outline-none" />
+            <label class="block text-xs font-bold text-brand-graphite uppercase mb-1">Phone / WhatsApp *</label>
+            <input type="tel" required placeholder="+91 98765 43210" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-gray-300 focus:border-brand-gold outline-none" />
           </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-brand-graphite uppercase mb-1">Your City *</label>
+          <input type="text" name="city" required placeholder="e.g. Mumbai, Surat, Indore..." class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-gray-300 focus:border-brand-gold outline-none" />
         </div>
 
         <div>
-          <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Estimated Volume or Requirements <span class="text-gray-400 font-medium normal-case">(optional)</span></label>
-          <textarea rows="2" placeholder="Quantity, product or region — if you have it..." class="w-full text-xs p-3 rounded-lg border border-gray-300 focus:border-brand-royal outline-none resize-none"></textarea>
+          <label class="block text-xs font-bold text-brand-graphite uppercase mb-1">Estimated Volume or Requirements <span class="text-gray-400 font-medium normal-case">(optional)</span></label>
+          <textarea rows="2" placeholder="Quantity, product or region — if you have it..." class="w-full text-xs p-3 rounded-lg border border-gray-300 focus:border-brand-gold outline-none resize-none"></textarea>
         </div>
 
         <div class="pt-3">
-          <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-navy hover:bg-brand-royal text-white font-heading font-bold text-xs uppercase tracking-wider transition-colors shadow">
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-graphite hover:bg-brand-gold text-white font-heading font-bold text-xs uppercase tracking-wider transition-colors shadow">
             Transmit Enquiry to Group Desk <i class="fa-solid fa-paper-plane ml-1"></i>
           </button>
         </div>
@@ -760,7 +770,7 @@
       <div class="flex items-center justify-between pb-4 border-b border-gray-200">
         <div class="flex items-center space-x-3 flex-1 mr-4">
           <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
-          <input type="text" id="globalSearchInput" oninput="performLiveSearch(this.value)" placeholder="Search products, OEM, technologies, brands, opportunities..." class="w-full text-sm outline-none text-brand-navy font-medium placeholder-gray-400" />
+          <input type="text" id="globalSearchInput" oninput="performLiveSearch(this.value)" placeholder="Search products, OEM, technologies, brands, opportunities..." class="w-full text-sm outline-none text-brand-graphite font-medium placeholder-gray-400" />
         </div>
         <button onclick="toggleGlobalSearch()" class="text-gray-400 hover:text-gray-600">
           <i class="fa-solid fa-xmark text-lg"></i>
